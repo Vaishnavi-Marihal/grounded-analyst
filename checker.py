@@ -32,7 +32,13 @@ def collect_numbers(obj) -> list[float]:
     if isinstance(obj, (int, float)):
         return [float(obj)]
     if isinstance(obj, dict):
-        return [n for v in obj.values() for n in collect_numbers(v)]
+        found = []
+        for key, value in obj.items():
+            if key == "error" and isinstance(value, str):
+                found += [float(t) for t in extract_numbers(value)]
+            else:
+                found += collect_numbers(value)
+        return found
     if isinstance(obj, list):
         return [n for v in obj for n in collect_numbers(v)]
     return []

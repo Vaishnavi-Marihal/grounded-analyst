@@ -1,5 +1,6 @@
 import checker
 import tools
+import pytest
 
 SAMPLE = {
     "building_id": "B",
@@ -58,3 +59,61 @@ def test_calculate_subtract_and_percent():
 def test_calculate_rejects_zero_and_unknown():
     assert "error" in tools.calculate("percent_difference", 5.0, 0)
     assert "error" in tools.calculate("power", 2.0, 3.0)
+
+def test_get_retries_after_connection_error(monkeypatch):
+    calls = {"n": 0}
+
+    class Resp:
+        status_code = 200
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"ok": 1}
+
+    def flaky(url, params=None, timeout=None):
+        calls["n"] += 1
+        if calls["n"] == 1:
+            raise tools.requests.ConnectionError("boom")
+        return Resp()
+
+    monkeypatch.setattr(tools.requests, "get", flaky)
+    monkeypatch.setattr(tools.time, "sleep", lambda s: None)
+    assert tools._get("/x") == {"ok": 1}
+    assert calls["n"] == 2
+
+class FakeResponse:
+    def __init__(self, status, body):
+        self.status_code = status
+        self._body = body
+
+    def json(self):
+        return self._body
+
+
+def test_record_then_replay(monkeypatch, tmp_path):
+    monkeypatch.setattr(tools, "CACHE_DIR", tmp_path)
+    monkeypatch.setattr(tools.requests, "get",
+                        lambda url, params=None, timeout=None: FakeResponse(200, {"v": 7}))
+    monkeypatch.setenv("FORECAST_MODE", "record")
+    assert tools._get("/a", {"d": "x"}) == {"v": 7}
+
+    def no_network(*args, **kwargs):
+        raise AssertionError("network used")
+
+    monkeypatch.setattr(tools.requests, "get", no_network)
+    monkeypatch.setenv("FORECAST_MODE", "replay")
+    assert tools._get("/a", {"d": "x"}) == {"v": 7}
+
+
+def test_error_status_is_recorded_and_replayed(monkeypatch, tmp_path):
+    monkeypatch.setattr(tools, "CACHE_DIR", tmp_path)
+    monkeypatch.setattr(tools.requests, "get",
+                        lambda url, params=None, timeout=None: FakeResponse(422, {"detail": "bad date"}))
+    monkeypatch.setenv("FORECAST_MODE", "record")
+    with pytest.raises(tools.requests.HTTPError):
+        tools._get("/b")
+    monkeypatch.setenv("FORECAST_MODE", "replay")
+    with pytest.raises(tools.requests.HTTPError, match="422"):
+        tools._get("/b")

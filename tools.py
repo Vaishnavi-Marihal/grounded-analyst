@@ -1,14 +1,58 @@
+import hashlib
+import json
 import os
+import pathlib
+import time
 
 import requests
 
 BASE_URL = os.environ.get("FORECAST_API_URL", "http://13.51.206.202:8080/api")
+CACHE_DIR = pathlib.Path(os.environ.get("FORECAST_CACHE_DIR", "cache"))
+
+
+def _cache_file(path, params):
+    key = json.dumps([path, sorted((params or {}).items())])
+    return CACHE_DIR / (hashlib.sha1(key.encode()).hexdigest() + ".json")
+
+
+def _fetch(path, params):
+    last = None
+    for attempt in range(3):
+        try:
+            response = requests.get(BASE_URL + path, params=params, timeout=30)
+        except (requests.ConnectionError, requests.Timeout) as exc:
+            last = exc
+            time.sleep(1 + attempt)
+            continue
+        if response.status_code >= 500:
+            last = requests.HTTPError(f"server error {response.status_code}")
+            time.sleep(1 + attempt)
+            continue
+        return response
+    raise last
 
 
 def _get(path, params=None):
-    response = requests.get(BASE_URL + path, params=params, timeout=30)
-    response.raise_for_status()
-    return response.json()
+    mode = os.environ.get("FORECAST_MODE", "live")
+    file = _cache_file(path, params)
+    if mode == "replay":
+        if not file.exists():
+            raise KeyError(f"not in cache: {path} {params}")
+        saved = json.loads(file.read_text())
+    else:
+        response = _fetch(path, params)
+        try:
+            body = response.json()
+        except ValueError:
+            body = {}
+        saved = {"status": response.status_code, "body": body}
+        if mode == "record":
+            CACHE_DIR.mkdir(parents=True, exist_ok=True)
+            file.write_text(json.dumps(saved))
+    if saved["status"] >= 400:
+        detail = saved["body"].get("detail", "") if isinstance(saved["body"], dict) else ""
+        raise requests.HTTPError(f"{saved['status']} error: {detail}")
+    return saved["body"]
 
 
 def list_buildings():

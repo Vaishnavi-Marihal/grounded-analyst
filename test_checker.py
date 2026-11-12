@@ -1,4 +1,4 @@
-from checker import extract_numbers, find_ungrounded
+from checker import collect_numbers, extract_numbers, find_ungrounded
 
 TOOL = [412.6, 380.1, 449.3]
 
@@ -32,3 +32,7 @@ def test_dates_are_ignored():
 
 def test_iso_dates_and_times_are_ignored():
     assert find_ungrounded("On 2017-12-25 the peak was at 10:00.", TOOL) == []
+
+def test_error_text_numbers_are_collected():
+    nums = collect_numbers({"error": "422 error: date must be between 2017-07-01 and 2017-12-31"})
+    assert nums == [422.0]

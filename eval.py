@@ -71,6 +71,7 @@ def score(question, out):
         "question": question["question"],
         "expected": question["expected"],
         "answer": out["answer"],
+        "tool_results": out.get("tool_results", []),
         "tool_results": out["tool_results"],
         "ungrounded": out["ungrounded"],
         "grounded": grounded,
