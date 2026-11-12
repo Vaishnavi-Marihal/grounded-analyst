@@ -29,3 +29,6 @@ def test_close_but_wrong_is_flagged():
 
 def test_dates_are_ignored():
     assert find_ungrounded("Flagged on Dec 25.", TOOL) == []
+
+def test_iso_dates_and_times_are_ignored():
+    assert find_ungrounded("On 2017-12-25 the peak was at 10:00.", TOOL) == []

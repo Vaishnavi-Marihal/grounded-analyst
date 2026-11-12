@@ -3,6 +3,7 @@ import re
 NUMBER = re.compile(r"\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?")
 
 DATE = re.compile(
+    r"\b\d{4}-\d{2}-\d{2}\b|\b\d{1,2}:\d{2}\b|"
     r"\b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|"
     r"Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)"
     r"\.?\s+\d{1,2}(?:,?\s+\d{4})?\b",

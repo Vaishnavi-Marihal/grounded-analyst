@@ -24,8 +24,7 @@ def test_day_summary_totals(monkeypatch):
     monkeypatch.setattr(tools, "_get", fake_get)
     s = tools.get_day_forecast("B", "2017-12-25")
     assert s["total_forecast_kwh"] == 60.0
-    
-    assert s["total_lag168_kwh"] == 59.0
+    assert s["total_last_week_kwh"] == 59.0
     assert s["interval_level_pct"] == 90
 
 
@@ -49,3 +48,13 @@ def test_summary_numbers_feed_the_checker(monkeypatch):
     numbers = checker.collect_numbers(s)
     assert checker.find_ungrounded("Total forecast is 60 kWh.", numbers) == []
     assert checker.find_ungrounded("Total forecast is 75 kWh.", numbers) == ["75"]
+
+
+def test_calculate_subtract_and_percent():
+    assert tools.calculate("subtract", 2168.0, 2088.9)["result"] == 79.1
+    assert tools.calculate("percent_difference", 2168.0, 2088.9)["result"] == 3.8
+
+
+def test_calculate_rejects_zero_and_unknown():
+    assert "error" in tools.calculate("percent_difference", 5.0, 0)
+    assert "error" in tools.calculate("power", 2.0, 3.0)
