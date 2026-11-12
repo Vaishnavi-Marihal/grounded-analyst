@@ -1,0 +1,271 @@
+[
+ {
+  "kind": "total",
+  "question": "What is the total forecast for Bear_education_Bob on 2017-12-25?",
+  "expected": 2168.0,
+  "answer": "The total forecast for Bear_education_Bob on 2017-12-25 is 2168.0 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Bob",
+    "date": "2017-12-25",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2168.0,
+    "mean_interval_width_kwh": 69.8,
+    "peak_forecast_kwh": 103.9,
+    "peak_hour": "10:00",
+    "total_last_week_kwh": 3374.0,
+    "total_actual_kwh": 2088.9
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "peak",
+  "question": "What is the peak hourly forecast for Bear_education_Bob on 2017-12-25?",
+  "expected": 103.9,
+  "answer": "The peak hourly forecast for Bear_education_Bob on 2017-12-25 is 103.9 kWh at 10:00.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Bob",
+    "date": "2017-12-25",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2168.0,
+    "mean_interval_width_kwh": 69.8,
+    "peak_forecast_kwh": 103.9,
+    "peak_hour": "10:00",
+    "total_last_week_kwh": 3374.0,
+    "total_actual_kwh": 2088.9
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Bob on 2017-12-25 from the actual total?",
+  "expected": 79.1,
+  "answer": "It seems that the tools cannot answer the question without specific numbers. However, I can try to provide a more detailed response.\n\nTo answer the question, we would need to call the \"get_day_forecast\" tool for the actual total on 2017-12-25 and compare it to the forecasted total. However, the \"get_day_forecast\" tool requires a specific number as input, which is not provided in this case.\n\nIf you provide the actual total for Bear_education_Bob on 2017-12-25, I can try to help you find the difference between the forecast and the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "malformed": false,
+  "passed": false
+ },
+ {
+  "kind": "total",
+  "question": "What is the total forecast for Bear_education_Chana on 2017-09-04?",
+  "expected": 465.4,
+  "answer": "The total forecast for Bear_education_Chana on 2017-09-04 is 465.4 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Chana",
+    "date": "2017-09-04",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 465.4,
+    "mean_interval_width_kwh": 8.7,
+    "peak_forecast_kwh": 24.9,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 559.8,
+    "total_actual_kwh": 392.0
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "peak",
+  "question": "What is the peak hourly forecast for Bear_education_Chana on 2017-09-04?",
+  "expected": 24.9,
+  "answer": "The peak hourly forecast for Bear_education_Chana on 2017-09-04 is 24.9 kWh at 14:00.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Chana",
+    "date": "2017-09-04",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 465.4,
+    "mean_interval_width_kwh": 8.7,
+    "peak_forecast_kwh": 24.9,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 559.8,
+    "total_actual_kwh": 392.0
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Chana on 2017-09-04 from the actual total?",
+  "expected": 73.4,
+  "answer": "It seems that the tools cannot answer the question without specific numbers. However, I can try to provide a more detailed response.\n\nTo answer the question, we would need to call the \"get_day_forecast\" tool for the actual total on 2017-09-04 and compare it to the forecasted total. However, the \"get_day_forecast\" tool requires a building ID and a date, but it does not provide a numerical result that can be used as input for the \"calculate\" tool.\n\nIf you can provide the actual total for Bear_education_Chana on 2017-09-04, I can try to help you calculate the difference between the forecast and the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "malformed": false,
+  "passed": false
+ },
+ {
+  "kind": "total",
+  "question": "What is the total forecast for Bear_education_Deborah on 2017-11-23?",
+  "expected": 4.3,
+  "answer": "The total forecast for Bear_education_Deborah on 2017-11-23 is 4.3 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Deborah",
+    "date": "2017-11-23",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 4.3,
+    "mean_interval_width_kwh": 1.6,
+    "peak_forecast_kwh": 0.9,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 22.5,
+    "total_actual_kwh": 8.2
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "peak",
+  "question": "What is the peak hourly forecast for Bear_education_Deborah on 2017-11-23?",
+  "expected": 0.9,
+  "answer": "The peak hourly forecast for Bear_education_Deborah on 2017-11-23 is 0.9 kWh at 17:00.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Deborah",
+    "date": "2017-11-23",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 4.3,
+    "mean_interval_width_kwh": 1.6,
+    "peak_forecast_kwh": 0.9,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 22.5,
+    "total_actual_kwh": 8.2
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Deborah on 2017-11-23 from the actual total?",
+  "expected": 3.9,
+  "answer": "It seems that the tools cannot answer the question without specific numbers. However, I can try to provide a more detailed response.\n\nTo answer the question, we would need to call the \"get_day_forecast\" tool for the actual total on 2017-11-23 and compare it to the forecasted total. However, the \"get_day_forecast\" tool requires a building ID and a date, but it does not provide a numerical result that can be used as input for the \"calculate\" tool.\n\nIf you can provide the actual total for Bear_education_Deborah on 2017-11-23, I can try to help you calculate the difference between the forecast and the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "malformed": false,
+  "passed": false
+ },
+ {
+  "kind": "mae",
+  "question": "What was the model's mean absolute error for Bear_education_Bob?",
+  "expected": 7.7793,
+  "answer": "The model's mean absolute error for Bear_education_Bob is 7.7793.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Bob",
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_hours": 4416,
+    "mae_model": 7.7793,
+    "mae_lag168": 13.0731,
+    "mae_lag24": 19.4087,
+    "relative_mae_vs_lag168": 0.5951,
+    "coverage_90": 0.9493,
+    "mean_width": 46.3592
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "count",
+  "question": "How many buildings does the evaluation cover?",
+  "expected": 56,
+  "answer": "The evaluation covers 56 buildings.",
+  "tool_results": [
+   {
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_buildings": 56,
+    "median_relative_mae_vs_lag168": 0.6698,
+    "pct_buildings_beating_lag168": 0.9286,
+    "pooled_coverage_90": 0.9001,
+    "median_mean_width_kwh": 39.8979
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Bear_education_Bob on 2018-03-01?",
+  "expected": null,
+  "answer": "Unfortunately, the tool call resulted in an error. The error message indicates that the request was unprocessable, which means that the tool was unable to provide a forecast for the specified building and date.",
+  "tool_results": [
+   {
+    "error": "422 Client Error: Unprocessable Entity for url: http://13.51.206.202:8080/api/buildings/Bear_education_Bob/forecast?date=2018-03-01"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Nowhere_Hall on 2017-12-25?",
+  "expected": null,
+  "answer": "The tool call was unable to retrieve the forecast for Nowhere_Hall on 2017-12-25.",
+  "tool_results": [
+   {
+    "error": "404 Client Error: Not Found for url: http://13.51.206.202:8080/api/buildings/Nowhere_Hall/forecast?date=2017-12-25"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ }
+]

@@ -1,0 +1,145 @@
+[
+ {
+  "kind": "total",
+  "question": "What is the total forecast for Bear_education_Bob on 2017-12-25?",
+  "expected": 2168.0,
+  "answer": "The total forecast for Bear_education_Bob on 2017-12-25 is 2168.0 kWh.",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "peak",
+  "question": "What is the peak hourly forecast for Bear_education_Bob on 2017-12-25?",
+  "expected": 103.9,
+  "answer": "The peak hourly forecast for Bear_education_Bob on 2017-12-25 is 103.9 kWh at 10:00.",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Bob on 2017-12-25 from the actual total?",
+  "expected": 79.1,
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Bob\",\"date\":\"2017-12-25\",\"b\":\"get_day_forecast\",\"building_id\":\"Bear_education_Bob\",\"date\":\"2017-12-25\"}}",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "malformed": true,
+  "passed": false
+ },
+ {
+  "kind": "total",
+  "question": "What is the total forecast for Bear_education_Chana on 2017-09-04?",
+  "expected": 465.4,
+  "answer": "The total forecast for Bear_education_Chana on 2017-09-04 is 465.4 kWh.",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "peak",
+  "question": "What is the peak hourly forecast for Bear_education_Chana on 2017-09-04?",
+  "expected": 24.9,
+  "answer": "The peak hourly forecast for Bear_education_Chana on 2017-09-04 is 24.9 kWh at 14:00.",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Chana on 2017-09-04 from the actual total?",
+  "expected": 73.4,
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Chana\",\"date\":\"2017-09-04\",\"b\":\"get_day_forecast\"}}",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "malformed": true,
+  "passed": false
+ },
+ {
+  "kind": "total",
+  "question": "What is the total forecast for Bear_education_Deborah on 2017-11-23?",
+  "expected": 4.3,
+  "answer": "The total forecast for Bear_education_Deborah on 2017-11-23 is 4.3 kilowatt-hours (kWh).",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "peak",
+  "question": "What is the peak hourly forecast for Bear_education_Deborah on 2017-11-23?",
+  "expected": 0.9,
+  "answer": "The peak hourly forecast for Bear_education_Deborah on 2017-11-23 is 0.9 kWh at 17:00.",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Deborah on 2017-11-23 from the actual total?",
+  "expected": 3.9,
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-11-23\",\"b\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-11-23\"}}",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "malformed": true,
+  "passed": false
+ },
+ {
+  "kind": "mae",
+  "question": "What was the model's mean absolute error for Bear_education_Bob?",
+  "expected": 7.7793,
+  "answer": "Unfortunately, I was unable to retrieve the model's mean absolute error for Bear_education_Bob as the tool was unable to connect to the API.",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "malformed": false,
+  "passed": false
+ },
+ {
+  "kind": "count",
+  "question": "How many buildings does the evaluation cover?",
+  "expected": 56,
+  "answer": "The evaluation covers 56 buildings.",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Bear_education_Bob on 2018-03-01?",
+  "expected": null,
+  "answer": "Unfortunately, I was unable to get the forecast for Bear_education_Bob on 2018-03-01 as the tool returned an error. The error message indicates that the connection was refused, which suggests that the building ID \"Bear_education_Bob\" may not be valid or recognized by the tool. If you could provide more information or context about the building ID, I may be able to help you further.",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Nowhere_Hall on 2017-12-25?",
+  "expected": null,
+  "answer": "Unfortunately, I was unable to get the forecast for Nowhere_Hall on 2017-12-25 due to a connection error. The tool was unable to establish a connection to the API.",
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "malformed": false,
+  "passed": true
+ }
+]
