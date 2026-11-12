@@ -240,10 +240,10 @@
   "kind": "unanswerable",
   "question": "What is the forecast for Bear_education_Bob on 2018-03-01?",
   "expected": null,
-  "answer": "Unfortunately, the tool call resulted in an error. The error message indicates that the request was unprocessable, which means that the tool was unable to provide a forecast for the specified building and date.",
+  "answer": "The date 2018-03-01 is outside the valid date range for the tool.",
   "tool_results": [
    {
-    "error": "422 Client Error: Unprocessable Entity for url: http://13.51.206.202:8080/api/buildings/Bear_education_Bob/forecast?date=2018-03-01"
+    "error": "422 error: date must be between 2017-07-01 and 2017-12-31"
    }
   ],
   "ungrounded": [],
@@ -256,10 +256,10 @@
   "kind": "unanswerable",
   "question": "What is the forecast for Nowhere_Hall on 2017-12-25?",
   "expected": null,
-  "answer": "The tool call was unable to retrieve the forecast for Nowhere_Hall on 2017-12-25.",
+  "answer": "I'm sorry, but the tool call resulted in an error. The building \"Nowhere_Hall\" is not recognized.",
   "tool_results": [
    {
-    "error": "404 Client Error: Not Found for url: http://13.51.206.202:8080/api/buildings/Nowhere_Hall/forecast?date=2017-12-25"
+    "error": "404 error: unknown building: Nowhere_Hall"
    }
   ],
   "ungrounded": [],

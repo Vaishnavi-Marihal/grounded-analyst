@@ -4,6 +4,19 @@
   "question": "What is the total forecast for Bear_education_Bob on 2017-12-25?",
   "expected": 2168.0,
   "answer": "The total forecast for Bear_education_Bob on 2017-12-25 is 2168.0 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Bob",
+    "date": "2017-12-25",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2168.0,
+    "mean_interval_width_kwh": 69.8,
+    "peak_forecast_kwh": 103.9,
+    "peak_hour": "10:00",
+    "total_last_week_kwh": 3374.0,
+    "total_actual_kwh": 2088.9
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
@@ -15,6 +28,19 @@
   "question": "What is the peak hourly forecast for Bear_education_Bob on 2017-12-25?",
   "expected": 103.9,
   "answer": "The peak hourly forecast for Bear_education_Bob on 2017-12-25 is 103.9 kWh at 10:00.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Bob",
+    "date": "2017-12-25",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2168.0,
+    "mean_interval_width_kwh": 69.8,
+    "peak_forecast_kwh": 103.9,
+    "peak_hour": "10:00",
+    "total_last_week_kwh": 3374.0,
+    "total_actual_kwh": 2088.9
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
@@ -26,6 +52,7 @@
   "question": "How far was the total forecast for Bear_education_Bob on 2017-12-25 from the actual total?",
   "expected": 79.1,
   "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Bob\",\"date\":\"2017-12-25\",\"b\":\"get_day_forecast\",\"building_id\":\"Bear_education_Bob\",\"date\":\"2017-12-25\"}}",
+  "tool_results": [],
   "ungrounded": [],
   "grounded": true,
   "correct": false,
@@ -37,6 +64,19 @@
   "question": "What is the total forecast for Bear_education_Chana on 2017-09-04?",
   "expected": 465.4,
   "answer": "The total forecast for Bear_education_Chana on 2017-09-04 is 465.4 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Chana",
+    "date": "2017-09-04",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 465.4,
+    "mean_interval_width_kwh": 8.7,
+    "peak_forecast_kwh": 24.9,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 559.8,
+    "total_actual_kwh": 392.0
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
@@ -48,6 +88,19 @@
   "question": "What is the peak hourly forecast for Bear_education_Chana on 2017-09-04?",
   "expected": 24.9,
   "answer": "The peak hourly forecast for Bear_education_Chana on 2017-09-04 is 24.9 kWh at 14:00.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Chana",
+    "date": "2017-09-04",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 465.4,
+    "mean_interval_width_kwh": 8.7,
+    "peak_forecast_kwh": 24.9,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 559.8,
+    "total_actual_kwh": 392.0
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
@@ -59,6 +112,7 @@
   "question": "How far was the total forecast for Bear_education_Chana on 2017-09-04 from the actual total?",
   "expected": 73.4,
   "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Chana\",\"date\":\"2017-09-04\",\"b\":\"get_day_forecast\"}}",
+  "tool_results": [],
   "ungrounded": [],
   "grounded": true,
   "correct": false,
@@ -70,6 +124,19 @@
   "question": "What is the total forecast for Bear_education_Deborah on 2017-11-23?",
   "expected": 4.3,
   "answer": "The total forecast for Bear_education_Deborah on 2017-11-23 is 4.3 kilowatt-hours (kWh).",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Deborah",
+    "date": "2017-11-23",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 4.3,
+    "mean_interval_width_kwh": 1.6,
+    "peak_forecast_kwh": 0.9,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 22.5,
+    "total_actual_kwh": 8.2
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
@@ -81,6 +148,19 @@
   "question": "What is the peak hourly forecast for Bear_education_Deborah on 2017-11-23?",
   "expected": 0.9,
   "answer": "The peak hourly forecast for Bear_education_Deborah on 2017-11-23 is 0.9 kWh at 17:00.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Deborah",
+    "date": "2017-11-23",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 4.3,
+    "mean_interval_width_kwh": 1.6,
+    "peak_forecast_kwh": 0.9,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 22.5,
+    "total_actual_kwh": 8.2
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
@@ -92,6 +172,7 @@
   "question": "How far was the total forecast for Bear_education_Deborah on 2017-11-23 from the actual total?",
   "expected": 3.9,
   "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-11-23\",\"b\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-11-23\"}}",
+  "tool_results": [],
   "ungrounded": [],
   "grounded": true,
   "correct": false,
@@ -102,18 +183,41 @@
   "kind": "mae",
   "question": "What was the model's mean absolute error for Bear_education_Bob?",
   "expected": 7.7793,
-  "answer": "Unfortunately, I was unable to retrieve the model's mean absolute error for Bear_education_Bob as the tool was unable to connect to the API.",
+  "answer": "The model's mean absolute error (MAE) for Bear_education_Bob was 7.7793.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Bob",
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_hours": 4416,
+    "mae_model": 7.7793,
+    "mae_lag168": 13.0731,
+    "mae_lag24": 19.4087,
+    "relative_mae_vs_lag168": 0.5951,
+    "coverage_90": 0.9493,
+    "mean_width": 46.3592
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
-  "correct": false,
+  "correct": true,
   "malformed": false,
-  "passed": false
+  "passed": true
  },
  {
   "kind": "count",
   "question": "How many buildings does the evaluation cover?",
   "expected": 56,
   "answer": "The evaluation covers 56 buildings.",
+  "tool_results": [
+   {
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_buildings": 56,
+    "median_relative_mae_vs_lag168": 0.6698,
+    "pct_buildings_beating_lag168": 0.9286,
+    "pooled_coverage_90": 0.9001,
+    "median_mean_width_kwh": 39.8979
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
@@ -124,7 +228,12 @@
   "kind": "unanswerable",
   "question": "What is the forecast for Bear_education_Bob on 2018-03-01?",
   "expected": null,
-  "answer": "Unfortunately, I was unable to get the forecast for Bear_education_Bob on 2018-03-01 as the tool returned an error. The error message indicates that the connection was refused, which suggests that the building ID \"Bear_education_Bob\" may not be valid or recognized by the tool. If you could provide more information or context about the building ID, I may be able to help you further.",
+  "answer": "It appears that the tool is unable to provide a forecast for the specified date (2018-03-01) as it is outside the valid date range of 2017-07-01 to 2017-12-31.",
+  "tool_results": [
+   {
+    "error": "422 error: date must be between 2017-07-01 and 2017-12-31"
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
@@ -135,7 +244,12 @@
   "kind": "unanswerable",
   "question": "What is the forecast for Nowhere_Hall on 2017-12-25?",
   "expected": null,
-  "answer": "Unfortunately, I was unable to get the forecast for Nowhere_Hall on 2017-12-25 due to a connection error. The tool was unable to establish a connection to the API.",
+  "answer": "I'm unable to provide a forecast for Nowhere_Hall as it is not a recognized building. Can you please provide the correct building ID or name?",
+  "tool_results": [
+   {
+    "error": "404 error: unknown building: Nowhere_Hall"
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
