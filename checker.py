@@ -24,3 +24,14 @@ def is_grounded(token: str, tool_numbers: list[float]) -> bool:
 
 def find_ungrounded(answer: str, tool_numbers: list[float]) -> list[str]:
     return [t for t in extract_numbers(answer) if not is_grounded(t, tool_numbers)]
+
+def collect_numbers(obj) -> list[float]:
+    if isinstance(obj, bool):
+        return []
+    if isinstance(obj, (int, float)):
+        return [float(obj)]
+    if isinstance(obj, dict):
+        return [n for v in obj.values() for n in collect_numbers(v)]
+    if isinstance(obj, list):
+        return [n for v in obj for n in collect_numbers(v)]
+    return []
