@@ -115,7 +115,7 @@ def build_questions():
             q(
                 "baseline_gaps",
                 f"For {b} on {d}, how far was the model forecast total from the actual total, "
-                f"and how far was last week's total from the actual total?",
+                f"and how far was the last-week baseline total from the actual total?",
                 [
                     diff(s["total_forecast_kwh"], s["total_actual_kwh"]),
                     diff(s["total_last_week_kwh"], s["total_actual_kwh"])

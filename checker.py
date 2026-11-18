@@ -19,8 +19,8 @@ def extract_numbers(text: str) -> list[str]:
 def is_grounded(token: str, tool_numbers: list[float]) -> bool:
     parts = token.split(".")
     decimals = len(parts[1]) if len(parts) == 2 else 0
-    value = float(token)
-    return any(round(t, decimals) == value for t in tool_numbers)
+    value = abs(float(token))
+    return any(round(abs(t), decimals) == value for t in tool_numbers)
 
 
 def find_ungrounded(answer: str, tool_numbers: list[float]) -> list[str]:

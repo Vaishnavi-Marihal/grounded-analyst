@@ -37,3 +37,14 @@ def test_wrong_building_named_first_fails():
 
 def test_right_building_named_first_passes():
     assert score(TWO, out("B2 is higher: B2 20.0, B1 10.0."))["passed"] is True
+
+UNANS = {"kind": "unanswerable", "question": "What is the forecast for X on 2017-06-30?",
+         "numbers": [], "forbid": [], "first_of": []}
+
+
+def test_unanswerable_with_a_number_fails():
+    assert score(UNANS, out("It is 4607.0 kWh."))["passed"] is False
+
+
+def test_unanswerable_without_a_number_passes():
+    assert score(UNANS, out("I cannot answer that date."))["passed"] is True

@@ -289,7 +289,7 @@
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "numbers": [
    37.5,
    25.8
@@ -299,7 +299,7 @@
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "numbers": [
    165.0,
    584.0
@@ -309,7 +309,7 @@
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "numbers": [
    28.4,
    151.4
@@ -319,7 +319,7 @@
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "numbers": [
    126.6,
    187.5
@@ -329,7 +329,7 @@
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "numbers": [
    301.9,
    42.0
@@ -339,7 +339,7 @@
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "numbers": [
    14.0,
    14.6
@@ -349,7 +349,7 @@
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "numbers": [
    81.0,
    296.3
@@ -359,7 +359,7 @@
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "numbers": [
    89.0,
    14.2
