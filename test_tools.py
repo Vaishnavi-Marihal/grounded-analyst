@@ -78,7 +78,7 @@ def test_get_retries_after_connection_error(monkeypatch):
             raise tools.requests.ConnectionError("boom")
         return Resp()
 
-    monkeypatch.setattr(tools.requests, "get", flaky)
+    monkeypatch.setattr(tools.SESSION, "get", flaky)
     monkeypatch.setattr(tools.time, "sleep", lambda s: None)
     assert tools._get("/x") == {"ok": 1}
     assert calls["n"] == 2
@@ -94,7 +94,7 @@ class FakeResponse:
 
 def test_record_then_replay(monkeypatch, tmp_path):
     monkeypatch.setattr(tools, "CACHE_DIR", tmp_path)
-    monkeypatch.setattr(tools.requests, "get",
+    monkeypatch.setattr(tools.SESSION, "get",
                         lambda url, params=None, timeout=None: FakeResponse(200, {"v": 7}))
     monkeypatch.setenv("FORECAST_MODE", "record")
     assert tools._get("/a", {"d": "x"}) == {"v": 7}
@@ -102,14 +102,14 @@ def test_record_then_replay(monkeypatch, tmp_path):
     def no_network(*args, **kwargs):
         raise AssertionError("network used")
 
-    monkeypatch.setattr(tools.requests, "get", no_network)
+    monkeypatch.setattr(tools.SESSION, "get", no_network)
     monkeypatch.setenv("FORECAST_MODE", "replay")
     assert tools._get("/a", {"d": "x"}) == {"v": 7}
 
 
 def test_error_status_is_recorded_and_replayed(monkeypatch, tmp_path):
     monkeypatch.setattr(tools, "CACHE_DIR", tmp_path)
-    monkeypatch.setattr(tools.requests, "get",
+    monkeypatch.setattr(tools.SESSION, "get",
                         lambda url, params=None, timeout=None: FakeResponse(422, {"detail": "bad date"}))
     monkeypatch.setenv("FORECAST_MODE", "record")
     with pytest.raises(tools.requests.HTTPError):

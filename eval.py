@@ -29,6 +29,12 @@ def score(question, out):
     grounded = not out["ungrounded"]
     correct = all(any(is_grounded(t, [n]) for t in tokens) for n in question["numbers"])
     forbidden = any(re.search(p, answer.lower()) for p in question["forbid"])
+    first_of = question.get("first_of", [])
+    if first_of:
+        pos = [answer.find(n) for n in first_of]
+        order_ok = pos[0] != -1 and (pos[1] == -1 or pos[0] < pos[1])
+    else:
+        order_ok = True
     malformed = out["malformed_tool_call"]
     cache_miss = any(
         isinstance(r, dict) and "not in cache" in str(r.get("error", ""))
@@ -45,10 +51,11 @@ def score(question, out):
         "grounded": grounded,
         "correct": correct,
         "forbidden": forbidden,
+        "order_ok": order_ok,
         "malformed": malformed,
         "cache_miss": cache_miss,
-        "passed": grounded and correct and not forbidden and not malformed
-        and not failed and not cache_miss,
+        "passed": grounded and correct and not forbidden and order_ok
+        and not malformed and not failed and not cache_miss,
     }
 
 

@@ -8,6 +8,7 @@ import requests
 
 BASE_URL = os.environ.get("FORECAST_API_URL", "http://13.51.206.202:8080/api")
 CACHE_DIR = pathlib.Path(os.environ.get("FORECAST_CACHE_DIR", "cache"))
+SESSION = requests.Session()
 
 
 def _cache_file(path, params):
@@ -19,7 +20,7 @@ def _fetch(path, params):
     last = None
     for attempt in range(3):
         try:
-            response = requests.get(BASE_URL + path, params=params, timeout=30)
+            response = SESSION.get(BASE_URL + path, params=params, timeout=30)
         except (requests.ConnectionError, requests.Timeout) as exc:
             last = exc
             time.sleep(1 + attempt)
@@ -40,6 +41,8 @@ def _get(path, params=None):
             raise KeyError(f"not in cache: {path} {params}")
         saved = json.loads(file.read_text())
     else:
+        if mode == "record":
+            time.sleep(0.3)
         response = _fetch(path, params)
         try:
             body = response.json()

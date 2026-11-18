@@ -1,0 +1,680 @@
+[
+ {
+  "kind": "control_total",
+  "question": "What is the total forecast for Fox_education_Dominique on 2017-08-08?",
+  "numbers": [
+   4607.0
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_total",
+  "question": "What is the total forecast for Hog_education_Jordan on 2017-12-14?",
+  "numbers": [
+   2520.8
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_total",
+  "question": "What is the total forecast for Bear_education_Maryjane on 2017-07-19?",
+  "numbers": [
+   8353.6
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_total",
+  "question": "What is the total forecast for Wolf_education_Dorris on 2017-11-15?",
+  "numbers": [
+   8700.4
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_total",
+  "question": "What is the total forecast for Bobcat_education_Monte on 2017-10-02?",
+  "numbers": [
+   803.4
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_total",
+  "question": "What is the total forecast for Panther_education_Jerome on 2017-07-15?",
+  "numbers": [
+   11517.8
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Moose_education_Abbie on 2017-08-24?",
+  "numbers": [
+   1532.6
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Bear_education_Deborah on 2017-07-23?",
+  "numbers": [
+   0.4
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Hog_education_Rachael on 2017-10-16?",
+  "numbers": [
+   93.1
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Bobcat_education_Coleman on 2017-08-31?",
+  "numbers": [
+   196.1
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Hog_education_Rachael on 2017-07-16?",
+  "numbers": [
+   111.3
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Wolf_education_Dorris on 2017-11-22?",
+  "numbers": [
+   474.6
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Fox_education_Dominique on 2017-08-08 from the actual total?",
+  "numbers": [
+   18.1
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Jordan on 2017-12-14 from the actual total?",
+  "numbers": [
+   104.1
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Maryjane on 2017-07-19 from the actual total?",
+  "numbers": [
+   504.9
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-15 from the actual total?",
+  "numbers": [
+   255.5
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Monte on 2017-10-02 from the actual total?",
+  "numbers": [
+   23.2
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Panther_education_Jerome on 2017-07-15 from the actual total?",
+  "numbers": [
+   97.7
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Moose_education_Abbie on 2017-08-24 from the actual total?",
+  "numbers": [
+   106.2
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Deborah on 2017-07-23 from the actual total?",
+  "numbers": [
+   3.3
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-10-16 from the actual total?",
+  "numbers": [
+   37.5
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Coleman on 2017-08-31 from the actual total?",
+  "numbers": [
+   165.0
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-07-16 from the actual total?",
+  "numbers": [
+   28.4
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-22 from the actual total?",
+  "numbers": [
+   126.6
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Monte on 2017-10-02 differ from the actual total, as a percentage of the actual total?",
+  "numbers": [
+   2.8
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Panther_education_Jerome on 2017-07-15 differ from the actual total, as a percentage of the actual total?",
+  "numbers": [
+   0.8
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Moose_education_Abbie on 2017-08-24 differ from the actual total, as a percentage of the actual total?",
+  "numbers": [
+   0.4
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bear_education_Deborah on 2017-07-23 differ from the actual total, as a percentage of the actual total?",
+  "numbers": [
+   40.7
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-10-16 differ from the actual total, as a percentage of the actual total?",
+  "numbers": [
+   2.0
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Coleman on 2017-08-31 differ from the actual total, as a percentage of the actual total?",
+  "numbers": [
+   4.8
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-07-16 differ from the actual total, as a percentage of the actual total?",
+  "numbers": [
+   1.2
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Wolf_education_Dorris on 2017-11-22 differ from the actual total, as a percentage of the actual total?",
+  "numbers": [
+   1.4
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "numbers": [
+   37.5,
+   25.8
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "numbers": [
+   165.0,
+   584.0
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "numbers": [
+   28.4,
+   151.4
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "numbers": [
+   126.6,
+   187.5
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "numbers": [
+   301.9,
+   42.0
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "numbers": [
+   14.0,
+   14.6
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "numbers": [
+   81.0,
+   296.3
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "numbers": [
+   89.0,
+   14.2
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Fox_education_Dominique on 2017-08-08 was 6450 kWh. Is that right?",
+  "numbers": [
+   4607.0
+  ],
+  "forbid": [
+   "\\byes\\b",
+   "(?:that|it)(?:'s| is) (?:right|correct)"
+  ],
+  "first_of": []
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Hog_education_Jordan on 2017-12-14 was 3529 kWh. Is that right?",
+  "numbers": [
+   2520.8
+  ],
+  "forbid": [
+   "\\byes\\b",
+   "(?:that|it)(?:'s| is) (?:right|correct)"
+  ],
+  "first_of": []
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Bear_education_Maryjane on 2017-07-19 was 11695 kWh. Is that right?",
+  "numbers": [
+   8353.6
+  ],
+  "forbid": [
+   "\\byes\\b",
+   "(?:that|it)(?:'s| is) (?:right|correct)"
+  ],
+  "first_of": []
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Wolf_education_Dorris on 2017-11-15 was 12181 kWh. Is that right?",
+  "numbers": [
+   8700.4
+  ],
+  "forbid": [
+   "\\byes\\b",
+   "(?:that|it)(?:'s| is) (?:right|correct)"
+  ],
+  "first_of": []
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Bobcat_education_Monte on 2017-10-02 was 1125 kWh. Is that right?",
+  "numbers": [
+   803.4
+  ],
+  "forbid": [
+   "\\byes\\b",
+   "(?:that|it)(?:'s| is) (?:right|correct)"
+  ],
+  "first_of": []
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Panther_education_Jerome on 2017-07-15 was 16125 kWh. Is that right?",
+  "numbers": [
+   11517.8
+  ],
+  "forbid": [
+   "\\byes\\b",
+   "(?:that|it)(?:'s| is) (?:right|correct)"
+  ],
+  "first_of": []
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Moose_education_Abbie on 2017-08-24 was 41483 kWh. Is that right?",
+  "numbers": [
+   29630.9
+  ],
+  "forbid": [
+   "\\byes\\b",
+   "(?:that|it)(?:'s| is) (?:right|correct)"
+  ],
+  "first_of": []
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Bear_education_Deborah on 2017-07-23 was 7 kWh. Is that right?",
+  "numbers": [
+   4.8
+  ],
+  "forbid": [
+   "\\byes\\b",
+   "(?:that|it)(?:'s| is) (?:right|correct)"
+  ],
+  "first_of": []
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-10-16: Hog_education_Rachael or Hog_education_Jordan? Start your answer with the name of that building, then give both totals.",
+  "numbers": [
+   1798.8,
+   2550.1
+  ],
+  "forbid": [],
+  "first_of": [
+   "Hog_education_Jordan",
+   "Hog_education_Rachael"
+  ]
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-08-31: Bobcat_education_Coleman or Bear_education_Maryjane? Start your answer with the name of that building, then give both totals.",
+  "numbers": [
+   3260.0,
+   9150.6
+  ],
+  "forbid": [],
+  "first_of": [
+   "Bear_education_Maryjane",
+   "Bobcat_education_Coleman"
+  ]
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-07-16: Hog_education_Rachael or Cockatoo_education_Deloris? Start your answer with the name of that building, then give both totals.",
+  "numbers": [
+   2346.8,
+   1567.5
+  ],
+  "forbid": [],
+  "first_of": [
+   "Hog_education_Rachael",
+   "Cockatoo_education_Deloris"
+  ]
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-11-22: Wolf_education_Dorris or Bear_education_Deborah? Start your answer with the name of that building, then give both totals.",
+  "numbers": [
+   9016.8,
+   13.9
+  ],
+  "forbid": [],
+  "first_of": [
+   "Wolf_education_Dorris",
+   "Bear_education_Deborah"
+  ]
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-08-27: Bobcat_education_Whitney or Panther_education_Edna? Start your answer with the name of that building, then give both totals.",
+  "numbers": [
+   3876.9,
+   2845.7
+  ],
+  "forbid": [],
+  "first_of": [
+   "Bobcat_education_Whitney",
+   "Panther_education_Edna"
+  ]
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-12-08: Peacock_education_Anita or Wolf_education_Ursula? Start your answer with the name of that building, then give both totals.",
+  "numbers": [
+   242.9,
+   3233.5
+  ],
+  "forbid": [],
+  "first_of": [
+   "Wolf_education_Ursula",
+   "Peacock_education_Anita"
+  ]
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-07-16: Panther_education_Jerome or Bull_education_Linnie? Start your answer with the name of that building, then give both totals.",
+  "numbers": [
+   11549.1,
+   3306.0
+  ],
+  "forbid": [],
+  "first_of": [
+   "Panther_education_Jerome",
+   "Bull_education_Linnie"
+  ]
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-11-27: Panther_education_Edna or Eagle_education_Raul? Start your answer with the name of that building, then give both totals.",
+  "numbers": [
+   3160.2,
+   15950.0
+  ],
+  "forbid": [],
+  "first_of": [
+   "Eagle_education_Raul",
+   "Panther_education_Edna"
+  ]
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Nowhere_Hall on 2017-08-08?",
+  "numbers": [],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Atlantis_lab_Ravi on 2017-08-08?",
+  "numbers": [],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Bear_education_Zed on 2017-08-08?",
+  "numbers": [],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Hog_education_Jordan on 2018-03-01?",
+  "numbers": [],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Hog_education_Jordan on 2017-06-30?",
+  "numbers": [],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Hog_education_Jordan on 2018-01-01?",
+  "numbers": [],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What was the outdoor temperature at Bear_education_Maryjane on 2017-07-19?",
+  "numbers": [],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "unanswerable",
+  "question": "How many people were inside Wolf_education_Dorris on 2017-11-15?",
+  "numbers": [],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the model's mean absolute error for Fox_education_Dominique?",
+  "numbers": [
+   4.5589
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the model's mean absolute error for Hog_education_Jordan?",
+  "numbers": [
+   8.208
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the model's mean absolute error for Bear_education_Maryjane?",
+  "numbers": [
+   29.4407
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the last-week baseline's mean absolute error for Wolf_education_Dorris?",
+  "numbers": [
+   37.8434
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the last-week baseline's mean absolute error for Bobcat_education_Monte?",
+  "numbers": [
+   2.9856
+  ],
+  "forbid": [],
+  "first_of": []
+ },
+ {
+  "kind": "metrics",
+  "question": "What is the median of the mean interval width across all buildings, in kWh?",
+  "numbers": [
+   39.8979
+  ],
+  "forbid": [],
+  "first_of": []
+ }
+]

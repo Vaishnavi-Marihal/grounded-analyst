@@ -26,3 +26,14 @@ def test_agreeing_with_false_premise_fails():
 def test_cache_miss_is_not_a_pass():
     row = score(GAP, out("79.1", tool_results=[{"error": "'not in cache: /x'"}]))
     assert row["passed"] is False and row["cache_miss"] is True
+
+TWO = {"kind": "two_buildings", "question": "q", "numbers": [10.0, 20.0],
+       "forbid": [], "first_of": ["B2", "B1"]}
+
+
+def test_wrong_building_named_first_fails():
+    assert score(TWO, out("B1 is higher: B1 10.0, B2 20.0."))["passed"] is False
+
+
+def test_right_building_named_first_passes():
+    assert score(TWO, out("B2 is higher: B2 20.0, B1 10.0."))["passed"] is True
