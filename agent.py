@@ -1,10 +1,11 @@
+
 import json
 import sys
 
 import ollama
 
 import tools
-from checker import collect_numbers, find_ungrounded, is_grounded
+from checker import collect_numbers, extract_numbers, find_ungrounded, is_grounded
 
 MODEL = "llama3.2"
 
@@ -102,38 +103,63 @@ def run_agent(question, model=MODEL, max_steps=5):
         {"role": "user", "content": question},
     ]
     tool_results = []
+
+    question_numbers = [float(t) for t in extract_numbers(question)]
+
     for _ in range(max_steps):
-        response = ollama.chat(model=model, messages=messages, tools=TOOL_SPECS,
-                               options={"temperature": 0})
+        response = ollama.chat(
+            model=model,
+            messages=messages,
+            tools=TOOL_SPECS,
+            options={"temperature": 0},
+        )
         message = response.message
         messages.append(message)
+
         if not message.tool_calls:
             answer = message.content or ""
             return {
                 "answer": answer,
-                "ungrounded": find_ungrounded(answer, collect_numbers(tool_results)),
+                "ungrounded": find_ungrounded(
+                    answer, collect_numbers(tool_results) + question_numbers
+                ),
                 "tool_results": tool_results,
                 "malformed_tool_call": '"name"' in answer and '"parameters"' in answer,
             }
+
         for call in message.tool_calls:
             name = call.function.name
             args = dict(call.function.arguments)
+
             if name == "calculate":
                 if operands_grounded(args, collect_numbers(tool_results)):
                     result = tools.calculate(**args)
                 else:
-                    result = {"error": "a and b must be numbers copied from earlier tool results"}
+                    result = {
+                        "error": "a and b must be numbers copied from earlier tool results"
+                    }
             else:
                 try:
                     result = REGISTRY[name](**args)
                 except Exception as exc:
                     result = {"error": str(exc)}
+
             tool_results.append(result)
             messages.append(
-                {"role": "tool", "tool_name": name, "content": json.dumps(result)}
+                {
+                    "role": "tool",
+                    "tool_name": name,
+                    "content": json.dumps(result),
+                }
             )
-    return {"answer": "", "ungrounded": [], "tool_results": tool_results,
-            "malformed_tool_call": False, "error": "max steps reached"}
+
+    return {
+        "answer": "",
+        "ungrounded": [],
+        "tool_results": tool_results,
+        "malformed_tool_call": False,
+        "error": "max steps reached",
+    }
 
 
 if __name__ == "__main__":

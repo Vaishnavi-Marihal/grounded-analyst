@@ -73,3 +73,8 @@ def test_json_in_text_is_marked_malformed(monkeypatch):
     setup(monkeypatch, [reply(content='{"name": "calculate", "parameters": {"a": "1"}}')])
     out = agent.run_agent("question")
     assert out["malformed_tool_call"] is True
+
+def test_numbers_quoted_from_the_question_are_allowed(monkeypatch):
+    setup(monkeypatch, [reply(calls=[CALL]), reply(content="No, the total is 60 kWh, not 3000 kWh.")])
+    out = agent.run_agent("Is the total 3000 kWh?")
+    assert out["ungrounded"] == []
