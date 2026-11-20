@@ -141,3 +141,11 @@ def test_forgiving_calculate_accepts_numeric_strings(monkeypatch):
 def test_forgiving_calculate_names_valid_operations(monkeypatch):
     monkeypatch.setenv("TOOLS_V", "2")
     assert "use subtract or percent_difference" in tools.calculate("difference", 1.0, 2.0)["error"]
+
+def test_search_docs_hides_scores_and_ids(monkeypatch):
+    monkeypatch.setattr(tools, "_INDEX", {"chunks": [], "vectors": None})
+    monkeypatch.setattr(
+        tools.rag, "search",
+        lambda index, query, k=3: [{"source": "a.md", "chunk_id": 4, "text": "hello", "score": 0.7}],
+    )
+    assert tools.search_docs("q") == {"passages": [{"source": "a.md", "text": "hello"}]}

@@ -34,7 +34,7 @@ def collect_numbers(obj) -> list[float]:
     if isinstance(obj, dict):
         found = []
         for key, value in obj.items():
-            if key == "error" and isinstance(value, str):
+            if key in ("error", "text") and isinstance(value, str):
                 found += [float(t) for t in extract_numbers(value)]
             else:
                 found += collect_numbers(value)

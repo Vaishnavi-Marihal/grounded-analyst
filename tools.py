@@ -3,6 +3,7 @@ import json
 import os
 import pathlib
 import time
+import rag
 
 import requests
 
@@ -113,3 +114,13 @@ def calculate(operation, a, b):
         hint = "; use subtract or percent_difference" if forgiving else ""
         return {"error": f"unknown operation: {operation}{hint}"}
     return {"operation": operation, "result": round(value, 1)}
+
+_INDEX = None
+
+
+def search_docs(query, k=3):
+    global _INDEX
+    if _INDEX is None:
+        _INDEX = rag.load_index()
+    hits = rag.search(_INDEX, query, k=k)
+    return {"passages": [{"source": h["source"], "text": h["text"]} for h in hits]}

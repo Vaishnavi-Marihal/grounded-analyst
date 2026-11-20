@@ -102,6 +102,27 @@ REGISTRY = {
     "get_metrics_summary": tools.get_metrics_summary,
 }
 
+DOCS_SPEC = {
+    "type": "function",
+    "function": {
+        "name": "search_docs",
+        "description": (
+            "Search the project documentation for explanations: how the model works, "
+            "why days were flagged by monitoring, how prediction intervals are made, "
+            "data, limitations and deployment. Returns text passages."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {"query": {"type": "string", "description": "what to look up, in plain words"}},
+            "required": ["query"],
+        },
+    },
+}
+
+if os.environ.get("DOCS") == "1":
+    TOOL_SPECS.append(DOCS_SPEC)
+    REGISTRY["search_docs"] = tools.search_docs
+
 KNOWN_TOOLS = set(REGISTRY) | {"calculate"}
 
 

@@ -45,3 +45,7 @@ def test_corrects_claim():
     q = "I read that the total on 2017-08-08 was 6450 kWh. Is that right?"
     assert corrects_claim(q, "The total was 4607.0 kWh, not 6450 kWh.") is True
     assert corrects_claim(q, "The total forecast was 4607 kWh.") is False
+
+def test_numbers_inside_retrieved_text_are_collected():
+    result = {"passages": [{"source": "a.md", "text": "coverage was 0.77 against 0.90"}]}
+    assert collect_numbers(result) == [0.77, 0.9]
