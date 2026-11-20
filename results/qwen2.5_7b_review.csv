@@ -6,9 +6,7 @@ two_buildings,"Which building had the higher total forecast on 2017-12-08: Peaco
 - Peacock_education_Anita: 242.9 kWh
 - Wolf_education_Ursula: 3233.5 kWh",True,
 control_total,What is the total forecast for Panther_education_Jerome on 2017-07-15?,The total forecast for Panther_education_Jerome on 2017-07-15 is 11517.8 kWh.,True,
-baseline_gaps,"For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?","The model forecast total for Bobcat_education_Coleman on 2017-08-31 was 165 kWh lower than the actual total.
-
-Unfortunately, the forecast data for 2017-08-24 is not available, so we cannot provide a comparison with last week's total.",False,
+baseline_gaps,"For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",The model forecast total for Bobcat_education_Coleman on 2017-08-31 was 165 kWh away from the actual total. The last-week baseline total was 15.2 kWh away from the actual total.,False,
 metrics,What was the model's mean absolute error for Hog_education_Jordan?,The model's mean absolute error (MAE) for Hog_education_Jordan was 8.208 kWh.,True,
 unanswerable,What was the outdoor temperature at Bear_education_Maryjane on 2017-07-19?,"The requested information is not available in the provided tools. The available tools can provide day-ahead electricity forecasts, building metrics, and a summary of metrics across all buildings, but none of them provide outdoor temperature data.",True,
 two_buildings,"Which building had the higher total forecast on 2017-11-22: Wolf_education_Dorris or Bear_education_Deborah? Start your answer with the name of that building, then give both totals.","Wolf_education_Dorris had a higher total forecast on 2017-11-22. The totals were:
@@ -20,15 +18,7 @@ two_buildings,"Which building had the higher total forecast on 2017-07-16: Hog_e
 - Cockatoo_education_Deloris: 1567.5 kWh",True,
 metrics,What was the last-week baseline's mean absolute error for Bobcat_education_Monte?,The last-week baseline's mean absolute error for Bobcat_education_Monte is 2.9856 kWh.,True,
 gap,How far was the total forecast for Bear_education_Deborah on 2017-07-23 from the actual total?,The total forecast for Bear_education_Deborah on 2017-07-23 was 3.3 kWh away from the actual total.,True,
-percent,"By what percentage did the total forecast for Hog_education_Rachael on 2017-07-16 differ from the actual total, as a percentage of the actual total?","The total forecast for Hog_education_Rachael on 2017-07-16 was 1.2% lower than the actual total, as a percentage of the actual total.",False,
+percent,"By what percentage did the total forecast for Hog_education_Rachael on 2017-07-16 differ from the actual total, as a percentage of the actual total?","The total forecast for Hog_education_Rachael on 2017-07-16 was 1.2% lower than the actual total, as a percentage of the actual total.",True,
 gap,How far was the total forecast for Hog_education_Rachael on 2017-07-16 from the actual total?,The total forecast for Hog_education_Rachael on 2017-07-16 was 28.4 kWh away from the actual total.,True,
-baseline_gaps,"For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?","Let's calculate the percentage difference between the forecast and actual total for 2017-12-08 using the numbers provided:
-
-The total forecasted energy was 242.9 kWh, and the actual total was 256.9 kWh. The difference is 256.9 - 242.9 = 14 kWh.
-
-Now, the percentage difference is calculated as (14 / 242.9) * 100 = 5.76%.
-
-For last week's total, the forecasted energy was 271.5 kWh, and the actual total was 256.9 kWh. The difference is 271.5 - 256.9 = 14.6 kWh.
-
-The percentage difference is calculated as (14.6 / 256.9) * 100 = 5.68%.",False,
+baseline_gaps,"For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",The model forecast total for Peacock_education_Anita on 2017-12-08 was 14.0 kWh less than the actual total. The last-week baseline total was 14.6 kWh more than the actual total.,True,
 gap,How far was the total forecast for Hog_education_Jordan on 2017-12-14 from the actual total?,The total forecast for Hog_education_Jordan on 2017-12-14 was 104.1 kWh away from the actual total.,True,

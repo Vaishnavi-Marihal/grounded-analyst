@@ -26,6 +26,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -55,6 +56,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -84,6 +86,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -113,6 +116,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -142,6 +146,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -171,6 +176,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -200,6 +206,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -229,6 +236,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -258,6 +266,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -287,6 +296,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -316,6 +326,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -345,6 +356,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -376,6 +388,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": false
  },
  {
@@ -409,6 +422,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -442,6 +456,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -475,6 +490,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -508,6 +524,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -541,6 +558,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -574,6 +592,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -607,6 +626,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -640,6 +660,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -673,6 +694,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -706,6 +728,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -739,6 +762,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -765,16 +789,15 @@
     "result": -2.8
    }
   ],
-  "ungrounded": [
-   "2.8"
-  ],
-  "grounded": false,
+  "ungrounded": [],
+  "grounded": true,
   "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
-  "passed": false
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "percent",
@@ -800,16 +823,15 @@
     "result": -0.8
    }
   ],
-  "ungrounded": [
-   "0.8"
-  ],
-  "grounded": false,
+  "ungrounded": [],
+  "grounded": true,
   "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
-  "passed": false
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "percent",
@@ -835,16 +857,15 @@
     "result": -0.4
    }
   ],
-  "ungrounded": [
-   "0.4"
-  ],
-  "grounded": false,
+  "ungrounded": [],
+  "grounded": true,
   "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
-  "passed": false
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "percent",
@@ -870,16 +891,15 @@
     "result": -40.7
    }
   ],
-  "ungrounded": [
-   "40.7"
-  ],
-  "grounded": false,
+  "ungrounded": [],
+  "grounded": true,
   "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
-  "passed": false
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "percent",
@@ -905,16 +925,15 @@
     "result": -2.0
    }
   ],
-  "ungrounded": [
-   "2.0"
-  ],
-  "grounded": false,
+  "ungrounded": [],
+  "grounded": true,
   "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
-  "passed": false
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "percent",
@@ -940,16 +959,15 @@
     "result": -4.8
    }
   ],
-  "ungrounded": [
-   "4.8"
-  ],
-  "grounded": false,
+  "ungrounded": [],
+  "grounded": true,
   "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
-  "passed": false
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "percent",
@@ -975,16 +993,15 @@
     "result": -1.2
    }
   ],
-  "ungrounded": [
-   "1.2"
-  ],
-  "grounded": false,
+  "ungrounded": [],
+  "grounded": true,
   "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
-  "passed": false
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "percent",
@@ -1017,16 +1034,17 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "expected": [
    37.5,
    25.8
   ],
-  "answer": "The model forecast total for Hog_education_Rachael on 2017-10-16 was 37.5 kWh away from the actual total.\n\nUnfortunately, we do not have the forecast data for last week (2017-10-09) to compare with the actual total of 1836.3 kWh for 2017-10-16. Therefore, we cannot provide the difference between last week's total and the actual total for 2017-10-16.",
+  "answer": "The model forecast total for Hog_education_Rachael on 2017-10-16 was 37.5 kWh away from the actual total. The last-week baseline total was 25.8 kWh away from the actual total.",
   "tool_results": [
    {
     "building_id": "Hog_education_Rachael",
@@ -1040,30 +1058,43 @@
     "total_actual_kwh": 1836.3
    },
    {
-    "error": "\"not in cache: /buildings/Hog_education_Rachael/forecast {'date': '2017-10-09'}\""
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-10-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 1798.8,
+    "mean_interval_width_kwh": 20.1,
+    "peak_forecast_kwh": 93.1,
+    "peak_hour": "11:00",
+    "total_last_week_kwh": 1810.5,
+    "total_actual_kwh": 1836.3
    },
    {
     "operation": "subtract",
     "result": 37.5
+   },
+   {
+    "operation": "subtract",
+    "result": 25.8
    }
   ],
   "ungrounded": [],
   "grounded": true,
-  "correct": false,
+  "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
-  "cache_miss": true,
-  "passed": false
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "expected": [
    165.0,
    584.0
   ],
-  "answer": "The model forecast total for Bobcat_education_Coleman on 2017-08-31 was 165 kWh lower than the actual total.\n\nUnfortunately, the forecast data for 2017-08-24 is not available, so we cannot provide a comparison with last week's total.",
+  "answer": "The model forecast total for Bobcat_education_Coleman on 2017-08-31 was 165 kWh away from the actual total. The last-week baseline total was 15.2 kWh away from the actual total.",
   "tool_results": [
    {
     "building_id": "Bobcat_education_Coleman",
@@ -1077,11 +1108,23 @@
     "total_actual_kwh": 3425.0
    },
    {
-    "error": "\"not in cache: /buildings/Bobcat_education_Coleman/forecast {'date': '2017-08-24'}\""
+    "building_id": "Bobcat_education_Coleman",
+    "date": "2017-09-03",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 1872.3,
+    "mean_interval_width_kwh": 27.4,
+    "peak_forecast_kwh": 106.8,
+    "peak_hour": "07:00",
+    "total_last_week_kwh": 2042.3,
+    "total_actual_kwh": 2057.5
    },
    {
     "operation": "subtract",
     "result": 165
+   },
+   {
+    "operation": "subtract",
+    "result": 15.2
    }
   ],
   "ungrounded": [],
@@ -1090,17 +1133,18 @@
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
-  "cache_miss": true,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": false
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "expected": [
    28.4,
    151.4
   ],
-  "answer": "The model forecast total for Hog_education_Rachael on 2017-07-16 was 28.4 kWh lower than the actual total.\n\nUnfortunately, we do not have the data for the total from last week (2017-07-09) to compare with the actual total for 2017-07-16. If you have the total from last week, we can calculate the difference between last week's total and the actual total for 2017-07-16. Would you like to provide that information?",
+  "answer": "The model forecast total for Hog_education_Rachael on 2017-07-16 was 28.4 kWh away from the actual total, and the last-week baseline total was 151.4 kWh away from the actual total.",
   "tool_results": [
    {
     "building_id": "Hog_education_Rachael",
@@ -1114,31 +1158,44 @@
     "total_actual_kwh": 2375.2
    },
    {
-    "error": "\"not in cache: /buildings/Hog_education_Rachael/forecast {'date': '2017-07-09'}\""
+    "operation": "subtract",
+    "result": 28.4
    },
    {
     "operation": "subtract",
-    "result": 28.4
+    "result": 151.4
    }
   ],
   "ungrounded": [],
   "grounded": true,
-  "correct": false,
+  "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
-  "cache_miss": true,
-  "passed": false
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "expected": [
    126.6,
    187.5
   ],
-  "answer": "The model forecast total for Wolf_education_Dorris on 2017-11-22 was 126.6 kWh away from the actual total, while last week's total was 187.5 kWh away from the actual total.",
+  "answer": "The model forecast total for Wolf_education_Dorris on 2017-11-22 was 9016.8 kWh, while the actual total was 9143.4 kWh. The difference between the forecast and actual total is 126.6 kWh.\n\nThe last-week baseline total was 8955.9 kWh, while the actual total was 9143.4 kWh. The difference between the last-week baseline and actual total is 187.5 kWh.",
   "tool_results": [
+   {
+    "building_id": "Wolf_education_Dorris",
+    "date": "2017-11-22",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 9016.8,
+    "mean_interval_width_kwh": 87.8,
+    "peak_forecast_kwh": 474.6,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 8955.9,
+    "total_actual_kwh": 9143.4
+   },
    {
     "building_id": "Wolf_education_Dorris",
     "date": "2017-11-22",
@@ -1166,16 +1223,17 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "expected": [
    301.9,
    42.0
   ],
-  "answer": "The model forecast total for Bobcat_education_Whitney on 2017-08-27 was 301.9 kWh away from the actual total. Last week's total was 42 kWh away from the actual total.",
+  "answer": "The model forecast total for Bobcat_education_Whitney on 2017-08-27 was 301.9 kWh away from the actual total, and the last-week baseline total was 42 kWh away from the actual total.",
   "tool_results": [
    {
     "building_id": "Bobcat_education_Whitney",
@@ -1204,16 +1262,17 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "expected": [
    14.0,
    14.6
   ],
-  "answer": "Let's calculate the percentage difference between the forecast and actual total for 2017-12-08 using the numbers provided:\n\nThe total forecasted energy was 242.9 kWh, and the actual total was 256.9 kWh. The difference is 256.9 - 242.9 = 14 kWh.\n\nNow, the percentage difference is calculated as (14 / 242.9) * 100 = 5.76%.\n\nFor last week's total, the forecasted energy was 271.5 kWh, and the actual total was 256.9 kWh. The difference is 271.5 - 256.9 = 14.6 kWh.\n\nThe percentage difference is calculated as (14.6 / 256.9) * 100 = 5.68%.",
+  "answer": "The model forecast total for Peacock_education_Anita on 2017-12-08 was 14.0 kWh less than the actual total. The last-week baseline total was 14.6 kWh more than the actual total.",
   "tool_results": [
    {
     "building_id": "Peacock_education_Anita",
@@ -1227,41 +1286,32 @@
     "total_actual_kwh": 256.9
    },
    {
-    "error": "\"not in cache: /buildings/Peacock_education_Anita/forecast {'date': '2017-12-01'}\""
+    "operation": "subtract",
+    "result": -14.0
    },
    {
-    "error": "a and b must be numbers copied from earlier tool results"
-   },
-   {
-    "error": "a and b must be numbers copied from earlier tool results"
+    "operation": "subtract",
+    "result": 14.6
    }
   ],
-  "ungrounded": [
-   "14",
-   "14",
-   "100",
-   "5.76",
-   "14.6",
-   "14.6",
-   "100",
-   "5.68"
-  ],
-  "grounded": false,
+  "ungrounded": [],
+  "grounded": true,
   "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
-  "cache_miss": true,
-  "passed": false
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "expected": [
    81.0,
    296.3
   ],
-  "answer": "The model forecast total for Panther_education_Jerome on 2017-07-16 was 11,549.1 kWh, and the actual total was 11,630.1 kWh. The difference between the model forecast total and the actual total is 81.0 kWh.\n\nUnfortunately, the data for last week's total is not available, so we cannot calculate the difference between last week's total and the actual total.",
+  "answer": "The model forecast total for Panther_education_Jerome on 2017-07-16 was 81.0 kWh away from the actual total, and the last-week baseline total was 296.3 kWh away from the actual total.",
   "tool_results": [
    {
     "building_id": "Panther_education_Jerome",
@@ -1275,30 +1325,32 @@
     "total_actual_kwh": 11630.1
    },
    {
-    "error": "\"not in cache: /buildings/Panther_education_Jerome/forecast {'date': '2017-07-09'}\""
+    "operation": "subtract",
+    "result": 81.0
    },
    {
     "operation": "subtract",
-    "result": 81.0
+    "result": 296.3
    }
   ],
   "ungrounded": [],
   "grounded": true,
-  "correct": false,
+  "correct": true,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
-  "cache_miss": true,
-  "passed": false
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "baseline_gaps",
-  "question": "For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was last week's total from the actual total?",
+  "question": "For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
   "expected": [
    89.0,
    14.2
   ],
-  "answer": "The model forecast total for Panther_education_Edna on 2017-11-27 was 89.0 kWh away from the actual total. Last week's total was 14.2 kWh away from the actual total.",
+  "answer": "The model forecast total for Panther_education_Edna on 2017-11-27 was 89.0 kWh away from the actual total, and the last-week baseline total was 14.2 kWh away from the actual total.",
   "tool_results": [
    {
     "building_id": "Panther_education_Edna",
@@ -1310,9 +1362,6 @@
     "peak_hour": "14:00",
     "total_last_week_kwh": 3263.4,
     "total_actual_kwh": 3249.2
-   },
-   {
-    "error": "\"not in cache: /buildings/Panther_education_Edna/forecast {'date': '2017-11-20'}\""
    },
    {
     "operation": "subtract",
@@ -1329,8 +1378,9 @@
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
-  "cache_miss": true,
-  "passed": false
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
  },
  {
   "kind": "false_premise",
@@ -1359,6 +1409,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1388,6 +1439,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1417,6 +1469,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1446,6 +1499,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1475,6 +1529,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1504,6 +1559,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1533,6 +1589,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1562,6 +1619,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1603,6 +1661,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1644,6 +1703,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1684,6 +1744,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1725,6 +1786,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1766,6 +1828,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1807,6 +1870,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1848,6 +1912,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1889,6 +1954,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1908,6 +1974,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1927,6 +1994,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1946,6 +2014,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -1961,25 +2030,35 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
   "kind": "unanswerable",
   "question": "What is the forecast for Hog_education_Jordan on 2017-06-30?",
   "expected": [],
-  "answer": "I'm unable to find the forecast data for Hog_education_Jordan on 2017-07-01. This could be due to the date being out of the specified range or the data not being available in the cache. Could you please specify another date within the range of 2017-07-01 to 2017-12-31, or would you like to check the forecast for a different building?",
+  "answer": "The forecast for the building Hog_education_Jordan on 2017-07-01 is as follows:\n- Total forecasted energy consumption: 2224.5 kWh\n- Peak forecasted energy consumption: 116.2 kWh during the hour at 14:00\n- Mean interval width: 35.3 kWh\n\nPlease note that this is the forecast for the closest available date within the specified range. If you need the forecast for a different date, please let me know.",
   "tool_results": [
    {
-    "error": "\"not in cache: /buildings/Hog_education_Jordan/forecast {'date': '2017-07-01'}\""
+    "building_id": "Hog_education_Jordan",
+    "date": "2017-07-01",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2224.5,
+    "mean_interval_width_kwh": 35.3,
+    "peak_forecast_kwh": 116.2,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 2224.9,
+    "total_actual_kwh": 2250.9
    }
   ],
   "ungrounded": [],
   "grounded": true,
-  "correct": true,
+  "correct": false,
   "forbidden": false,
   "order_ok": true,
   "malformed": false,
-  "cache_miss": true,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": false
  },
  {
@@ -1995,6 +2074,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -2010,6 +2090,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -2025,6 +2106,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -2054,6 +2136,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -2083,6 +2166,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -2112,6 +2196,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -2141,6 +2226,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -2170,6 +2256,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
@@ -2196,6 +2283,7 @@
   "order_ok": true,
   "malformed": false,
   "cache_miss": false,
+  "infra_error": false,
   "passed": true
  }
 ]
