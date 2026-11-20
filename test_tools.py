@@ -117,3 +117,27 @@ def test_error_status_is_recorded_and_replayed(monkeypatch, tmp_path):
     monkeypatch.setenv("FORECAST_MODE", "replay")
     with pytest.raises(tools.requests.HTTPError, match="422"):
         tools._get("/b")
+
+def test_auto_mode_uses_cache_after_first_fetch(monkeypatch, tmp_path):
+    monkeypatch.setattr(tools, "CACHE_DIR", tmp_path)
+    monkeypatch.setattr(tools.time, "sleep", lambda s: None)
+    calls = {"n": 0}
+
+    def fake_get(url, params=None, timeout=None):
+        calls["n"] += 1
+        return FakeResponse(200, {"v": 1})
+
+    monkeypatch.setattr(tools.SESSION, "get", fake_get)
+    monkeypatch.setenv("FORECAST_MODE", "auto")
+    assert tools._get("/c") == {"v": 1}
+    assert tools._get("/c") == {"v": 1}
+    assert calls["n"] == 1
+
+def test_forgiving_calculate_accepts_numeric_strings(monkeypatch):
+    monkeypatch.setenv("TOOLS_V", "2")
+    assert tools.calculate("subtract", "4607.0", "4588.9")["result"] == 18.1
+
+
+def test_forgiving_calculate_names_valid_operations(monkeypatch):
+    monkeypatch.setenv("TOOLS_V", "2")
+    assert "use subtract or percent_difference" in tools.calculate("difference", 1.0, 2.0)["error"]

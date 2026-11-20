@@ -1,0 +1,586 @@
+[
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Fox_education_Dominique on 2017-08-08 from the actual total?",
+  "expected": [
+   18.1
+  ],
+  "answer": "To calculate the difference, I need to get the day forecast first.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Fox_education_Dominique\", \"date\": \"2017-08-08\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Jordan on 2017-12-14 from the actual total?",
+  "expected": [
+   104.1
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Hog_education_Jordan\",\"date\":\"2017-12-14\",\"b\":\"get_day_forecast\",\"building_id\":\"Hog_education_Jordan\",\"date\":\"2017-12-14\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Maryjane on 2017-07-19 from the actual total?",
+  "expected": [
+   504.9
+  ],
+  "answer": "To calculate the difference, I need to get the day forecast first.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Bear_education_Maryjane\", \"date\": \"2017-07-19\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-15 from the actual total?",
+  "expected": [
+   255.5
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"total_actual_kwh\",\"b\":\"total_forecast_kwh\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Monte on 2017-10-02 from the actual total?",
+  "expected": [
+   23.2
+  ],
+  "answer": "To calculate the difference, I need to get the day forecast first.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Bobcat_education_Monte\", \"date\": \"2017-10-02\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Panther_education_Jerome on 2017-07-15 from the actual total?",
+  "expected": [
+   97.7
+  ],
+  "answer": "To calculate the difference, I need to get the day forecast first.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Panther_education_Jerome\", \"date\": \"2017-07-15\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Moose_education_Abbie on 2017-08-24 from the actual total?",
+  "expected": [
+   106.2
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Moose_education_Abbie\",\"date\":\"2017-08-24\",\"b\":\"get_day_forecast\",\"building_id\":\"Moose_education_Abbie\",\"date\":\"2017-08-24\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Deborah on 2017-07-23 from the actual total?",
+  "expected": [
+   3.3
+  ],
+  "answer": "To calculate the difference, I need to call get_day_forecast twice and store the results in 'a' and 'b'. \n\nHere are the corrected tool calls:\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Bear_education_Deborah\", \"date\": \"2017-07-23\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-10-16 from the actual total?",
+  "expected": [
+   37.5
+  ],
+  "answer": "To calculate the difference, I need to get the day forecast first.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Hog_education_Rachael\", \"date\": \"2017-10-16\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Coleman on 2017-08-31 from the actual total?",
+  "expected": [
+   165.0
+  ],
+  "answer": "To calculate the difference, I need to call get_day_forecast twice and store the results in 'a' and 'b'. \n\nFirst, I'll call get_day_forecast with the building and date. \n\nThen, I'll call get_day_forecast again with the same building and date. \n\nAfter that, I'll call calculate with the results of the two get_day_forecast calls. \n\nPlease wait for the results of the two get_day_forecast calls.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-07-16 from the actual total?",
+  "expected": [
+   28.4
+  ],
+  "answer": "To calculate the difference, I need to get the day forecast first.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Hog_education_Rachael\", \"date\": \"2017-07-16\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-22 from the actual total?",
+  "expected": [
+   126.6
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"total_actual_kwh\",\"b\":\"total_forecast_kwh\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Monte on 2017-10-02 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   2.8
+  ],
+  "answer": "To calculate the percentage difference, I need to call get_day_forecast twice and store the results in 'a' and 'b'. \n\nFirst, I'll call get_day_forecast for the building and date. \n\nThen, I'll call calculate with the results of get_day_forecast and get_day_forecast as arguments. \n\nPlease wait for the results of get_day_forecast.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Panther_education_Jerome on 2017-07-15 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   0.8
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":{\"name\":\"total_forecast_kwh\",\"\"parameters\":{}},\"b\":{\"name\":\"total_actual_kwh\",\"\"parameters\":{}}}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Moose_education_Abbie on 2017-08-24 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   0.4
+  ],
+  "answer": "To calculate the percentage difference, I need to get the day forecast first.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Moose_education_Abbie\", \"date\": \"2017-08-24\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bear_education_Deborah on 2017-07-23 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   40.7
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-07-23\",\"b\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-07-23\",\"total_actual_kwh\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-07-23\",\"total_forecast_kwh\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-07-23\",\"total_last_week_kwh\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-07-23\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-10-16 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   2.0
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":{\"name\":\"total_forecast_kwh\",\"\"parameters\":{}},\"b\":{\"name\":\"total_actual_kwh\",\"\"parameters\":{}}}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Coleman on 2017-08-31 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   4.8
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\",\"b\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\",\"total_actual_kwh\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-07-16 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   1.2
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-07-16\",\"b\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-07-16\",\"total_actual_kwh\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-07-16\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Wolf_education_Dorris on 2017-11-22 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   1.4
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":{\"name\":\"total_forecast_kwh\",\"\"parameters\":{}},\"b\":{\"name\":\"total_actual_kwh\",\"\"parameters\":{}}}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   37.5,
+   25.8
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-10-16\",\"b\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-10-16\",\"total_actual_kwh\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-10-16\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   165.0,
+   584.0
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\",\"b\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\",\"a\":\"total_actual_kwh\",\"b\":\"total_last_week_kwh\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   28.4,
+   151.4
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-07-16\",\"b\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-07-16\",\"a\":\"total_actual_kwh\",\"b\":\"total_last_week_kwh\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   126.6,
+   187.5
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Wolf_education_Dorris\",\"date\":\"2017-11-22\",\"b\":\"get_day_forecast\",\"building_id\":\"Wolf_education_Dorris\",\"date\":\"2017-11-22\",\"a\":\"total_actual_kwh\",\"b\":\"total_last_week_kwh\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   301.9,
+   42.0
+  ],
+  "answer": "To calculate the difference, I need to get the results of get_day_forecast for the building and date.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Bobcat_education_Whitney\", \"date\": \"2017-08-27\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   14.0,
+   14.6
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Peacock_education_Anita\",\"date\":\"2017-12-08\",\"b\":\"get_day_forecast\",\"building_id\":\"Peacock_education_Anita\",\"date\":\"2017-12-08\",\"a\":\"total_actual_kwh\",\"b\":\"total_last_week_kwh\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   81.0,
+   296.3
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Panther_education_Jerome\",\"date\":\"2017-07-16\",\"b\":\"get_day_forecast\",\"building_id\":\"Panther_education_Jerome\",\"date\":\"2017-07-16\",\"total_actual_kwh\":\"get_day_forecast\",\"building_id\":\"Panther_education_Jerome\",\"date\":\"2017-07-16\",\"total_last_week_kwh\":\"get_day_forecast\",\"building_id\":\"Panther_education_Jerome\",\"date\":\"2017-07-16\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   89.0,
+   14.2
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Panther_education_Edna\",\"date\":\"2017-11-27\",\"b\":\"get_day_forecast\",\"building_id\":\"Panther_education_Edna\",\"date\":\"2017-11-27\",\"total_actual_kwh\":\"get_day_forecast\",\"building_id\":\"Panther_education_Edna\",\"date\":\"2017-11-27\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ }
+]

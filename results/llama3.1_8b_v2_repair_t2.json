@@ -1,0 +1,1073 @@
+[
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Fox_education_Dominique on 2017-08-08 from the actual total?",
+  "expected": [
+   18.1
+  ],
+  "answer": "The total forecast for Fox_education_Dominique on 2017-08-08 was 0.4% higher than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Fox_education_Dominique",
+    "date": "2017-08-08",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 4607.0,
+    "mean_interval_width_kwh": 21.4,
+    "peak_forecast_kwh": 226.3,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 4642.0,
+    "total_actual_kwh": 4588.9
+   },
+   {
+    "operation": "percent_difference",
+    "result": 0.4
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Jordan on 2017-12-14 from the actual total?",
+  "expected": [
+   104.1
+  ],
+  "answer": "The total forecast for Hog_education_Jordan on 2017-12-14 was 104.1 kWh less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Hog_education_Jordan",
+    "date": "2017-12-14",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2520.8,
+    "mean_interval_width_kwh": 36.2,
+    "peak_forecast_kwh": 139.7,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 2694.1,
+    "total_actual_kwh": 2416.7
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": 104.1
+   }
+  ],
+  "repaired_calls": 3,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Maryjane on 2017-07-19 from the actual total?",
+  "expected": [
+   504.9
+  ],
+  "answer": "The total forecast for Bear_education_Maryjane on 2017-07-19 was 5.7% less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Bear_education_Maryjane",
+    "date": "2017-07-19",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 8353.6,
+    "mean_interval_width_kwh": 101.2,
+    "peak_forecast_kwh": 443.4,
+    "peak_hour": "15:00",
+    "total_last_week_kwh": 7712.0,
+    "total_actual_kwh": 8858.5
+   },
+   {
+    "operation": "percent_difference",
+    "result": -5.7
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-15 from the actual total?",
+  "expected": [
+   255.5
+  ],
+  "answer": "The total forecast for Wolf_education_Dorris on 2017-11-15 was 2.9% less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Wolf_education_Dorris",
+    "date": "2017-11-15",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 8700.4,
+    "mean_interval_width_kwh": 97.8,
+    "peak_forecast_kwh": 452.1,
+    "peak_hour": "15:00",
+    "total_last_week_kwh": 8108.0,
+    "total_actual_kwh": 8955.9
+   },
+   {
+    "operation": "percent_difference",
+    "result": -2.9
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Monte on 2017-10-02 from the actual total?",
+  "expected": [
+   23.2
+  ],
+  "answer": "The difference between the total forecast and actual for Bobcat_education_Monte on 2017-10-02 is 23.2 kWh.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Bobcat_education_Monte",
+    "date": "2017-10-02",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 803.4,
+    "mean_interval_width_kwh": 27.6,
+    "peak_forecast_kwh": 57.8,
+    "peak_hour": "12:00",
+    "total_last_week_kwh": 850.8,
+    "total_actual_kwh": 826.6
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [
+   "23.2"
+  ],
+  "grounded": false,
+  "correct": true,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Panther_education_Jerome on 2017-07-15 from the actual total?",
+  "expected": [
+   97.7
+  ],
+  "answer": "The total forecast for Panther_education_Jerome on 2017-07-15 was 0.8% less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Panther_education_Jerome",
+    "date": "2017-07-15",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 11517.8,
+    "mean_interval_width_kwh": 45.3,
+    "peak_forecast_kwh": 487.7,
+    "peak_hour": "12:00",
+    "total_last_week_kwh": 11343.9,
+    "total_actual_kwh": 11615.5
+   },
+   {
+    "operation": "percent_difference",
+    "result": -0.8
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Moose_education_Abbie on 2017-08-24 from the actual total?",
+  "expected": [
+   106.2
+  ],
+  "answer": "The total forecast for Moose_education_Abbie on 2017-08-24 was 0.4% less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Moose_education_Abbie",
+    "date": "2017-08-24",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 29630.9,
+    "mean_interval_width_kwh": 267.3,
+    "peak_forecast_kwh": 1532.6,
+    "peak_hour": "11:00",
+    "total_last_week_kwh": 29920.7,
+    "total_actual_kwh": 29737.1
+   },
+   {
+    "operation": "percent_difference",
+    "result": -0.4
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Deborah on 2017-07-23 from the actual total?",
+  "expected": [
+   3.3
+  ],
+  "answer": "The total forecast for Bear_education_Deborah on 2017-07-23 was 40.7% less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Bear_education_Deborah",
+    "date": "2017-07-23",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 4.8,
+    "mean_interval_width_kwh": 1.3,
+    "peak_forecast_kwh": 0.4,
+    "peak_hour": "19:00",
+    "total_last_week_kwh": 7.8,
+    "total_actual_kwh": 8.1
+   },
+   {
+    "operation": "percent_difference",
+    "result": -40.7
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-10-16 from the actual total?",
+  "expected": [
+   37.5
+  ],
+  "answer": "The total forecast for Hog_education_Rachael on 2017-10-16 was 2.0% less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-10-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 1798.8,
+    "mean_interval_width_kwh": 20.1,
+    "peak_forecast_kwh": 93.1,
+    "peak_hour": "11:00",
+    "total_last_week_kwh": 1810.5,
+    "total_actual_kwh": 1836.3
+   },
+   {
+    "operation": "percent_difference",
+    "result": -2.0
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Coleman on 2017-08-31 from the actual total?",
+  "expected": [
+   165.0
+  ],
+  "answer": "The total forecast for Bobcat_education_Coleman on 2017-08-31 was 165 kWh less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Bobcat_education_Coleman",
+    "date": "2017-08-31",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3260.0,
+    "mean_interval_width_kwh": 45.1,
+    "peak_forecast_kwh": 196.1,
+    "peak_hour": "13:00",
+    "total_last_week_kwh": 2841.0,
+    "total_actual_kwh": 3425.0
+   },
+   {
+    "operation": "subtract",
+    "result": -165.0
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-07-16 from the actual total?",
+  "expected": [
+   28.4
+  ],
+  "answer": "The total forecast for Hog_education_Rachael on 2017-07-16 was 1.2% less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2346.8,
+    "mean_interval_width_kwh": 32.8,
+    "peak_forecast_kwh": 111.3,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 2223.8,
+    "total_actual_kwh": 2375.2
+   },
+   {
+    "operation": "percent_difference",
+    "result": -1.2
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-22 from the actual total?",
+  "expected": [
+   126.6
+  ],
+  "answer": "The total forecast for Wolf_education_Dorris on 2017-11-22 was 1.4% less than the actual total.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   },
+   {
+    "building_id": "Wolf_education_Dorris",
+    "date": "2017-11-22",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 9016.8,
+    "mean_interval_width_kwh": 87.8,
+    "peak_forecast_kwh": 474.6,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 8955.9,
+    "total_actual_kwh": 9143.4
+   },
+   {
+    "operation": "percent_difference",
+    "result": -1.4
+   }
+  ],
+  "repaired_calls": 2,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Monte on 2017-10-02 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   2.8
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Bobcat_education_Monte\", date=\"2017-10-02\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "repaired_calls": 0,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Panther_education_Jerome on 2017-07-15 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   0.8
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Panther_education_Jerome\", date=\"2017-07-15\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "repaired_calls": 0,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Moose_education_Abbie on 2017-08-24 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   0.4
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Moose_education_Abbie\", date=\"2017-08-24\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "repaired_calls": 0,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bear_education_Deborah on 2017-07-23 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   40.7
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Bear_education_Deborah\", date=\"2017-07-23\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "repaired_calls": 0,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-10-16 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   2.0
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Hog_education_Rachael\", date=\"2017-10-16\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "repaired_calls": 0,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Coleman on 2017-08-31 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   4.8
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Bobcat_education_Coleman\", date=\"2017-08-31\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "repaired_calls": 0,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-07-16 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   1.2
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Hog_education_Rachael\", date=\"2017-07-16\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "repaired_calls": 0,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Wolf_education_Dorris on 2017-11-22 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   1.4
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Wolf_education_Dorris\", date=\"2017-11-22\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "repaired_calls": 0,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   37.5,
+   25.8
+  ],
+  "answer": "The last-week baseline total was 25.8 kWh less than the actual total.",
+  "tool_results": [
+   {
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-10-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 1798.8,
+    "mean_interval_width_kwh": 20.1,
+    "peak_forecast_kwh": 93.1,
+    "peak_hour": "11:00",
+    "total_last_week_kwh": 1810.5,
+    "total_actual_kwh": 1836.3
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": -37.5
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": -25.8
+   }
+  ],
+  "repaired_calls": 6,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   165.0,
+   584.0
+  ],
+  "answer": "",
+  "tool_results": [
+   {
+    "building_id": "Bobcat_education_Coleman",
+    "date": "2017-08-31",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3260.0,
+    "mean_interval_width_kwh": 45.1,
+    "peak_forecast_kwh": 196.1,
+    "peak_hour": "13:00",
+    "total_last_week_kwh": 2841.0,
+    "total_actual_kwh": 3425.0
+   },
+   {
+    "error": "calculate() got an unexpected keyword argument 'op'"
+   },
+   {
+    "error": "calculate() got an unexpected keyword argument 'op'"
+   },
+   {
+    "error": "calculate() got an unexpected keyword argument 'op'"
+   },
+   {
+    "error": "calculate() got an unexpected keyword argument 'op'"
+   },
+   {
+    "error": "calculate() got an unexpected keyword argument 'op'"
+   },
+   {
+    "error": "calculate() got an unexpected keyword argument 'op'"
+   },
+   {
+    "error": "calculate() got an unexpected keyword argument 'op'"
+   }
+  ],
+  "repaired_calls": 7,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   28.4,
+   151.4
+  ],
+  "answer": "The difference between the last-week baseline and the actual total is 151.4 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2346.8,
+    "mean_interval_width_kwh": 32.8,
+    "peak_forecast_kwh": 111.3,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 2223.8,
+    "total_actual_kwh": 2375.2
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": 28.4
+   },
+   {
+    "operation": "subtract",
+    "result": 151.4
+   }
+  ],
+  "repaired_calls": 4,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   126.6,
+   187.5
+  ],
+  "answer": "The last-week baseline was 187.5 kWh less than the actual total.",
+  "tool_results": [
+   {
+    "building_id": "Wolf_education_Dorris",
+    "date": "2017-11-22",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 9016.8,
+    "mean_interval_width_kwh": 87.8,
+    "peak_forecast_kwh": 474.6,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 8955.9,
+    "total_actual_kwh": 9143.4
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": -126.6
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": -187.5
+   }
+  ],
+  "repaired_calls": 6,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   301.9,
+   42.0
+  ],
+  "answer": "The difference between the last-week baseline and the actual total is 42.0 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bobcat_education_Whitney",
+    "date": "2017-08-27",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3876.9,
+    "mean_interval_width_kwh": 98.2,
+    "peak_forecast_kwh": 179.5,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 3617.0,
+    "total_actual_kwh": 3575.0
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": 301.9
+   },
+   {
+    "operation": "subtract",
+    "result": 42.0
+   }
+  ],
+  "repaired_calls": 4,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   14.0,
+   14.6
+  ],
+  "answer": "The last-week baseline total was 14.6 kWh more than the actual total.",
+  "tool_results": [
+   {
+    "building_id": "Peacock_education_Anita",
+    "date": "2017-12-08",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 242.9,
+    "mean_interval_width_kwh": 4.0,
+    "peak_forecast_kwh": 13.0,
+    "peak_hour": "09:00",
+    "total_last_week_kwh": 271.5,
+    "total_actual_kwh": 256.9
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": -14.0
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": 14.6
+   }
+  ],
+  "repaired_calls": 6,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   81.0,
+   296.3
+  ],
+  "answer": "The last-week baseline total was 296.3 kWh less than the actual total.",
+  "tool_results": [
+   {
+    "building_id": "Panther_education_Jerome",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 11549.1,
+    "mean_interval_width_kwh": 40.6,
+    "peak_forecast_kwh": 488.2,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 11333.8,
+    "total_actual_kwh": 11630.1
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": -81.0
+   },
+   {
+    "operation": "subtract",
+    "result": -296.3
+   }
+  ],
+  "repaired_calls": 4,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   89.0,
+   14.2
+  ],
+  "answer": "The last-week baseline was 14.2 kWh more than the actual total.",
+  "tool_results": [
+   {
+    "building_id": "Panther_education_Edna",
+    "date": "2017-11-27",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3160.2,
+    "mean_interval_width_kwh": 46.2,
+    "peak_forecast_kwh": 172.3,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 3263.4,
+    "total_actual_kwh": 3249.2
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": -89.0
+   },
+   {
+    "error": "calculate() missing 1 required positional argument: 'operation'"
+   },
+   {
+    "error": "unknown operation: difference; use subtract or percent_difference"
+   },
+   {
+    "operation": "subtract",
+    "result": 14.2
+   }
+  ],
+  "repaired_calls": 6,
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ }
+]

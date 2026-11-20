@@ -1,0 +1,718 @@
+[
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Fox_education_Dominique on 2017-08-08 from the actual total?",
+  "expected": [
+   18.1
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Fox_education_Dominique\", \"date\": \"2017-08-08\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Jordan on 2017-12-14 from the actual total?",
+  "expected": [
+   104.1
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Hog_education_Jordan\", \"date\": \"2017-12-14\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Maryjane on 2017-07-19 from the actual total?",
+  "expected": [
+   504.9
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Bear_education_Maryjane\", \"date\": \"2017-07-19\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-15 from the actual total?",
+  "expected": [
+   255.5
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Wolf_education_Dorris\", \"date\": \"2017-11-15\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Monte on 2017-10-02 from the actual total?",
+  "expected": [
+   23.2
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Bobcat_education_Monte\", \"date\": \"2017-10-02\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Panther_education_Jerome on 2017-07-15 from the actual total?",
+  "expected": [
+   97.7
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Panther_education_Jerome\", \"date\": \"2017-07-15\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Moose_education_Abbie on 2017-08-24 from the actual total?",
+  "expected": [
+   106.2
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Moose_education_Abbie\", \"date\": \"2017-08-24\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Deborah on 2017-07-23 from the actual total?",
+  "expected": [
+   3.3
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Bear_education_Deborah\", \"date\": \"2017-07-23\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-10-16 from the actual total?",
+  "expected": [
+   37.5
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Hog_education_Rachael\", \"date\": \"2017-10-16\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Coleman on 2017-08-31 from the actual total?",
+  "expected": [
+   165.0
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Bobcat_education_Coleman\", \"date\": \"2017-08-31\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-07-16 from the actual total?",
+  "expected": [
+   28.4
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Hog_education_Rachael\", \"date\": \"2017-07-16\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-22 from the actual total?",
+  "expected": [
+   126.6
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the total forecast and actual values.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Wolf_education_Dorris\", \"date\": \"2017-11-22\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Monte on 2017-10-02 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   2.8
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Bobcat_education_Monte\", date=\"2017-10-02\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Panther_education_Jerome on 2017-07-15 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   0.8
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Panther_education_Jerome\", date=\"2017-07-15\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Moose_education_Abbie on 2017-08-24 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   0.4
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Moose_education_Abbie\", date=\"2017-08-24\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bear_education_Deborah on 2017-07-23 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   40.7
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Bear_education_Deborah\", date=\"2017-07-23\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-10-16 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   2.0
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Hog_education_Rachael\", date=\"2017-10-16\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Coleman on 2017-08-31 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   4.8
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Bobcat_education_Coleman\", date=\"2017-08-31\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-07-16 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   1.2
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Hog_education_Rachael\", date=\"2017-07-16\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Wolf_education_Dorris on 2017-11-22 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   1.4
+  ],
+  "answer": "First, I need to call get_day_forecast with the building and date to get the forecast and actual values.\n\nget_day_forecast(building_id=\"Wolf_education_Dorris\", date=\"2017-11-22\")",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   37.5,
+   25.8
+  ],
+  "answer": "To find the difference between the forecast and the actual total, we need to call the calculate tool with the total_forecast_kwh and total_actual_kwh values.\n\n{\"name\": \"calculate\", \"parameters\": {\"a\": 1798.8, \"b\": 1836.3}}",
+  "tool_results": [
+   {
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-10-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 1798.8,
+    "mean_interval_width_kwh": 20.1,
+    "peak_forecast_kwh": 93.1,
+    "peak_hour": "11:00",
+    "total_last_week_kwh": 1810.5,
+    "total_actual_kwh": 1836.3
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   165.0,
+   584.0
+  ],
+  "answer": "To find the difference between the forecast and the actual total, we need to call the calculate tool with the total_forecast_kwh and total_actual_kwh from the get_day_forecast result.\n\n{\"name\": \"calculate\", \"parameters\": {\"a\": 3260.0, \"b\": 3425.0, \"op\": \"diff\"}}",
+  "tool_results": [
+   {
+    "building_id": "Bobcat_education_Coleman",
+    "date": "2017-08-31",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3260.0,
+    "mean_interval_width_kwh": 45.1,
+    "peak_forecast_kwh": 196.1,
+    "peak_hour": "13:00",
+    "total_last_week_kwh": 2841.0,
+    "total_actual_kwh": 3425.0
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   28.4,
+   151.4
+  ],
+  "answer": "To find the difference between the forecast and the actual total, we will call the calculate tool with the total_forecast_kwh and total_actual_kwh from the get_day_forecast result.\n\n{\"name\": \"calculate\", \"parameters\": {\"a\": 2375.2, \"b\": 2346.8}}",
+  "tool_results": [
+   {
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2346.8,
+    "mean_interval_width_kwh": 32.8,
+    "peak_forecast_kwh": 111.3,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 2223.8,
+    "total_actual_kwh": 2375.2
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   126.6,
+   187.5
+  ],
+  "answer": "To find the difference between the forecast and the actual total, we need to call the calculate tool with the total_forecast_kwh and total_actual_kwh from the get_day_forecast result.\n\n{\"name\": \"calculate\", \"parameters\": {\"a\": 9016.8, \"b\": 9143.4}}",
+  "tool_results": [
+   {
+    "building_id": "Wolf_education_Dorris",
+    "date": "2017-11-22",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 9016.8,
+    "mean_interval_width_kwh": 87.8,
+    "peak_forecast_kwh": 474.6,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 8955.9,
+    "total_actual_kwh": 9143.4
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   301.9,
+   42.0
+  ],
+  "answer": "To find the difference between the forecast and the actual total, we need to call the `calculate` tool with the forecast and actual total values.\n\n{\"name\": \"calculate\", \"parameters\": {\"a\": 3876.9, \"b\": 3575.0}}",
+  "tool_results": [
+   {
+    "building_id": "Bobcat_education_Whitney",
+    "date": "2017-08-27",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3876.9,
+    "mean_interval_width_kwh": 98.2,
+    "peak_forecast_kwh": 179.5,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 3617.0,
+    "total_actual_kwh": 3575.0
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   14.0,
+   14.6
+  ],
+  "answer": "To find the difference between the forecast and the actual total, we need to call the calculate tool with the total_forecast_kwh and total_actual_kwh from the get_day_forecast result.\n\n{\"name\": \"calculate\", \"parameters\": {\"a\": 242.9, \"b\": 256.9}}",
+  "tool_results": [
+   {
+    "building_id": "Peacock_education_Anita",
+    "date": "2017-12-08",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 242.9,
+    "mean_interval_width_kwh": 4.0,
+    "peak_forecast_kwh": 13.0,
+    "peak_hour": "09:00",
+    "total_last_week_kwh": 271.5,
+    "total_actual_kwh": 256.9
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   81.0,
+   296.3
+  ],
+  "answer": "To find the difference between the forecast and the actual total, we will call the calculate tool with the total_forecast_kwh and total_actual_kwh from the get_day_forecast result.\n\n{\"name\": \"calculate\", \"parameters\": {\"a\": 11549.1, \"b\": 11630.1}}",
+  "tool_results": [
+   {
+    "building_id": "Panther_education_Jerome",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 11549.1,
+    "mean_interval_width_kwh": 40.6,
+    "peak_forecast_kwh": 488.2,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 11333.8,
+    "total_actual_kwh": 11630.1
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   89.0,
+   14.2
+  ],
+  "answer": "To find the difference between the forecast and the actual total, we need to call the calculate tool with the total_forecast_kwh and total_actual_kwh from the get_day_forecast result.\n\n{\"name\": \"calculate\", \"parameters\": {\"a\": 3160.2, \"b\": 3249.2}}",
+  "tool_results": [
+   {
+    "building_id": "Panther_education_Edna",
+    "date": "2017-11-27",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3160.2,
+    "mean_interval_width_kwh": 46.2,
+    "peak_forecast_kwh": 172.3,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 3263.4,
+    "total_actual_kwh": 3249.2
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "explicit_correction": null,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ }
+]

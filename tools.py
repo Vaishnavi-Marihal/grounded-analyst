@@ -36,12 +36,12 @@ def _fetch(path, params):
 def _get(path, params=None):
     mode = os.environ.get("FORECAST_MODE", "live")
     file = _cache_file(path, params)
-    if mode == "replay":
-        if not file.exists():
-            raise KeyError(f"not in cache: {path} {params}")
+    if mode in ("replay", "auto") and file.exists():
         saved = json.loads(file.read_text())
+    elif mode == "replay":
+        raise KeyError(f"not in cache: {path} {params}")
     else:
-        if mode == "record":
+        if mode in ("record", "auto"):
             time.sleep(0.3)
         response = _fetch(path, params)
         try:
@@ -49,14 +49,13 @@ def _get(path, params=None):
         except ValueError:
             body = {}
         saved = {"status": response.status_code, "body": body}
-        if mode == "record":
+        if mode in ("record", "auto"):
             CACHE_DIR.mkdir(parents=True, exist_ok=True)
             file.write_text(json.dumps(saved))
     if saved["status"] >= 400:
         detail = saved["body"].get("detail", "") if isinstance(saved["body"], dict) else ""
         raise requests.HTTPError(f"{saved['status']} error: {detail}")
     return saved["body"]
-
 
 def list_buildings():
     return _get("/buildings")
@@ -98,6 +97,12 @@ def get_day_forecast(building_id, date):
 
 
 def calculate(operation, a, b):
+    forgiving = os.environ.get("TOOLS_V") == "2"
+    if forgiving:
+        try:
+            a, b = float(a), float(b)
+        except (TypeError, ValueError):
+            return {"error": "a and b must be plain numbers"}
     if operation == "subtract":
         value = a - b
     elif operation == "percent_difference":
@@ -105,5 +110,6 @@ def calculate(operation, a, b):
             return {"error": "b must not be zero"}
         value = (a - b) / b * 100
     else:
-        return {"error": f"unknown operation: {operation}"}
+        hint = "; use subtract or percent_difference" if forgiving else ""
+        return {"error": f"unknown operation: {operation}{hint}"}
     return {"operation": operation, "result": round(value, 1)}

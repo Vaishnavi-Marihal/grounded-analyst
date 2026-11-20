@@ -1,0 +1,24 @@
+kind,question,answer,auto_passed,manual_ok
+baseline_gaps,"For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",,False,
+percent,"By what percentage did the total forecast for Bobcat_education_Monte on 2017-10-02 differ from the actual total, as a percentage of the actual total?","First, I need to call get_day_forecast with the building and date to get the forecast and actual values.
+
+get_day_forecast(building_id=""Bobcat_education_Monte"", date=""2017-10-02"")",False,
+baseline_gaps,"For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",,False,
+percent,"By what percentage did the total forecast for Panther_education_Jerome on 2017-07-15 differ from the actual total, as a percentage of the actual total?","First, I need to call get_day_forecast with the building and date to get the forecast and actual values.
+
+get_day_forecast(building_id=""Panther_education_Jerome"", date=""2017-07-15"")",False,
+gap,How far was the total forecast for Hog_education_Jordan on 2017-12-14 from the actual total?,,False,
+gap,How far was the total forecast for Hog_education_Rachael on 2017-10-16 from the actual total?,,False,
+percent,"By what percentage did the total forecast for Hog_education_Rachael on 2017-10-16 differ from the actual total, as a percentage of the actual total?","First, I need to call get_day_forecast with the building and date to get the forecast and actual values.
+
+get_day_forecast(building_id=""Hog_education_Rachael"", date=""2017-10-16"")",False,
+percent,"By what percentage did the total forecast for Bear_education_Deborah on 2017-07-23 differ from the actual total, as a percentage of the actual total?","First, I need to call get_day_forecast with the building and date to get the forecast and actual values.
+
+get_day_forecast(building_id=""Bear_education_Deborah"", date=""2017-07-23"")",False,
+baseline_gaps,"For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",,False,
+gap,How far was the total forecast for Bobcat_education_Coleman on 2017-08-31 from the actual total?,,False,
+baseline_gaps,"For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",,False,
+gap,How far was the total forecast for Wolf_education_Dorris on 2017-11-22 from the actual total?,The total forecast for Wolf_education_Dorris on 2017-11-22 was 1.4% less than the actual total.,False,
+gap,How far was the total forecast for Moose_education_Abbie on 2017-08-24 from the actual total?,,False,
+baseline_gaps,"For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",,False,
+gap,How far was the total forecast for Bear_education_Maryjane on 2017-07-19 from the actual total?,,False,

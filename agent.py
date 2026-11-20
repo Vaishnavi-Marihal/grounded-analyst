@@ -1,5 +1,5 @@
-
 import json
+import os
 import sys
 
 import ollama
@@ -17,6 +17,19 @@ SYSTEM_PROMPT = (
     "copied from earlier tool results. Never calculate or round numbers yourself. "
     "If the tools cannot answer the question, say so."
 )
+
+SYSTEM_PROMPT_V2 = (
+    "You answer questions about building electricity forecasts using tools. "
+    "Never state a number that is not in a tool result. "
+    "For a question about a difference or percentage between the forecast and the actual: "
+    "first call get_day_forecast with the building and date and wait for its result, "
+    "then call calculate with a and b copied exactly from that result "
+    "(total_forecast_kwh and total_actual_kwh, or total_last_week_kwh for the baseline). "
+    "Never put one tool call inside another tool's arguments, "
+    "and never write a tool call as text."
+)
+
+PROMPTS = {"v1": SYSTEM_PROMPT, "v2": SYSTEM_PROMPT_V2}
 
 TOOL_SPECS = [
     {
@@ -89,6 +102,8 @@ REGISTRY = {
     "get_metrics_summary": tools.get_metrics_summary,
 }
 
+KNOWN_TOOLS = set(REGISTRY) | {"calculate"}
+
 
 def operands_grounded(args, allowed):
     try:
@@ -97,15 +112,52 @@ def operands_grounded(args, allowed):
         return False
 
 
-def run_agent(question, model=MODEL, max_steps=5):
+def parse_text_tool_calls(text):
+    calls = []
+    decoder = json.JSONDecoder()
+    i = 0
+    while True:
+        start = text.find("{", i)
+        if start == -1:
+            break
+        try:
+            obj, end = decoder.raw_decode(text[start:])
+        except ValueError:
+            i = start + 1
+            continue
+        i = start + end
+        if isinstance(obj, dict) and obj.get("name") in KNOWN_TOOLS:
+            args = obj.get("parameters", obj.get("arguments", {}))
+            if isinstance(args, dict):
+                calls.append((obj["name"], args))
+    return calls
+
+
+def execute_call(name, args, tool_results):
+    if name == "calculate":
+        if operands_grounded(args, collect_numbers(tool_results)):
+            try:
+                return tools.calculate(**args)
+            except TypeError as exc:
+                return {"error": str(exc)}
+        return {"error": "a and b must be numbers copied from earlier tool results"}
+    try:
+        return REGISTRY[name](**args)
+    except Exception as exc:
+        return {"error": str(exc)}
+
+
+def run_agent(question, model=MODEL, max_steps=None):
+    if max_steps is None:
+        max_steps = 8 if os.environ.get("TOOLS_V") == "2" else 5
     messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": PROMPTS[os.environ.get("PROMPT_VARIANT", "v1")]},
         {"role": "user", "content": question},
     ]
     tool_results = []
-
+    repaired = 0
+    repair_on = os.environ.get("REPAIR") == "1"
     question_numbers = [float(t) for t in extract_numbers(question)]
-
     for _ in range(max_steps):
         response = ollama.chat(
             model=model,
@@ -115,49 +167,37 @@ def run_agent(question, model=MODEL, max_steps=5):
         )
         message = response.message
         messages.append(message)
-
-        if not message.tool_calls:
-            answer = message.content or ""
-            return {
-                "answer": answer,
-                "ungrounded": find_ungrounded(
-                    answer, collect_numbers(tool_results) + question_numbers
-                ),
-                "tool_results": tool_results,
-                "malformed_tool_call": '"name"' in answer and '"parameters"' in answer,
-            }
-
-        for call in message.tool_calls:
-            name = call.function.name
-            args = dict(call.function.arguments)
-
-            if name == "calculate":
-                if operands_grounded(args, collect_numbers(tool_results)):
-                    result = tools.calculate(**args)
-                else:
-                    result = {
-                        "error": "a and b must be numbers copied from earlier tool results"
-                    }
-            else:
-                try:
-                    result = REGISTRY[name](**args)
-                except Exception as exc:
-                    result = {"error": str(exc)}
-
-            tool_results.append(result)
-            messages.append(
-                {
-                    "role": "tool",
-                    "tool_name": name,
-                    "content": json.dumps(result),
-                }
-            )
-
+        if message.tool_calls:
+            for call in message.tool_calls:
+                name = call.function.name
+                result = execute_call(name, dict(call.function.arguments), tool_results)
+                tool_results.append(result)
+                messages.append({"role": "tool", "tool_name": name, "content": json.dumps(result)})
+            continue
+        answer = message.content or ""
+        text_calls = parse_text_tool_calls(answer) if repair_on else []
+        if text_calls:
+            for name, args in text_calls:
+                result = execute_call(name, args, tool_results)
+                tool_results.append(result)
+                repaired += 1
+                messages.append({"role": "tool", "tool_name": name, "content": json.dumps(result)})
+            continue
+        return {
+            "answer": answer,
+            "ungrounded": find_ungrounded(
+                answer, collect_numbers(tool_results) + question_numbers
+            ),
+            "tool_results": tool_results,
+            "malformed_tool_call": '"name"' in answer and '"parameters"' in answer,
+            "repaired_calls": repaired,
+        }
     return {
         "answer": "",
         "ungrounded": [],
         "tool_results": tool_results,
         "malformed_tool_call": False,
+        "repaired_calls": repaired,
         "error": "max steps reached",
     }
 
