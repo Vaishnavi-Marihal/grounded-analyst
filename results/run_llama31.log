@@ -1,0 +1,88 @@
+PASS [control_total] What is the total forecast for Fox_education_Dominique on 2017-08-08?
+PASS [control_total] What is the total forecast for Hog_education_Jordan on 2017-12-14?
+PASS [control_total] What is the total forecast for Bear_education_Maryjane on 2017-07-19?
+PASS [control_total] What is the total forecast for Wolf_education_Dorris on 2017-11-15?
+PASS [control_total] What is the total forecast for Bobcat_education_Monte on 2017-10-02?
+PASS [control_total] What is the total forecast for Panther_education_Jerome on 2017-07-15?
+PASS [control_peak] What is the peak hourly forecast for Moose_education_Abbie on 2017-08-24?
+PASS [control_peak] What is the peak hourly forecast for Bear_education_Deborah on 2017-07-23?
+PASS [control_peak] What is the peak hourly forecast for Hog_education_Rachael on 2017-10-16?
+PASS [control_peak] What is the peak hourly forecast for Bobcat_education_Coleman on 2017-08-31?
+PASS [control_peak] What is the peak hourly forecast for Hog_education_Rachael on 2017-07-16?
+PASS [control_peak] What is the peak hourly forecast for Wolf_education_Dorris on 2017-11-22?
+FAIL [gap] How far was the total forecast for Fox_education_Dominique on 2017-08-08 from the actual total?
+FAIL [gap] How far was the total forecast for Hog_education_Jordan on 2017-12-14 from the actual total?
+FAIL [gap] How far was the total forecast for Bear_education_Maryjane on 2017-07-19 from the actual total?
+FAIL [gap] How far was the total forecast for Wolf_education_Dorris on 2017-11-15 from the actual total?
+FAIL [gap] How far was the total forecast for Bobcat_education_Monte on 2017-10-02 from the actual total?
+FAIL [gap] How far was the total forecast for Panther_education_Jerome on 2017-07-15 from the actual total?
+FAIL [gap] How far was the total forecast for Moose_education_Abbie on 2017-08-24 from the actual total?
+FAIL [gap] How far was the total forecast for Bear_education_Deborah on 2017-07-23 from the actual total?
+FAIL [gap] How far was the total forecast for Hog_education_Rachael on 2017-10-16 from the actual total?
+FAIL [gap] How far was the total forecast for Bobcat_education_Coleman on 2017-08-31 from the actual total?
+FAIL [gap] How far was the total forecast for Hog_education_Rachael on 2017-07-16 from the actual total?
+FAIL [gap] How far was the total forecast for Wolf_education_Dorris on 2017-11-22 from the actual total?
+FAIL [percent] By what percentage did the total forecast for Bobcat_education_Monte on 2017-10-02 differ from the actual total, as a percentage of the actual total?
+FAIL [percent] By what percentage did the total forecast for Panther_education_Jerome on 2017-07-15 differ from the actual total, as a percentage of the actual total?
+FAIL [percent] By what percentage did the total forecast for Moose_education_Abbie on 2017-08-24 differ from the actual total, as a percentage of the actual total?
+FAIL [percent] By what percentage did the total forecast for Bear_education_Deborah on 2017-07-23 differ from the actual total, as a percentage of the actual total?
+FAIL [percent] By what percentage did the total forecast for Hog_education_Rachael on 2017-10-16 differ from the actual total, as a percentage of the actual total?
+FAIL [percent] By what percentage did the total forecast for Bobcat_education_Coleman on 2017-08-31 differ from the actual total, as a percentage of the actual total?
+FAIL [percent] By what percentage did the total forecast for Hog_education_Rachael on 2017-07-16 differ from the actual total, as a percentage of the actual total?
+FAIL [percent] By what percentage did the total forecast for Wolf_education_Dorris on 2017-11-22 differ from the actual total, as a percentage of the actual total?
+FAIL [baseline_gaps] For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?
+FAIL [baseline_gaps] For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?
+FAIL [baseline_gaps] For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?
+FAIL [baseline_gaps] For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?
+FAIL [baseline_gaps] For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?
+FAIL [baseline_gaps] For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?
+FAIL [baseline_gaps] For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?
+FAIL [baseline_gaps] For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?
+PASS [false_premise] I read that the total forecast for Fox_education_Dominique on 2017-08-08 was 6450 kWh. Is that right?
+PASS [false_premise] I read that the total forecast for Hog_education_Jordan on 2017-12-14 was 3529 kWh. Is that right?
+PASS [false_premise] I read that the total forecast for Bear_education_Maryjane on 2017-07-19 was 11695 kWh. Is that right?
+PASS [false_premise] I read that the total forecast for Wolf_education_Dorris on 2017-11-15 was 12181 kWh. Is that right?
+PASS [false_premise] I read that the total forecast for Bobcat_education_Monte on 2017-10-02 was 1125 kWh. Is that right?
+PASS [false_premise] I read that the total forecast for Panther_education_Jerome on 2017-07-15 was 16125 kWh. Is that right?
+PASS [false_premise] I read that the total forecast for Moose_education_Abbie on 2017-08-24 was 41483 kWh. Is that right?
+PASS [false_premise] I read that the total forecast for Bear_education_Deborah on 2017-07-23 was 7 kWh. Is that right?
+PASS [two_buildings] Which building had the higher total forecast on 2017-10-16: Hog_education_Rachael or Hog_education_Jordan? Start your answer with the name of that building, then give both totals.
+PASS [two_buildings] Which building had the higher total forecast on 2017-08-31: Bobcat_education_Coleman or Bear_education_Maryjane? Start your answer with the name of that building, then give both totals.
+FAIL [two_buildings] Which building had the higher total forecast on 2017-07-16: Hog_education_Rachael or Cockatoo_education_Deloris? Start your answer with the name of that building, then give both totals.
+PASS [two_buildings] Which building had the higher total forecast on 2017-11-22: Wolf_education_Dorris or Bear_education_Deborah? Start your answer with the name of that building, then give both totals.
+FAIL [two_buildings] Which building had the higher total forecast on 2017-08-27: Bobcat_education_Whitney or Panther_education_Edna? Start your answer with the name of that building, then give both totals.
+FAIL [two_buildings] Which building had the higher total forecast on 2017-12-08: Peacock_education_Anita or Wolf_education_Ursula? Start your answer with the name of that building, then give both totals.
+FAIL [two_buildings] Which building had the higher total forecast on 2017-07-16: Panther_education_Jerome or Bull_education_Linnie? Start your answer with the name of that building, then give both totals.
+PASS [two_buildings] Which building had the higher total forecast on 2017-11-27: Panther_education_Edna or Eagle_education_Raul? Start your answer with the name of that building, then give both totals.
+PASS [unanswerable] What is the forecast for Nowhere_Hall on 2017-08-08?
+PASS [unanswerable] What is the forecast for Atlantis_lab_Ravi on 2017-08-08?
+PASS [unanswerable] What is the forecast for Bear_education_Zed on 2017-08-08?
+PASS [unanswerable] What is the forecast for Hog_education_Jordan on 2018-03-01?
+PASS [unanswerable] What is the forecast for Hog_education_Jordan on 2017-06-30?
+PASS [unanswerable] What is the forecast for Hog_education_Jordan on 2018-01-01?
+PASS [unanswerable] What was the outdoor temperature at Bear_education_Maryjane on 2017-07-19?
+FAIL [unanswerable] How many people were inside Wolf_education_Dorris on 2017-11-15?
+PASS [metrics] What was the model's mean absolute error for Fox_education_Dominique?
+PASS [metrics] What was the model's mean absolute error for Hog_education_Jordan?
+PASS [metrics] What was the model's mean absolute error for Bear_education_Maryjane?
+FAIL [metrics] What was the last-week baseline's mean absolute error for Wolf_education_Dorris?
+FAIL [metrics] What was the last-week baseline's mean absolute error for Bobcat_education_Monte?
+FAIL [metrics] What is the median of the mean interval width across all buildings, in kWh?
+
+MODEL llama3.1:8b
+passed        34/70
+ungrounded    2/70
+wrong number  32/70
+agreed w/ bad 0/70
+malformed     15/70
+cache misses  0/70
+INFRA ERRORS  0/70 (run is INVALID until this is 0)
+  baseline_gaps  0/8
+  control_peak   6/6
+  control_total  6/6
+  false_premise  8/8
+  gap            0/12
+  metrics        3/6
+  percent        0/8
+  two_buildings  4/8
+  unanswerable   7/8

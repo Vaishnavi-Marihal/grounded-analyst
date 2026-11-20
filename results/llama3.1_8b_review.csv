@@ -1,0 +1,42 @@
+kind,question,answer,auto_passed,manual_ok
+two_buildings,"Which building had the higher total forecast on 2017-08-31: Bobcat_education_Coleman or Bear_education_Maryjane? Start your answer with the name of that building, then give both totals.","Bear_education_Maryjane had a total forecast of 9150.6 kWh, while Bobcat_education_Coleman had a total forecast of 3260.0 kWh.",True,
+two_buildings,"Which building had the higher total forecast on 2017-12-08: Peacock_education_Anita or Wolf_education_Ursula? Start your answer with the name of that building, then give both totals.","Peacock_education_Anita had a total forecast of 242.9 kWh, while Wolf_education_Ursula had a total forecast of 3233.5 kWh.",False,
+control_total,What is the total forecast for Panther_education_Jerome on 2017-07-15?,The total forecast for Panther_education_Jerome on 2017-07-15 is 11517.8 kWh.,True,
+baseline_gaps,"For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?","To find the difference between the forecast total and the actual total, we need to call the calculate tool with the numbers copied from the get_day_forecast tool result.
+
+{""name"": ""calculate"", ""parameters"": {""op"": ""subtract"", ""a"": 3425, ""b"": 3260}}",False,
+metrics,What was the model's mean absolute error for Hog_education_Jordan?,The model's mean absolute error for Hog_education_Jordan is 8.208.,True,
+unanswerable,What was the outdoor temperature at Bear_education_Maryjane on 2017-07-19?,The outdoor temperature at Bear_education_Maryjane on 2017-07-19 was not provided in the tool output.,True,
+two_buildings,"Which building had the higher total forecast on 2017-11-22: Wolf_education_Dorris or Bear_education_Deborah? Start your answer with the name of that building, then give both totals.","Wolf_education_Dorris had a total forecast of 9016.8 kWh, while Bear_education_Deborah had a total forecast of 13.9 kWh.",True,
+unanswerable,What is the forecast for Bear_education_Zed on 2017-08-08?,"The building ""Bear_education_Zed"" does not exist in the database.",True,
+two_buildings,"Which building had the higher total forecast on 2017-07-16: Hog_education_Rachael or Cockatoo_education_Deloris? Start your answer with the name of that building, then give both totals.",Cockatoo_education_Deloris had a total forecast of 1567.5 kWh on 2017-07-16. Hog_education_Rachael had a total forecast of 2346.8 kWh on 2017-07-16.,False,
+metrics,What was the last-week baseline's mean absolute error for Bobcat_education_Monte?,The last-week baseline's mean absolute error for Bobcat_education_Monte is 2.3229.,False,
+gap,How far was the total forecast for Bear_education_Deborah on 2017-07-23 from the actual total?,"It seems that the tools cannot answer the question without specific numbers. However, I can try to provide a more detailed response.
+
+To answer the question, we would need to call the ""get_day_forecast"" tool for the actual total on 2017-07-23 and compare it to the forecasted total. However, the ""get_day_forecast"" tool requires a building ID and a date, but it does not provide a numerical result that can be used as input for the ""calculate"" tool.
+
+If you can provide the actual total for Bear_education_Deborah on 2017-07-23, I can try to help you calculate the difference between the forecast and the actual total.",False,
+percent,"By what percentage did the total forecast for Hog_education_Rachael on 2017-07-16 differ from the actual total, as a percentage of the actual total?","To answer the question, I need to call the get_day_forecast tool for Hog_education_Rachael on 2017-07-16 and get the actual total for that day. Then I can call the calculate tool with the forecast and actual total to get the percentage difference.
+
+First, I will call the get_day_forecast tool for Hog_education_Rachael on 2017-07-16.
+
+{""name"": ""get_day_forecast"", ""parameters"": {""df"": ""Hog_education_Rachael"", ""date"": ""2017-07-16""}}",False,
+gap,How far was the total forecast for Hog_education_Rachael on 2017-07-16 from the actual total?,"It seems that the tools cannot answer the question without specific numbers. However, I can try to provide a more detailed response.
+
+To answer the question, we would need to call the ""get_day_forecast"" tool for the actual total on 2017-07-16 and compare it to the forecasted total. However, the ""get_day_forecast"" tool requires a building ID and a date, but it does not provide a numerical result that can be used as input for the ""calculate"" tool.
+
+If you can provide the actual total for Hog_education_Rachael on 2017-07-16, I can try to help you calculate the difference between the forecast and the actual total.",False,
+baseline_gaps,"For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?","To find the difference between the forecast total and the actual total, we need to call the calculate tool with the numbers copied from the get_day_forecast tool results.
+
+{""name"": ""calculate"", ""parameters"": {""op"": ""subtract"", ""a"": 242.9, ""b"": 256.9}}",False,
+gap,How far was the total forecast for Hog_education_Jordan on 2017-12-14 from the actual total?,"It seems that the tools cannot answer the question without specific numbers. However, I can try to provide a more detailed response.
+
+To answer the question, we would need to call the ""get_day_forecast"" tool for Hog_education_Jordan on 2017-12-14 to get the forecasted total, and then call the ""get_day_forecast"" tool again to get the actual total for the same date. We would then need to call the ""calculate"" tool with the forecasted total and the actual total as input to get the difference and percentage difference.
+
+However, since the tools cannot answer the question directly, I will provide a general outline of the steps that would be needed to answer the question.
+
+1. Call the ""get_day_forecast"" tool for Hog_education_Jordan on 2017-12-14 to get the forecasted total.
+2. Call the ""get_day_forecast"" tool again for Hog_education_Jordan on 2017-12-14 to get the actual total.
+3. Call the ""calculate"" tool with the forecasted total and the actual total as input to get the difference and percentage difference.
+
+Without the specific numbers, I cannot provide a more detailed answer.",False,

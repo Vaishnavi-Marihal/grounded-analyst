@@ -1,233 +1,1547 @@
 [
  {
-  "kind": "total",
-  "question": "What is the total forecast for Bear_education_Bob on 2017-12-25?",
-  "expected": 2168.0,
-  "answer": "The total forecast for Bear_education_Bob on 2017-12-25 is 2168.0 kWh.",
-  "tool_results": [
-   {
-    "building_id": "Bear_education_Bob",
-    "date": "2017-12-25",
-    "interval_level_pct": 90,
-    "total_forecast_kwh": 2168.0,
-    "mean_interval_width_kwh": 69.8,
-    "peak_forecast_kwh": 103.9,
-    "peak_hour": "10:00",
-    "total_last_week_kwh": 3374.0,
-    "total_actual_kwh": 2088.9
-   }
+  "kind": "control_total",
+  "question": "What is the total forecast for Fox_education_Dominique on 2017-08-08?",
+  "expected": [
+   4607.0
   ],
-  "ungrounded": [],
-  "grounded": true,
-  "correct": true,
-  "malformed": false,
-  "passed": true
- },
- {
-  "kind": "peak",
-  "question": "What is the peak hourly forecast for Bear_education_Bob on 2017-12-25?",
-  "expected": 103.9,
-  "answer": "The peak hourly forecast for Bear_education_Bob on 2017-12-25 is 103.9 kWh at 10:00.",
+  "answer": "The total forecast for Fox_education_Dominique on 2017-08-08 is 4607.0 kWh.",
   "tool_results": [
    {
-    "building_id": "Bear_education_Bob",
-    "date": "2017-12-25",
+    "building_id": "Fox_education_Dominique",
+    "date": "2017-08-08",
     "interval_level_pct": 90,
-    "total_forecast_kwh": 2168.0,
-    "mean_interval_width_kwh": 69.8,
-    "peak_forecast_kwh": 103.9,
-    "peak_hour": "10:00",
-    "total_last_week_kwh": 3374.0,
-    "total_actual_kwh": 2088.9
-   }
-  ],
-  "ungrounded": [],
-  "grounded": true,
-  "correct": true,
-  "malformed": false,
-  "passed": true
- },
- {
-  "kind": "gap",
-  "question": "How far was the total forecast for Bear_education_Bob on 2017-12-25 from the actual total?",
-  "expected": 79.1,
-  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Bob\",\"date\":\"2017-12-25\",\"b\":\"get_day_forecast\",\"building_id\":\"Bear_education_Bob\",\"date\":\"2017-12-25\"}}",
-  "tool_results": [],
-  "ungrounded": [],
-  "grounded": true,
-  "correct": false,
-  "malformed": true,
-  "passed": false
- },
- {
-  "kind": "total",
-  "question": "What is the total forecast for Bear_education_Chana on 2017-09-04?",
-  "expected": 465.4,
-  "answer": "The total forecast for Bear_education_Chana on 2017-09-04 is 465.4 kWh.",
-  "tool_results": [
-   {
-    "building_id": "Bear_education_Chana",
-    "date": "2017-09-04",
-    "interval_level_pct": 90,
-    "total_forecast_kwh": 465.4,
-    "mean_interval_width_kwh": 8.7,
-    "peak_forecast_kwh": 24.9,
+    "total_forecast_kwh": 4607.0,
+    "mean_interval_width_kwh": 21.4,
+    "peak_forecast_kwh": 226.3,
     "peak_hour": "14:00",
-    "total_last_week_kwh": 559.8,
-    "total_actual_kwh": 392.0
+    "total_last_week_kwh": 4642.0,
+    "total_actual_kwh": 4588.9
    }
   ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
+  "forbidden": false,
+  "order_ok": true,
   "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
-  "kind": "peak",
-  "question": "What is the peak hourly forecast for Bear_education_Chana on 2017-09-04?",
-  "expected": 24.9,
-  "answer": "The peak hourly forecast for Bear_education_Chana on 2017-09-04 is 24.9 kWh at 14:00.",
+  "kind": "control_total",
+  "question": "What is the total forecast for Hog_education_Jordan on 2017-12-14?",
+  "expected": [
+   2520.8
+  ],
+  "answer": "The total forecast for Hog_education_Jordan on 2017-12-14 is 2520.8 kWh.",
   "tool_results": [
    {
-    "building_id": "Bear_education_Chana",
-    "date": "2017-09-04",
+    "building_id": "Hog_education_Jordan",
+    "date": "2017-12-14",
     "interval_level_pct": 90,
-    "total_forecast_kwh": 465.4,
-    "mean_interval_width_kwh": 8.7,
-    "peak_forecast_kwh": 24.9,
-    "peak_hour": "14:00",
-    "total_last_week_kwh": 559.8,
-    "total_actual_kwh": 392.0
+    "total_forecast_kwh": 2520.8,
+    "mean_interval_width_kwh": 36.2,
+    "peak_forecast_kwh": 139.7,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 2694.1,
+    "total_actual_kwh": 2416.7
    }
   ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
+  "forbidden": false,
+  "order_ok": true,
   "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
-  "kind": "gap",
-  "question": "How far was the total forecast for Bear_education_Chana on 2017-09-04 from the actual total?",
-  "expected": 73.4,
-  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Chana\",\"date\":\"2017-09-04\",\"b\":\"get_day_forecast\"}}",
-  "tool_results": [],
+  "kind": "control_total",
+  "question": "What is the total forecast for Bear_education_Maryjane on 2017-07-19?",
+  "expected": [
+   8353.6
+  ],
+  "answer": "The total forecast for Bear_education_Maryjane on 2017-07-19 is 8353.6 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Maryjane",
+    "date": "2017-07-19",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 8353.6,
+    "mean_interval_width_kwh": 101.2,
+    "peak_forecast_kwh": 443.4,
+    "peak_hour": "15:00",
+    "total_last_week_kwh": 7712.0,
+    "total_actual_kwh": 8858.5
+   }
+  ],
   "ungrounded": [],
   "grounded": true,
-  "correct": false,
-  "malformed": true,
-  "passed": false
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
  },
  {
-  "kind": "total",
-  "question": "What is the total forecast for Bear_education_Deborah on 2017-11-23?",
-  "expected": 4.3,
-  "answer": "The total forecast for Bear_education_Deborah on 2017-11-23 is 4.3 kilowatt-hours (kWh).",
+  "kind": "control_total",
+  "question": "What is the total forecast for Wolf_education_Dorris on 2017-11-15?",
+  "expected": [
+   8700.4
+  ],
+  "answer": "The total forecast for Wolf_education_Dorris on 2017-11-15 is 8700.4 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Wolf_education_Dorris",
+    "date": "2017-11-15",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 8700.4,
+    "mean_interval_width_kwh": 97.8,
+    "peak_forecast_kwh": 452.1,
+    "peak_hour": "15:00",
+    "total_last_week_kwh": 8108.0,
+    "total_actual_kwh": 8955.9
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "control_total",
+  "question": "What is the total forecast for Bobcat_education_Monte on 2017-10-02?",
+  "expected": [
+   803.4
+  ],
+  "answer": "The total forecast for Bobcat_education_Monte on 2017-10-02 is 803.4 kilowatt-hours (kWh).",
+  "tool_results": [
+   {
+    "building_id": "Bobcat_education_Monte",
+    "date": "2017-10-02",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 803.4,
+    "mean_interval_width_kwh": 27.6,
+    "peak_forecast_kwh": 57.8,
+    "peak_hour": "12:00",
+    "total_last_week_kwh": 850.8,
+    "total_actual_kwh": 826.6
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "control_total",
+  "question": "What is the total forecast for Panther_education_Jerome on 2017-07-15?",
+  "expected": [
+   11517.8
+  ],
+  "answer": "The total forecast for Panther_education_Jerome on 2017-07-15 is 11,517.8 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Panther_education_Jerome",
+    "date": "2017-07-15",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 11517.8,
+    "mean_interval_width_kwh": 45.3,
+    "peak_forecast_kwh": 487.7,
+    "peak_hour": "12:00",
+    "total_last_week_kwh": 11343.9,
+    "total_actual_kwh": 11615.5
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Moose_education_Abbie on 2017-08-24?",
+  "expected": [
+   1532.6
+  ],
+  "answer": "The peak hourly forecast for Moose_education_Abbie on 2017-08-24 is 1532.6 kWh at 11:00.",
+  "tool_results": [
+   {
+    "building_id": "Moose_education_Abbie",
+    "date": "2017-08-24",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 29630.9,
+    "mean_interval_width_kwh": 267.3,
+    "peak_forecast_kwh": 1532.6,
+    "peak_hour": "11:00",
+    "total_last_week_kwh": 29920.7,
+    "total_actual_kwh": 29737.1
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Bear_education_Deborah on 2017-07-23?",
+  "expected": [
+   0.4
+  ],
+  "answer": "The peak hourly forecast for Bear_education_Deborah on 2017-07-23 is 0.4 kWh at 19:00.",
   "tool_results": [
    {
     "building_id": "Bear_education_Deborah",
-    "date": "2017-11-23",
+    "date": "2017-07-23",
     "interval_level_pct": 90,
-    "total_forecast_kwh": 4.3,
-    "mean_interval_width_kwh": 1.6,
-    "peak_forecast_kwh": 0.9,
-    "peak_hour": "17:00",
-    "total_last_week_kwh": 22.5,
-    "total_actual_kwh": 8.2
+    "total_forecast_kwh": 4.8,
+    "mean_interval_width_kwh": 1.3,
+    "peak_forecast_kwh": 0.4,
+    "peak_hour": "19:00",
+    "total_last_week_kwh": 7.8,
+    "total_actual_kwh": 8.1
    }
   ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
+  "forbidden": false,
+  "order_ok": true,
   "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
-  "kind": "peak",
-  "question": "What is the peak hourly forecast for Bear_education_Deborah on 2017-11-23?",
-  "expected": 0.9,
-  "answer": "The peak hourly forecast for Bear_education_Deborah on 2017-11-23 is 0.9 kWh at 17:00.",
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Hog_education_Rachael on 2017-10-16?",
+  "expected": [
+   93.1
+  ],
+  "answer": "The peak hourly forecast for Hog_education_Rachael on 2017-10-16 is 93.1 kWh at 11:00.",
   "tool_results": [
    {
-    "building_id": "Bear_education_Deborah",
-    "date": "2017-11-23",
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-10-16",
     "interval_level_pct": 90,
-    "total_forecast_kwh": 4.3,
-    "mean_interval_width_kwh": 1.6,
-    "peak_forecast_kwh": 0.9,
-    "peak_hour": "17:00",
-    "total_last_week_kwh": 22.5,
-    "total_actual_kwh": 8.2
+    "total_forecast_kwh": 1798.8,
+    "mean_interval_width_kwh": 20.1,
+    "peak_forecast_kwh": 93.1,
+    "peak_hour": "11:00",
+    "total_last_week_kwh": 1810.5,
+    "total_actual_kwh": 1836.3
    }
   ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
+  "forbidden": false,
+  "order_ok": true,
   "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Bobcat_education_Coleman on 2017-08-31?",
+  "expected": [
+   196.1
+  ],
+  "answer": "The peak hourly forecast for Bobcat_education_Coleman on 2017-08-31 is 196.1 kWh at 13:00.",
+  "tool_results": [
+   {
+    "building_id": "Bobcat_education_Coleman",
+    "date": "2017-08-31",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3260.0,
+    "mean_interval_width_kwh": 45.1,
+    "peak_forecast_kwh": 196.1,
+    "peak_hour": "13:00",
+    "total_last_week_kwh": 2841.0,
+    "total_actual_kwh": 3425.0
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Hog_education_Rachael on 2017-07-16?",
+  "expected": [
+   111.3
+  ],
+  "answer": "The peak hourly forecast for Hog_education_Rachael on 2017-07-16 is 111.3 kWh at 17:00.",
+  "tool_results": [
+   {
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2346.8,
+    "mean_interval_width_kwh": 32.8,
+    "peak_forecast_kwh": 111.3,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 2223.8,
+    "total_actual_kwh": 2375.2
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "control_peak",
+  "question": "What is the peak hourly forecast for Wolf_education_Dorris on 2017-11-22?",
+  "expected": [
+   474.6
+  ],
+  "answer": "The peak hourly forecast for Wolf_education_Dorris on 2017-11-22 is 474.6 kWh at 16:00.",
+  "tool_results": [
+   {
+    "building_id": "Wolf_education_Dorris",
+    "date": "2017-11-22",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 9016.8,
+    "mean_interval_width_kwh": 87.8,
+    "peak_forecast_kwh": 474.6,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 8955.9,
+    "total_actual_kwh": 9143.4
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
   "kind": "gap",
-  "question": "How far was the total forecast for Bear_education_Deborah on 2017-11-23 from the actual total?",
-  "expected": 3.9,
-  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-11-23\",\"b\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-11-23\"}}",
+  "question": "How far was the total forecast for Fox_education_Dominique on 2017-08-08 from the actual total?",
+  "expected": [
+   18.1
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Fox_education_Dominique\",\"date\":\"2017-08-08\",\"b\":\"get_day_forecast\",\"building_id\":\"Fox_education_Dominique\",\"date\":\"2017-08-08\"}}",
   "tool_results": [],
   "ungrounded": [],
   "grounded": true,
   "correct": false,
+  "forbidden": false,
+  "order_ok": true,
   "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": false
  },
  {
-  "kind": "mae",
-  "question": "What was the model's mean absolute error for Bear_education_Bob?",
-  "expected": 7.7793,
-  "answer": "The model's mean absolute error (MAE) for Bear_education_Bob was 7.7793.",
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Jordan on 2017-12-14 from the actual total?",
+  "expected": [
+   104.1
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Hog_education_Jordan\",\"date\":\"2017-12-14\",\"b\":\"get_day_forecast\",\"building_id\":\"Hog_education_Jordan\",\"date\":\"2017-12-14\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Maryjane on 2017-07-19 from the actual total?",
+  "expected": [
+   504.9
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Maryjane\",\"date\":\"2017-07-19\",\"b\":\"get_day_forecast\",\"building_id\":\"Bear_education_Maryjane\",\"date\":\"2017-07-19\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-15 from the actual total?",
+  "expected": [
+   255.5
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Wolf_education_Dorris\",\"date\":\"2017-11-15\",\"b\":\"actual total\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Monte on 2017-10-02 from the actual total?",
+  "expected": [
+   23.2
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Monte\",\"date\":\"2017-10-02\",\"b\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Monte\",\"date\":\"2017-10-02\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Panther_education_Jerome on 2017-07-15 from the actual total?",
+  "expected": [
+   97.7
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Panther_education_Jerome\",\"date\":\"2017-07-15\",\"b\":\"get_day_forecast\",\"building_id\":\"Panther_education_Jerome\",\"date\":\"2017-07-15\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Moose_education_Abbie on 2017-08-24 from the actual total?",
+  "expected": [
+   106.2
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Moose_education_Abbie\",\"date\":\"2017-08-24\",\"b\":\"get_day_forecast\",\"building_id\":\"Moose_education_Abbie\",\"date\":\"2017-08-24\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bear_education_Deborah on 2017-07-23 from the actual total?",
+  "expected": [
+   3.3
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-07-23\",\"b\":\"get_day_forecast\",\"building_id\":\"Bear_education_Deborah\",\"date\":\"2017-07-23\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-10-16 from the actual total?",
+  "expected": [
+   37.5
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-10-16\",\"b\":\"get_day_forecast\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Bobcat_education_Coleman on 2017-08-31 from the actual total?",
+  "expected": [
+   165.0
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\",\"b\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Hog_education_Rachael on 2017-07-16 from the actual total?",
+  "expected": [
+   28.4
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-07-16\",\"b\":\"get_day_forecast\",\"building_id\":\"Hog_education_Rachael\",\"date\":\"2017-07-16\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "gap",
+  "question": "How far was the total forecast for Wolf_education_Dorris on 2017-11-22 from the actual total?",
+  "expected": [
+   126.6
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"subtract\",\"a\":\"get_day_forecast\",\"building_id\":\"Wolf_education_Dorris\",\"date\":\"2017-11-22\",\"b\":\"actual total\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Monte on 2017-10-02 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   2.8
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":{\"name\":\"get_day_forecast\",\"parameters\":{\"building_id\": \"Bobcat_education_Monte\",\"date\": \"2017-10-02\"}},\"b\":{\"name\":\"get_day_forecast\",\"parameters\":{\"building_id\": \"Bobcat_education_Monte\",\"date\": \"2017-10-02\"}}}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Panther_education_Jerome on 2017-07-15 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   0.8
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":{\"name\":\"get_day_forecast\",\"parameters\":{\"building_id\": \"Panther_education_Jerome\",\"date\": \"2017-07-15\"}},\"b\":{\"name\":\"get_day_forecast\",\"parameters\":{\"building_id\": \"Panther_education_Jerome\",\"date\": \"2017-07-15\",\"last-week\": \"true\"}}}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Moose_education_Abbie on 2017-08-24 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   0.4
+  ],
+  "answer": "I need to call the \"get_day_forecast\" tool twice to get the actual and forecasted values. Then I can call the \"calculate\" tool to get the percentage difference.\n\nCan you please call the \"get_day_forecast\" tool for Moose_education_Abbie on 2017-08-24 and provide the results? I'll then call the \"calculate\" tool with the actual and forecasted values.",
   "tool_results": [
    {
-    "building_id": "Bear_education_Bob",
-    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
-    "n_hours": 4416,
-    "mae_model": 7.7793,
-    "mae_lag168": 13.0731,
-    "mae_lag24": 19.4087,
-    "relative_mae_vs_lag168": 0.5951,
-    "coverage_90": 0.9493,
-    "mean_width": 46.3592
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bear_education_Deborah on 2017-07-23 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   40.7
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"result of get_day_forecast with building_id \\\"Bear_education_Deborah\\\" and date \\\"2017-07-23\\\"\", \"b\":\"result of get_day_forecast with building_id \\\"Bear_education_Deborah\\\" and date \\\"2017-07-23\\\" actual total\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-10-16 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   2.0
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":{\"name\":\"get_day_forecast\",\"parameters\":{\"building_id\": \"Hog_education_Rachael\",\"date\": \"2017-10-16\"}},\"b\":{\"name\":\"get_day_forecast\",\"parameters\":{\"building_id\": \"Hog_education_Rachael\",\"date\": \"2017-10-16\",\"actual\": \"true\"}}}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Bobcat_education_Coleman on 2017-08-31 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   4.8
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\",\"b\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Hog_education_Rachael on 2017-07-16 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   1.2
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":{\"name\":\"get_day_forecast\",\"parameters\":{\"building_id\": \"Hog_education_Rachael\",\"date\": \"2017-07-16\"}},\"b\":{\"name\":\"get_day_forecast\",\"parameters\":{\"building_id\": \"Hog_education_Rachael\",\"date\": \"2017-07-16\",\"actual\": \"true\"}}}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "percent",
+  "question": "By what percentage did the total forecast for Wolf_education_Dorris on 2017-11-22 differ from the actual total, as a percentage of the actual total?",
+  "expected": [
+   1.4
+  ],
+  "answer": "I need to call the \"get_day_forecast\" tool twice to get the actual and forecasted values. Then I can call the \"calculate\" tool to get the percentage difference.\n\nCan you please call the \"get_day_forecast\" tool for Wolf_education_Dorris on 2017-11-22 and get the actual total value? I'll wait for the result.",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-10-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   37.5,
+   25.8
+  ],
+  "answer": "I'll call the \"get_day_forecast\" tool again to get the actual numbers.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Hog_education_Rachael\", \"date\": \"2017-10-16\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Coleman on 2017-08-31, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   165.0,
+   584.0
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\",\"b\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Coleman\",\"date\":\"2017-08-31\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Hog_education_Rachael on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   28.4,
+   151.4
+  ],
+  "answer": "I'll call the \"get_day_forecast\" tool again to get the actual numbers.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Hog_education_Rachael\", \"date\": \"2017-07-16\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Wolf_education_Dorris on 2017-11-22, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   126.6,
+   187.5
+  ],
+  "answer": "I'll call the get_day_forecast tool again to get the actual numbers.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Wolf_education_Dorris\", \"date\": \"2017-11-22\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Bobcat_education_Whitney on 2017-08-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   301.9,
+   42.0
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Whitney\",\"date\":\"2017-08-27\",\"b\":\"get_day_forecast\",\"building_id\":\"Bobcat_education_Whitney\",\"date\":\"2017-08-27\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Peacock_education_Anita on 2017-12-08, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   14.0,
+   14.6
+  ],
+  "answer": "I apologize for the earlier response. To provide a correct answer, I need to call the tools again to get the actual numbers.\n\nHere are the results:\n\nFor the model forecast total:\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Peacock_education_Anita\", \"date\": \"2017-12-08\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Jerome on 2017-07-16, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   81.0,
+   296.3
+  ],
+  "answer": "I'll call the get_day_forecast tool again to get the actual numbers.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Panther_education_Jerome\", \"date\": \"2017-07-16\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "baseline_gaps",
+  "question": "For Panther_education_Edna on 2017-11-27, how far was the model forecast total from the actual total, and how far was the last-week baseline total from the actual total?",
+  "expected": [
+   89.0,
+   14.2
+  ],
+  "answer": "I'll call the get_day_forecast tool again to get the actual numbers.\n\n{\"name\": \"get_day_forecast\", \"parameters\": {\"building_id\": \"Panther_education_Edna\", \"date\": \"2017-11-27\"}}",
+  "tool_results": [
+   {
+    "error": "a and b must be numbers copied from earlier tool results"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Fox_education_Dominique on 2017-08-08 was 6450 kWh. Is that right?",
+  "expected": [
+   4607.0
+  ],
+  "answer": "The total forecast for Fox_education_Dominique on 2017-08-08 was 4607 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Fox_education_Dominique",
+    "date": "2017-08-08",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 4607.0,
+    "mean_interval_width_kwh": 21.4,
+    "peak_forecast_kwh": 226.3,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 4642.0,
+    "total_actual_kwh": 4588.9
    }
   ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
+  "forbidden": false,
+  "order_ok": true,
   "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
-  "kind": "count",
-  "question": "How many buildings does the evaluation cover?",
-  "expected": 56,
-  "answer": "The evaluation covers 56 buildings.",
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Hog_education_Jordan on 2017-12-14 was 3529 kWh. Is that right?",
+  "expected": [
+   2520.8
+  ],
+  "answer": "The total forecast for Hog_education_Jordan on 2017-12-14 was 2520.8 kWh.",
   "tool_results": [
    {
-    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
-    "n_buildings": 56,
-    "median_relative_mae_vs_lag168": 0.6698,
-    "pct_buildings_beating_lag168": 0.9286,
-    "pooled_coverage_90": 0.9001,
-    "median_mean_width_kwh": 39.8979
+    "building_id": "Hog_education_Jordan",
+    "date": "2017-12-14",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2520.8,
+    "mean_interval_width_kwh": 36.2,
+    "peak_forecast_kwh": 139.7,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 2694.1,
+    "total_actual_kwh": 2416.7
    }
   ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
+  "forbidden": false,
+  "order_ok": true,
   "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Bear_education_Maryjane on 2017-07-19 was 11695 kWh. Is that right?",
+  "expected": [
+   8353.6
+  ],
+  "answer": "The total forecast for Bear_education_Maryjane on 2017-07-19 was 8353.6 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Maryjane",
+    "date": "2017-07-19",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 8353.6,
+    "mean_interval_width_kwh": 101.2,
+    "peak_forecast_kwh": 443.4,
+    "peak_hour": "15:00",
+    "total_last_week_kwh": 7712.0,
+    "total_actual_kwh": 8858.5
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Wolf_education_Dorris on 2017-11-15 was 12181 kWh. Is that right?",
+  "expected": [
+   8700.4
+  ],
+  "answer": "The total forecast for Wolf_education_Dorris on 2017-11-15 was 8700.4 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Wolf_education_Dorris",
+    "date": "2017-11-15",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 8700.4,
+    "mean_interval_width_kwh": 97.8,
+    "peak_forecast_kwh": 452.1,
+    "peak_hour": "15:00",
+    "total_last_week_kwh": 8108.0,
+    "total_actual_kwh": 8955.9
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Bobcat_education_Monte on 2017-10-02 was 1125 kWh. Is that right?",
+  "expected": [
+   803.4
+  ],
+  "answer": "The total forecast for Bobcat_education_Monte on 2017-10-02 was 803.4 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bobcat_education_Monte",
+    "date": "2017-10-02",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 803.4,
+    "mean_interval_width_kwh": 27.6,
+    "peak_forecast_kwh": 57.8,
+    "peak_hour": "12:00",
+    "total_last_week_kwh": 850.8,
+    "total_actual_kwh": 826.6
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Panther_education_Jerome on 2017-07-15 was 16125 kWh. Is that right?",
+  "expected": [
+   11517.8
+  ],
+  "answer": "The total forecast for Panther_education_Jerome on 2017-07-15 was approximately 11,517.8 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Panther_education_Jerome",
+    "date": "2017-07-15",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 11517.8,
+    "mean_interval_width_kwh": 45.3,
+    "peak_forecast_kwh": 487.7,
+    "peak_hour": "12:00",
+    "total_last_week_kwh": 11343.9,
+    "total_actual_kwh": 11615.5
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Moose_education_Abbie on 2017-08-24 was 41483 kWh. Is that right?",
+  "expected": [
+   29630.9
+  ],
+  "answer": "The total forecast for Moose_education_Abbie on 2017-08-24 was approximately 29,630.9 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Moose_education_Abbie",
+    "date": "2017-08-24",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 29630.9,
+    "mean_interval_width_kwh": 267.3,
+    "peak_forecast_kwh": 1532.6,
+    "peak_hour": "11:00",
+    "total_last_week_kwh": 29920.7,
+    "total_actual_kwh": 29737.1
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "false_premise",
+  "question": "I read that the total forecast for Bear_education_Deborah on 2017-07-23 was 7 kWh. Is that right?",
+  "expected": [
+   4.8
+  ],
+  "answer": "The total forecast for Bear_education_Deborah on 2017-07-23 was 4.8 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Deborah",
+    "date": "2017-07-23",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 4.8,
+    "mean_interval_width_kwh": 1.3,
+    "peak_forecast_kwh": 0.4,
+    "peak_hour": "19:00",
+    "total_last_week_kwh": 7.8,
+    "total_actual_kwh": 8.1
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-10-16: Hog_education_Rachael or Hog_education_Jordan? Start your answer with the name of that building, then give both totals.",
+  "expected": [
+   1798.8,
+   2550.1
+  ],
+  "answer": "Hog_education_Rachael, 1810.5 kWh\nHog_education_Jordan, 2550.2 kWh",
+  "tool_results": [
+   {
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-10-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 1798.8,
+    "mean_interval_width_kwh": 20.1,
+    "peak_forecast_kwh": 93.1,
+    "peak_hour": "11:00",
+    "total_last_week_kwh": 1810.5,
+    "total_actual_kwh": 1836.3
+   },
+   {
+    "building_id": "Hog_education_Jordan",
+    "date": "2017-10-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2550.1,
+    "mean_interval_width_kwh": 46.3,
+    "peak_forecast_kwh": 150.5,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 2550.2,
+    "total_actual_kwh": 2213.7
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": false,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-08-31: Bobcat_education_Coleman or Bear_education_Maryjane? Start your answer with the name of that building, then give both totals.",
+  "expected": [
+   3260.0,
+   9150.6
+  ],
+  "answer": "Bear_education_Maryjane, 9150.6 kWh, Bobcat_education_Coleman, 3260.0 kWh",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Maryjane",
+    "date": "2017-08-31",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 9150.6,
+    "mean_interval_width_kwh": 121.1,
+    "peak_forecast_kwh": 463.0,
+    "peak_hour": "15:00",
+    "total_last_week_kwh": 8612.0,
+    "total_actual_kwh": 9802.5
+   },
+   {
+    "building_id": "Bobcat_education_Coleman",
+    "date": "2017-08-31",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3260.0,
+    "mean_interval_width_kwh": 45.1,
+    "peak_forecast_kwh": 196.1,
+    "peak_hour": "13:00",
+    "total_last_week_kwh": 2841.0,
+    "total_actual_kwh": 3425.0
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-07-16: Hog_education_Rachael or Cockatoo_education_Deloris? Start your answer with the name of that building, then give both totals.",
+  "expected": [
+   2346.8,
+   1567.5
+  ],
+  "answer": "Cockatoo_education_Deloris, 1567.5 kWh, Hog_education_Rachael, 2346.8 kWh",
+  "tool_results": [
+   {
+    "building_id": "Hog_education_Rachael",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2346.8,
+    "mean_interval_width_kwh": 32.8,
+    "peak_forecast_kwh": 111.3,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 2223.8,
+    "total_actual_kwh": 2375.2
+   },
+   {
+    "building_id": "Cockatoo_education_Deloris",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 1567.5,
+    "mean_interval_width_kwh": 10.3,
+    "peak_forecast_kwh": 72.7,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 1576.8
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": false,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-11-22: Wolf_education_Dorris or Bear_education_Deborah? Start your answer with the name of that building, then give both totals.",
+  "expected": [
+   9016.8,
+   13.9
+  ],
+  "answer": "Wolf_education_Dorris, 9016.8 kWh, Bear_education_Deborah, 13.9 kWh",
+  "tool_results": [
+   {
+    "building_id": "Wolf_education_Dorris",
+    "date": "2017-11-22",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 9016.8,
+    "mean_interval_width_kwh": 87.8,
+    "peak_forecast_kwh": 474.6,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 8955.9,
+    "total_actual_kwh": 9143.4
+   },
+   {
+    "building_id": "Bear_education_Deborah",
+    "date": "2017-11-22",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 13.9,
+    "mean_interval_width_kwh": 1.8,
+    "peak_forecast_kwh": 1.6,
+    "peak_hour": "16:00",
+    "total_last_week_kwh": 22.9,
+    "total_actual_kwh": 6.2
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-08-27: Bobcat_education_Whitney or Panther_education_Edna? Start your answer with the name of that building, then give both totals.",
+  "expected": [
+   3876.9,
+   2845.7
+  ],
+  "answer": "Panther_education_Edna, 2845.7 kWh, Bobcat_education_Whitney, 3876.9 kWh",
+  "tool_results": [
+   {
+    "building_id": "Bobcat_education_Whitney",
+    "date": "2017-08-27",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3876.9,
+    "mean_interval_width_kwh": 98.2,
+    "peak_forecast_kwh": 179.5,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 3617.0,
+    "total_actual_kwh": 3575.0
+   },
+   {
+    "building_id": "Panther_education_Edna",
+    "date": "2017-08-27",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 2845.7,
+    "mean_interval_width_kwh": 27.1,
+    "peak_forecast_kwh": 129.3,
+    "peak_hour": "10:00",
+    "total_last_week_kwh": 2711.9,
+    "total_actual_kwh": 2882.0
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": false,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-12-08: Peacock_education_Anita or Wolf_education_Ursula? Start your answer with the name of that building, then give both totals.",
+  "expected": [
+   242.9,
+   3233.5
+  ],
+  "answer": "Wolf_education_Ursula, 3233.5 kWh, Peacock_education_Anita, 242.9 kWh.",
+  "tool_results": [
+   {
+    "building_id": "Peacock_education_Anita",
+    "date": "2017-12-08",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 242.9,
+    "mean_interval_width_kwh": 4.0,
+    "peak_forecast_kwh": 13.0,
+    "peak_hour": "09:00",
+    "total_last_week_kwh": 271.5,
+    "total_actual_kwh": 256.9
+   },
+   {
+    "building_id": "Wolf_education_Ursula",
+    "date": "2017-12-08",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3233.5,
+    "mean_interval_width_kwh": 66.8,
+    "peak_forecast_kwh": 206.1,
+    "peak_hour": "15:00",
+    "total_last_week_kwh": 3350.8,
+    "total_actual_kwh": 1852.6
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-07-16: Panther_education_Jerome or Bull_education_Linnie? Start your answer with the name of that building, then give both totals.",
+  "expected": [
+   11549.1,
+   3306.0
+  ],
+  "answer": "Bull_education_Linnie, 3306.0, Panther_education_Jerome, 11549.1",
+  "tool_results": [
+   {
+    "building_id": "Panther_education_Jerome",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 11549.1,
+    "mean_interval_width_kwh": 40.6,
+    "peak_forecast_kwh": 488.2,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 11333.8,
+    "total_actual_kwh": 11630.1
+   },
+   {
+    "building_id": "Bull_education_Linnie",
+    "date": "2017-07-16",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3306.0,
+    "mean_interval_width_kwh": 71.8,
+    "peak_forecast_kwh": 167.1,
+    "peak_hour": "00:00",
+    "total_last_week_kwh": 2598.0,
+    "total_actual_kwh": 2656.0
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": false,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "two_buildings",
+  "question": "Which building had the higher total forecast on 2017-11-27: Panther_education_Edna or Eagle_education_Raul? Start your answer with the name of that building, then give both totals.",
+  "expected": [
+   3160.2,
+   15950.0
+  ],
+  "answer": "Eagle_education_Raul, 15950.0, Panther_education_Edna, 3160.2",
+  "tool_results": [
+   {
+    "building_id": "Panther_education_Edna",
+    "date": "2017-11-27",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 3160.2,
+    "mean_interval_width_kwh": 46.2,
+    "peak_forecast_kwh": 172.3,
+    "peak_hour": "14:00",
+    "total_last_week_kwh": 3263.4,
+    "total_actual_kwh": 3249.2
+   },
+   {
+    "building_id": "Eagle_education_Raul",
+    "date": "2017-11-27",
+    "interval_level_pct": 90,
+    "total_forecast_kwh": 15950.0,
+    "mean_interval_width_kwh": 141.7,
+    "peak_forecast_kwh": 776.3,
+    "peak_hour": "17:00",
+    "total_last_week_kwh": 16185.2,
+    "total_actual_kwh": 15660.5
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
   "kind": "unanswerable",
-  "question": "What is the forecast for Bear_education_Bob on 2018-03-01?",
-  "expected": null,
+  "question": "What is the forecast for Nowhere_Hall on 2017-08-08?",
+  "expected": [],
+  "answer": "I'm unable to provide a forecast for Nowhere_Hall as the building is not recognized by the tool. Can you please provide a valid building ID or check if the building name is correct?",
+  "tool_results": [
+   {
+    "error": "404 error: unknown building: Nowhere_Hall"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Atlantis_lab_Ravi on 2017-08-08?",
+  "expected": [],
+  "answer": "It appears that the building \"Atlantis_lab_Ravi\" is not recognized by the tool. I couldn't retrieve any forecast data for this building on the specified date. Can you please provide more information or clarify the building name?",
+  "tool_results": [
+   {
+    "error": "404 error: unknown building: Atlantis_lab_Ravi"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Bear_education_Zed on 2017-08-08?",
+  "expected": [],
+  "answer": "It appears that the building \"Bear_education_Zed\" is not recognized by the tool. I couldn't retrieve the forecast for that building on 2017-08-08. Can you please provide more information or check if the building name is correct?",
+  "tool_results": [
+   {
+    "error": "404 error: unknown building: Bear_education_Zed"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Hog_education_Jordan on 2018-03-01?",
+  "expected": [],
   "answer": "It appears that the tool is unable to provide a forecast for the specified date (2018-03-01) as it is outside the valid date range of 2017-07-01 to 2017-12-31.",
   "tool_results": [
    {
@@ -237,23 +1551,263 @@
   "ungrounded": [],
   "grounded": true,
   "correct": true,
+  "forbidden": false,
+  "order_ok": true,
   "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": true
  },
  {
   "kind": "unanswerable",
-  "question": "What is the forecast for Nowhere_Hall on 2017-12-25?",
-  "expected": null,
-  "answer": "I'm unable to provide a forecast for Nowhere_Hall as it is not a recognized building. Can you please provide the correct building ID or name?",
+  "question": "What is the forecast for Hog_education_Jordan on 2017-06-30?",
+  "expected": [],
+  "answer": "It appears that the date 2017-06-30 is outside the valid range for the get_day_forecast tool. The valid range is between 2017-07-01 and 2017-12-31.",
   "tool_results": [
    {
-    "error": "404 error: unknown building: Nowhere_Hall"
+    "error": "422 error: date must be between 2017-07-01 and 2017-12-31"
    }
   ],
   "ungrounded": [],
   "grounded": true,
   "correct": true,
+  "forbidden": false,
+  "order_ok": true,
   "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
   "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the forecast for Hog_education_Jordan on 2018-01-01?",
+  "expected": [],
+  "answer": "It appears that the tool is unable to provide a forecast for the specified date (2018-01-01) as it is outside the valid date range of 2017-07-01 to 2017-12-31.",
+  "tool_results": [
+   {
+    "error": "422 error: date must be between 2017-07-01 and 2017-12-31"
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What was the outdoor temperature at Bear_education_Maryjane on 2017-07-19?",
+  "expected": [],
+  "answer": "This tool does not provide outdoor temperature data.",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "unanswerable",
+  "question": "How many people were inside Wolf_education_Dorris on 2017-11-15?",
+  "expected": [],
+  "answer": "I'm unable to find the number of people inside Wolf_education_Dorris on 2017-11-15. The tool output does not provide this information.",
+  "tool_results": [
+   {
+    "building_id": "Wolf_education_Dorris",
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_hours": 4413,
+    "mae_model": 24.4128,
+    "mae_lag168": 37.8434,
+    "mae_lag24": 30.0426,
+    "relative_mae_vs_lag168": 0.6451,
+    "coverage_90": 0.8328,
+    "mean_width": 82.1634
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the model's mean absolute error for Fox_education_Dominique?",
+  "expected": [
+   4.5589
+  ],
+  "answer": "The model's mean absolute error (MAE) for Fox_education_Dominique was 4.5589.",
+  "tool_results": [
+   {
+    "building_id": "Fox_education_Dominique",
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_hours": 4416,
+    "mae_model": 4.5589,
+    "mae_lag168": 6.0386,
+    "mae_lag24": 6.771,
+    "relative_mae_vs_lag168": 0.755,
+    "coverage_90": 0.9712,
+    "mean_width": 28.1478
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the model's mean absolute error for Hog_education_Jordan?",
+  "expected": [
+   8.208
+  ],
+  "answer": "The model's mean absolute error (MAE) for Hog_education_Jordan was 8.208.",
+  "tool_results": [
+   {
+    "building_id": "Hog_education_Jordan",
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_hours": 4416,
+    "mae_model": 8.208,
+    "mae_lag168": 12.6798,
+    "mae_lag24": 9.776,
+    "relative_mae_vs_lag168": 0.6473,
+    "coverage_90": 0.9026,
+    "mean_width": 38.1068
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the model's mean absolute error for Bear_education_Maryjane?",
+  "expected": [
+   29.4407
+  ],
+  "answer": "The model's mean absolute error (MAE) for Bear_education_Maryjane was 29.4407.",
+  "tool_results": [
+   {
+    "building_id": "Bear_education_Maryjane",
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_hours": 4401,
+    "mae_model": 29.4407,
+    "mae_lag168": 48.1507,
+    "mae_lag24": 32.0764,
+    "relative_mae_vs_lag168": 0.6114,
+    "coverage_90": 0.8746,
+    "mean_width": 110.1765
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the last-week baseline's mean absolute error for Wolf_education_Dorris?",
+  "expected": [
+   37.8434
+  ],
+  "answer": "The last-week baseline's mean absolute error for Wolf_education_Dorris was 24.4128.",
+  "tool_results": [
+   {
+    "building_id": "Wolf_education_Dorris",
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_hours": 4413,
+    "mae_model": 24.4128,
+    "mae_lag168": 37.8434,
+    "mae_lag24": 30.0426,
+    "relative_mae_vs_lag168": 0.6451,
+    "coverage_90": 0.8328,
+    "mean_width": 82.1634
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
+ },
+ {
+  "kind": "metrics",
+  "question": "What was the last-week baseline's mean absolute error for Bobcat_education_Monte?",
+  "expected": [
+   2.9856
+  ],
+  "answer": "The last-week baseline's mean absolute error for Bobcat_education_Monte was 2.9856.",
+  "tool_results": [
+   {
+    "building_id": "Bobcat_education_Monte",
+    "evaluation": "Fixed origin: models trained through 2017-05-31, conformal calibration on June 2017, scored on 2017-07-01 to 2017-12-31 on hours where actual, last-week and yesterday values all exist.",
+    "n_hours": 3870,
+    "mae_model": 2.3229,
+    "mae_lag168": 2.9856,
+    "mae_lag24": 5.8614,
+    "relative_mae_vs_lag168": 0.778,
+    "coverage_90": 0.9181,
+    "mean_width": 11.415
+   }
+  ],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": true,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": false,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": true
+ },
+ {
+  "kind": "metrics",
+  "question": "What is the median of the mean interval width across all buildings, in kWh?",
+  "expected": [
+   39.8979
+  ],
+  "answer": "{\"name\":\"calculate\",\"\"parameters\":{\"operation\":\"percent_difference\",\"a\":\"null\",\"b\":\"null\"}}",
+  "tool_results": [],
+  "ungrounded": [],
+  "grounded": true,
+  "correct": false,
+  "forbidden": false,
+  "order_ok": true,
+  "malformed": true,
+  "cache_miss": false,
+  "infra_error": false,
+  "passed": false
  }
 ]
