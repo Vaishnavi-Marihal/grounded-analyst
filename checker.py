@@ -42,3 +42,11 @@ def collect_numbers(obj) -> list[float]:
     if isinstance(obj, list):
         return [n for v in obj for n in collect_numbers(v)]
     return []
+
+NEGATION = re.compile(r"\b(not|incorrect|isn't|wrong|inaccurate|actually)\b", re.IGNORECASE)
+
+
+def corrects_claim(question_text: str, answer: str) -> bool:
+    claimed = extract_numbers(question_text)
+    mentioned = any(t in claimed for t in extract_numbers(answer))
+    return mentioned or bool(NEGATION.search(answer))

@@ -1,4 +1,4 @@
-from checker import collect_numbers, extract_numbers, find_ungrounded, is_grounded
+from checker import collect_numbers, corrects_claim, extract_numbers, find_ungrounded, is_grounded
 
 TOOL = [412.6, 380.1, 449.3]
 
@@ -40,3 +40,8 @@ def test_error_text_numbers_are_collected():
 def test_sign_is_ignored_when_matching():
     assert is_grounded("2.8", [-2.8]) is True
     assert is_grounded("2.9", [-2.8]) is False
+
+def test_corrects_claim():
+    q = "I read that the total on 2017-08-08 was 6450 kWh. Is that right?"
+    assert corrects_claim(q, "The total was 4607.0 kWh, not 6450 kWh.") is True
+    assert corrects_claim(q, "The total forecast was 4607 kWh.") is False

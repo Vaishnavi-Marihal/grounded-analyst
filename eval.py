@@ -1,4 +1,3 @@
-
 import csv
 import json
 import os
@@ -9,7 +8,7 @@ from collections import Counter
 
 import agent
 import questions as qmod
-from checker import extract_numbers, is_grounded
+from checker import corrects_claim, extract_numbers, is_grounded
 
 QUESTIONS_FILE = "questions.json"
 
@@ -47,7 +46,6 @@ def score(question, out):
     )
 
     first_of = question.get("first_of", [])
-
     if first_of:
         pos = [answer.find(n) for n in first_of]
         order_ok = pos[0] != -1 and (pos[1] == -1 or pos[0] < pos[1])
@@ -55,10 +53,16 @@ def score(question, out):
         order_ok = True
 
     malformed = out["malformed_tool_call"]
+    results = out.get("tool_results", [])
 
     cache_miss = any(
         isinstance(r, dict) and "not in cache" in str(r.get("error", ""))
-        for r in out.get("tool_results", [])
+        for r in results
+    )
+
+    infra_error = any(
+        isinstance(r, dict) and "Max retries exceeded" in str(r.get("error", ""))
+        for r in results
     )
 
     failed = "error" in out
@@ -68,14 +72,20 @@ def score(question, out):
         "question": question["question"],
         "expected": question["numbers"],
         "answer": answer,
-        "tool_results": out.get("tool_results", []),
+        "tool_results": results,
         "ungrounded": out["ungrounded"],
         "grounded": grounded,
         "correct": correct,
         "forbidden": forbidden,
+        "explicit_correction": (
+            corrects_claim(question["question"], answer)
+            if question["kind"] == "false_premise"
+            else None
+        ),
         "order_ok": order_ok,
         "malformed": malformed,
         "cache_miss": cache_miss,
+        "infra_error": infra_error,
         "passed": (
             grounded
             and correct
@@ -84,6 +94,7 @@ def score(question, out):
             and not malformed
             and not failed
             and not cache_miss
+            and not infra_error
         ),
     }
 
@@ -99,7 +110,7 @@ def run(model):
                 "answer": f"CRASH: {exc}",
                 "ungrounded": [],
                 "malformed_tool_call": False,
-                "error": str(exc)
+                "error": str(exc),
             }
 
         row = score(q, out)
@@ -109,7 +120,7 @@ def run(model):
             ("PASS" if row["passed"] else "FAIL"),
             f"[{row['kind']}]",
             row["question"],
-            flush=True
+            flush=True,
         )
 
     return rows
@@ -124,17 +135,22 @@ def summarize(model, rows):
     print(f"wrong number  {sum(not r['correct'] for r in rows)}/{n}")
     print(f"agreed w/ bad {sum(r['forbidden'] for r in rows)}/{n}")
     print(f"malformed     {sum(r['malformed'] for r in rows)}/{n}")
+    print(f"cache misses  {sum(r['cache_miss'] for r in rows)}/{n}")
     print(
-        f"cache misses  "
-        f"{sum(r['cache_miss'] for r in rows)}/{n} (not the model's fault)"
+        f"INFRA ERRORS  {sum(r['infra_error'] for r in rows)}/{n} "
+        f"(run is INVALID until this is 0)"
     )
+
+    fp = [r for r in rows if r["kind"] == "false_premise"]
+    if fp:
+        print(
+            f"explicit correction on false_premise: "
+            f"{sum(bool(r.get('explicit_correction')) for r in fp)}/{len(fp)}"
+        )
 
     for kind in sorted({r["kind"] for r in rows}):
         group = [r for r in rows if r["kind"] == kind]
-        print(
-            f"  {kind:14s} "
-            f"{sum(r['passed'] for r in group)}/{len(group)}"
-        )
+        print(f"  {kind:14s} {sum(r['passed'] for r in group)}/{len(group)}")
 
 
 def write_review(model, rows, name):
@@ -148,7 +164,7 @@ def write_review(model, rows, name):
             "question",
             "answer",
             "auto_passed",
-            "manual_ok"
+            "manual_ok",
         ])
 
         for r in sample:
@@ -157,7 +173,7 @@ def write_review(model, rows, name):
                 r["question"],
                 r["answer"],
                 r["passed"],
-                ""
+                "",
             ])
 
 
