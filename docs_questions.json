@@ -1,0 +1,16 @@
+[
+{"kind":"docs","question":"What was the interval coverage on the three flagged days before the holiday flag was added?","numbers":[0.77,0.74],"allowed":[0.9,0.8],"keywords":[]},
+{"kind":"docs","question":"On the three flagged days, what was the median ratio to last week's value before the holiday flag was added?","numbers":[0.92,0.68,0.7],"allowed":[1],"keywords":[]},
+{"kind":"docs","question":"What coverage did the three previously flagged holidays reach after the holiday flag was added to the deployed model?","numbers":[0.83,0.84,0.81],"allowed":[0.9,0.8,0.77,0.74],"keywords":[]},
+{"kind":"docs","question":"Which US public holidays were the three flagged dates?","numbers":[],"allowed":[],"keywords":[["labor day"],["thanksgiving"],["christmas"]]},
+{"kind":"docs","question":"Why did the monitoring report flag three days, and what information did the model lack at that time?","numbers":[],"allowed":[0.77,0.74,0.92,0.68,0.7,0.9,0.8],"keywords":[["holiday"],["coverage","interval"]]},
+{"kind":"docs","question":"How many monthly folds does the rolling backtest use, and which data is used to calibrate the range in each fold?","numbers":[],"allowed":[],"keywords":[["six","6 monthly","6 fold"],["month before","previous month","preceding month","prior month"]]},
+{"kind":"docs","question":"Which model serves all buildings and how is the 90% range made?","numbers":[],"allowed":[],"keywords":[["lightgbm"],["percentile","quantile"],["conformal"]]},
+{"kind":"docs","question":"When is each forecast issued and which period does it cover?","numbers":[],"allowed":[],"keywords":[["23:00","11 pm","11:00"],["next day","24 hours","following day"]]},
+{"kind":"docs","question":"How many buildings beat last week's value when their site was in training, and how many when the site was unseen?","numbers":[52,48],"allowed":[],"keywords":[]},
+{"kind":"docs","question":"Which two sites did not beat last week's value when unseen, and what were their median error ratios?","numbers":[1.22,1.11],"allowed":[0.93,1.0],"keywords":[["lamb"],["moose"]]},
+{"kind":"docs","question":"Did adding weather data improve the forecast?","numbers":[],"allowed":[1.0,0.3,0.4],"keywords":[["did not","no gain","not help","no clear","not improve","does not","didn't","no improvement"]]},
+{"kind":"docs","question":"How is the demo deployed, and what does the deployment not cover?","numbers":[],"allowed":[],"keywords":[["ec2","aws"],["backup","https","by hand","manually"]]},
+{"kind":"docs_unanswerable","question":"What electricity tariff per kWh does the project assume?","numbers":[],"allowed":[],"keywords":[]},
+{"kind":"docs_unanswerable","question":"How many users has the live demo had?","numbers":[],"allowed":[],"keywords":[]}
+]

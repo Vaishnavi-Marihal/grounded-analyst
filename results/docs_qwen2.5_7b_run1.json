@@ -1,0 +1,156 @@
+[
+ {
+  "kind": "docs",
+  "question": "What was the interval coverage on the three flagged days before the holiday flag was added?",
+  "answer": "The interval coverage on the three flagged days before the holiday flag was added were 0.77, 0.74, and 0.74, respectively. These values indicate that the prediction intervals did not cover the actual data as much as desired, with the target being 90%.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "On the three flagged days, what was the median ratio to last week's value before the holiday flag was added?",
+  "answer": "The ratio of the total forecasted kWh on the holiday days to the total actual kWh from the previous week is 20.5% lower with the holiday flag compared to without the flag. \n\nTo find the median ratio, we need to consider the ratios for all three holiday days. Since we only have the difference, we can assume the ratios for each day are the same as the overall difference given the limited data. Therefore, the median ratio for the three flagged days is the same as the overall ratio, which is 79.5% (100% - 20.5%).\n\nSo, the median ratio to last week's value before the holiday flag was added is 79.5%.",
+  "grounded": false,
+  "must_ok": false,
+  "strict_ok": false,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "What coverage did the three previously flagged holidays reach after the holiday flag was added to the deployed model?",
+  "answer": "The three previously flagged holidays (Labor Day, Thanksgiving, and Christmas Day) had the following interval coverage after the holiday flag was added to the deployed model:\n\n- Labor Day: Coverage increased from 0.77 to 0.83\n- Thanksgiving: Coverage increased from 0.74 to 0.84\n- Christmas Day: Coverage increased from 0.74 to 0.81\n\nThe coverage on these days is still below the target of 0.90, but it is now above the flag limit of 0.80, so they are no longer flagged.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": false,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "Which US public holidays were the three flagged dates?",
+  "answer": "The three flagged dates were US public holidays: Labor Day, Thanksgiving, and Christmas Day. These dates are noted because the model did not have holiday information, only the hour, weekday, and month.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "Why did the monitoring report flag three days, and what information did the model lack at that time?",
+  "answer": "The monitoring flagged three days: 4 September, 23 November, and 25 December. On these days, the model's interval coverage was below the expected 0.90, with values of 0.77, 0.74, and 0.74 respectively. The model did not have holiday information, only the hour, weekday, and month, which may have contributed to the flagged days. These days were US public holidays (Labor Day, Thanksgiving, and Christmas Day). The data used for this experiment is a replay of 2017, so it is not live production monitoring.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "What share of true values fell inside the 90% range in the fixed-origin run, and how many of the 56 buildings beat last week's value?",
+  "answer": "In the fixed-origin run, the share of true values that fell inside the 90% range is 90.01%. Additionally, 92.86% of the 56 buildings beat last week's value.",
+  "grounded": false,
+  "must_ok": false,
+  "strict_ok": false,
+  "keywords_ok": true,
+  "used_tool": false,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "Which model serves all buildings and how is the 90% range made?",
+  "answer": "The 90% range for the model serving all buildings is derived from conformal prediction. Specifically, the model guarantees that 90% of the true values will fall within the prediction interval. This is detailed in the documentation as part of the \"Unseen sites\" section, where it states:\n\n\"True values inside the 90% range | 87.5% to 91.3%\"\n\nThis indicates that for the test months, the true values fell within the 90% prediction interval between 87.5% and 91.3% of the time.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": false,
+  "keywords_ok": false,
+  "used_tool": true,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "When is each forecast issued and which period does it cover?",
+  "answer": "The day-ahead forecast for the building \"Bear_education_Bob\" on 2017-07-01 was issued on 2017-06-30. This forecast covers the entire day of 2017-07-01. Here are the details of the forecast:\n\n- Total forecasted electricity consumption for the day: 2148.2 kWh\n- Peak forecasted electricity consumption: 102.2 kWh, occurring at 12:00\n- Mean interval width: 33.6 kWh\n- Total actual electricity consumption for the same day in the previous week: 2181.9 kWh\n- Actual total electricity consumption for the day being forecasted: 2092.8 kWh\n\nThese values give us an idea of the expected electricity usage and how it compares to the previous week.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": false,
+  "keywords_ok": false,
+  "used_tool": false,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "How many buildings beat last week's value when their site was in training, and how many when the site was unseen?",
+  "answer": "The `get_metrics_summary` function provided the following summary across all 56 buildings:\n\n- Median relative MAE vs. lag168: 0.6698\n- Percentage of buildings beating last week's value: 92.86%\n- Pooled 90% coverage: 90.01%\n- Median mean width in kWh: 39.8979\n\nFrom this summary, we can see that 92.86% of the buildings beat last week's value. However, this summary does not differentiate between buildings that were in training versus unseen. To get the specific counts for training and unseen buildings, we would need to call the `get_building_metrics` function for each building and filter the results based on the training status.\n\nSince calling the `get_building_metrics` function for all 56 buildings individually would be time-consuming, let's assume that the distribution of training and unseen buildings is roughly equal. Given that 92.86% of the buildings beat last week's value, we can estimate the counts as follows:\n\n- Number of buildings in training: 28\n- Number of buildings unseen: 28\n\nEstimated number of buildings beating last week's value in training:\n\\[ 28 \\times 0.9286 \\approx 25.9968 \\approx 26 \\]\n\nEstimated number of buildings beating last week's value when unseen:\n\\[ 28 \\times 0.9286 \\approx 25.9968 \\approx 26 \\]\n\nTherefore, approximately 26 buildings beat last week's value when their site was in training, and approximately 26 buildings beat last week's value when their site was unseen.\n\nTo get the exact counts, we would need to call the `get_building_metrics` function for each building and filter the results based on the training status. However, based on the available summary, we can make this estimation.",
+  "grounded": false,
+  "must_ok": false,
+  "strict_ok": false,
+  "keywords_ok": true,
+  "used_tool": false,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "Which two sites did not beat last week's value when unseen, and what were their median error ratios?",
+  "answer": "",
+  "grounded": true,
+  "must_ok": false,
+  "strict_ok": true,
+  "keywords_ok": false,
+  "used_tool": false,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "Did adding weather data improve the forecast?",
+  "answer": "According to the documentation, adding weather data did not significantly improve the forecast. The comparison of the model with and without weather data showed that the observed air temperature, and temperature with simulated forecast error (1, 2 and 3 \u00b0C), changed the error by between -1.0% and +0.3% compared with the no-weather model of the same seed. In every scenario, some seeds were better and some worse, and none of the seeds improved by more than 1%. Therefore, weather was not included in the final model.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "How is the demo deployed, and what does the deployment not cover?",
+  "answer": "The deployment of the demo involves several components:\n- `frontend/`: Contains the React + TypeScript dashboard.\n- `deploy/`: Includes demo data, trained models, and a data notice.\n- `Dockerfile`: Used for containerization.\n- `compose.yaml`: Configuration file for Docker Compose.\n\nThe deployment does not cover the following aspects:\n- HTTPS or a domain name.\n- The address changes if the server is stopped and started.\n- Automatic deployment from a Continuous Integration (CI) system.\n- Database backups.\n- Handling many users at once, as a single small server is used.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": false,
+  "used_tool": true,
+  "passed": false
+ },
+ {
+  "kind": "docs_unanswerable",
+  "question": "What electricity tariff per kWh does the project assume?",
+  "answer": "The project documentation does not specify the exact electricity tariff per kWh assumed. It primarily focuses on the methodology and evaluation of the day-ahead hourly electricity forecasts for 56 school buildings. For detailed information on the assumed tariff, you might need to refer to a different part of the documentation or contact the project team directly.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs_unanswerable",
+  "question": "How many users has the live demo had?",
+  "answer": "The provided tools do not contain information about the number of users for the live demo. The available tools are related to electricity forecast metrics for buildings. Can you please specify if you need any building forecast or model accuracy details?",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": false,
+  "passed": true
+ }
+]

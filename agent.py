@@ -29,7 +29,14 @@ SYSTEM_PROMPT_V2 = (
     "and never write a tool call as text."
 )
 
-PROMPTS = {"v1": SYSTEM_PROMPT, "v2": SYSTEM_PROMPT_V2}
+SYSTEM_PROMPT_V3 = (
+    SYSTEM_PROMPT
+    + " For questions about how the system works, its methods, reported results, "
+    "limitations or deployment, call search_docs and answer only from the returned passages. "
+    "For numbers about a specific building and date, use the forecast tools."
+)
+
+PROMPTS = {"v1": SYSTEM_PROMPT, "v2": SYSTEM_PROMPT_V2, "v3": SYSTEM_PROMPT_V3}
 
 TOOL_SPECS = [
     {
