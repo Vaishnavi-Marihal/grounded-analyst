@@ -60,5 +60,7 @@ if __name__ == "__main__":
     os.makedirs("results", exist_ok=True)
     variant = os.environ.get("PROMPT_VARIANT", "v1")
     name = model.replace(":", "_") + ("" if variant == "v1" else "_" + variant)
+    if os.environ.get("SEARCH_METHOD") == "hybrid":
+        name += "_hybrid"
     with open(f"results/docs_{name}.json", "w") as f:
         json.dump(rows, f, indent=1)

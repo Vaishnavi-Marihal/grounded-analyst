@@ -149,3 +149,12 @@ def test_search_docs_hides_scores_and_ids(monkeypatch):
         lambda index, query, k=3: [{"source": "a.md", "chunk_id": 4, "text": "hello", "score": 0.7}],
     )
     assert tools.search_docs("q") == {"passages": [{"source": "a.md", "text": "hello"}]}
+
+def test_search_docs_uses_hybrid_when_asked(monkeypatch):
+    monkeypatch.setenv("SEARCH_METHOD", "hybrid")
+    monkeypatch.setattr(tools, "_INDEX", {"chunks": [], "vectors": None})
+    monkeypatch.setattr(
+        tools.rag, "hybrid_search",
+        lambda index, query, k=3: [{"source": "h.md", "chunk_id": 1, "text": "hybrid hit", "score": 0.1}],
+    )
+    assert tools.search_docs("q") == {"passages": [{"source": "h.md", "text": "hybrid hit"}]}

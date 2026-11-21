@@ -122,5 +122,6 @@ def search_docs(query, k=3):
     global _INDEX
     if _INDEX is None:
         _INDEX = rag.load_index()
-    hits = rag.search(_INDEX, query, k=k)
+    search_fn = rag.hybrid_search if os.environ.get("SEARCH_METHOD") == "hybrid" else rag.search
+    hits = search_fn(_INDEX, query, k=k)
     return {"passages": [{"source": h["source"], "text": h["text"]} for h in hits]}

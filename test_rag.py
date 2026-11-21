@@ -32,3 +32,24 @@ def test_save_and_load_roundtrip(tmp_path):
     loaded = rag.load_index(tmp_path)
     assert loaded["chunks"] == chunks
     assert loaded["vectors"].shape == (1, 4)
+
+
+def test_bm25_ranking_prefers_keyword_match():
+    chunks = [
+        {"source": "a.md", "chunk_id": 0, "text": "alpha beta"},
+        {"source": "b.md", "chunk_id": 0, "text": "gamma delta"},
+        {"source": "c.md", "chunk_id": 0, "text": "epsilon zeta"},
+    ]
+    index = rag.build_index(chunks, embed=fake_embed)
+    assert rag.bm25_ranking(index, "delta")[0] == 1
+
+
+def test_hybrid_top_result_when_both_methods_agree():
+    chunks = [
+        {"source": "a.md", "chunk_id": 0, "text": "energy forecast"},
+        {"source": "b.md", "chunk_id": 0, "text": "docker docker"},
+        {"source": "c.md", "chunk_id": 0, "text": "holiday notes"},
+    ]
+    index = rag.build_index(chunks, embed=fake_embed)
+    hits = rag.hybrid_search(index, "docker", k=1, embed=fake_embed)
+    assert hits[0]["source"] == "b.md"

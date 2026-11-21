@@ -1,9 +1,11 @@
 import json
 import pathlib
+import re
 import sys
 
 import numpy as np
 import ollama
+from rank_bm25 import BM25Okapi
 
 DOCS_DIR = pathlib.Path("docs")
 INDEX_DIR = pathlib.Path("index")
@@ -63,11 +65,34 @@ def load_index(directory=INDEX_DIR):
     }
 
 
+def tokenize(text):
+    return re.findall(r"[a-z0-9]+(?:\.[0-9]+)?", text.lower())
+
+
+def dense_ranking(index, query, embed=embed_texts):
+    q = normalize(embed(["search_query: " + query]))[0]
+    return list(np.argsort(-(index["vectors"] @ q)))
+
+
+def bm25_ranking(index, query):
+    bm25 = BM25Okapi([tokenize(c["text"]) for c in index["chunks"]])
+    return list(np.argsort(-bm25.get_scores(tokenize(query))))
+
+
 def search(index, query, k=3, embed=embed_texts):
     q = normalize(embed(["search_query: " + query]))[0]
     scores = index["vectors"] @ q
     top = np.argsort(-scores)[:k]
     return [{**index["chunks"][i], "score": round(float(scores[i]), 3)} for i in top]
+
+
+def hybrid_search(index, query, k=3, embed=embed_texts, rrf_k=60):
+    fused = {}
+    for ranking in (dense_ranking(index, query, embed), bm25_ranking(index, query)):
+        for rank, i in enumerate(ranking, 1):
+            fused[i] = fused.get(i, 0.0) + 1.0 / (rrf_k + rank)
+    top = sorted(fused, key=fused.get, reverse=True)[:k]
+    return [{**index["chunks"][i], "score": round(fused[i], 4)} for i in top]
 
 
 if __name__ == "__main__":
