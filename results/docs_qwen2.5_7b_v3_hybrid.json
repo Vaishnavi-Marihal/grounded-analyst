@@ -126,10 +126,10 @@
   "answer": "The deployment of the demo involves running the same `compose.yaml` configuration on a single AWS EC2 server. Here are some details about the deployment:\n\n- The server is a t3.micro instance with Ubuntu 26.04, located in the Stockholm region on the AWS free tier.\n- It has 20 GiB of storage.\n- The firewall allows SSH access only from the developer's IP address and HTTP access from anywhere.\n- Docker, Docker Compose, and git are installed.\n- 2 GB of swap space is added to the server, which has 1 GB of memory.\n- The server is set up by cloning the repository, creating a `.env` file with a random database password, and running `docker compose up -d --build`.\n\nThe deployment does not cover the following aspects:\n- HTTPS or domain name setup.\n- Automatic deployment from a Continuous Integration (CI) system.\n- Database backups.\n- Handling many users at once, as the server is small.",
   "grounded": true,
   "must_ok": true,
-  "strict_ok": false,
+  "strict_ok": true,
   "keywords_ok": true,
   "used_tool": true,
-  "passed": false
+  "passed": true
  },
  {
   "kind": "docs_unanswerable",

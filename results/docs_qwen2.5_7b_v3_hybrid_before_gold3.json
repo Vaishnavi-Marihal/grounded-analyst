@@ -1,0 +1,156 @@
+[
+ {
+  "kind": "docs",
+  "question": "What was the interval coverage on the three flagged days before the holiday flag was added?",
+  "answer": "The interval coverage on the three flagged days before the holiday flag was added were 0.77, 0.74, and 0.74. These values indicate that the prediction intervals did not cover the actual load on those days, as the intervals are meant to reach 0.90 coverage.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "On the three flagged days, what was the median ratio to last week's value before the holiday flag was added?",
+  "answer": "Based on the information provided, the median ratio to last week's value on the three flagged days were 0.92, 0.68, and 0.70. All of these ratios stayed below 1, indicating that the model still beat last week's value on these days.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "What coverage did the three previously flagged holidays reach after the holiday flag was added to the deployed model?",
+  "answer": "After adding the holiday flag to the deployed model, the coverage on the three previously flagged holidays improved. Here are the details:\n\n- Labor Day: Coverage increased from 0.77 to 0.83.\n- Thanksgiving: Coverage increased from 0.74 to 0.84.\n- Christmas Day: Coverage increased from 0.74 to 0.81.\n\nThese improvements mean that the model's interval coverage on these holidays is now closer to the target of 0.90, though it still falls slightly short.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "Which US public holidays were the three flagged dates?",
+  "answer": "The three flagged dates correspond to US public holidays: Labor Day, Thanksgiving, and Christmas Day. The model did not have holiday information at those times, only the hour, weekday, and month.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "Why did the monitoring report flag three days, and what information did the model lack at that time?",
+  "answer": "The monitoring flagged three days: 4 September, 23 November, and 25 December. On these days, the model's interval coverage was below the expected level. Specifically, the interval coverage was 0.77, 0.74, and 0.74, respectively, whereas the intervals were meant to reach 0.90, and the flag limit was set at 0.80.\n\nAt the time, the model lacked holiday information, only having the hour, weekday, and month. The data used for training and testing was a replay of 2017, so the real readings already existed, but this was not live production monitoring. To test whether the model's performance was affected by the lack of holiday information, the model was retrained with an additional feature indicating US federal holidays.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "How many monthly folds does the rolling backtest use, and which data is used to calibrate the range in each fold?",
+  "answer": "The rolling backtest uses 6 monthly folds. Each fold calibrates the range on the month before the test month. This process retrained each month on earlier data.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "Which model serves all buildings and how is the 90% range made?",
+  "answer": "The model that serves all buildings is a single global LightGBM model. Each building's load is divided by its training-period mean to scale the data appropriately.\n\nThe 90% range is created using 5th and 95th percentile models, and this range is further widened by a split-conformal correction computed on the previous month. This process helps to account for variability in the data and provides a more robust prediction interval.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "When is each forecast issued and which period does it cover?",
+  "answer": "The day-ahead forecast for the building \"Bear_education_Bob\" on July 1, 2017, covers the electricity consumption from midnight on July 2, 2017, until midnight on July 3, 2017. This forecast predicts a total of 2148.2 kWh of electricity usage for the next day. \n\nFor your information, the forecast period always starts from the current midnight and ends the next midnight, regardless of the specific date requested. \n\nWould you like more details on how these forecasts are generated or any other specific building's forecast?",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": false,
+  "keywords_ok": false,
+  "used_tool": false,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "How many buildings beat last week's value when their site was in training, and how many when the site was unseen?",
+  "answer": "Based on the information provided:\n\n- When the site was in training, 52 out of 56 buildings beat last week's value.\n- When the site was unseen, 48 out of 56 buildings beat last week's value.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "Which two sites did not beat last week's value when unseen, and what were their median error ratios?",
+  "answer": "The two sites that did not beat last week's value when unseen are Lamb and Moose. Their median error ratios are 1.22 and 1.11, respectively, compared to 0.93 and 1.00 when seen.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "Did adding weather data improve the forecast?",
+  "answer": "Based on the documentation, adding weather data did not improve the forecast. The text states: \"Weather did not help. I repeated the comparison with three random seeds (July to December 2017). Observed air temperature, and temperature with simulated forecast error (1, 2 and 3 \u00b0C), changed the error by between \u22121.0% and +0.3% compared with the no-weather model of the same seed, and in every scenario some seeds were better and some worse. I had decided beforehand that I would call it a gain only if all three seeds improved by more than 1%; none did. The no-weather model alone differs by about 0.4% between seeds. Weather is not in the final model.\"",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "How is the demo deployed, and what does the deployment not cover?",
+  "answer": "The deployment of the demo involves running the same `compose.yaml` configuration on a single AWS EC2 server. Here are some details about the deployment:\n\n- The server is a t3.micro instance with Ubuntu 26.04, located in the Stockholm region on the AWS free tier.\n- It has 20 GiB of storage.\n- The firewall allows SSH access only from the developer's IP address and HTTP access from anywhere.\n- Docker, Docker Compose, and git are installed.\n- 2 GB of swap space is added to the server, which has 1 GB of memory.\n- The server is set up by cloning the repository, creating a `.env` file with a random database password, and running `docker compose up -d --build`.\n\nThe deployment does not cover the following aspects:\n- HTTPS or domain name setup.\n- Automatic deployment from a Continuous Integration (CI) system.\n- Database backups.\n- Handling many users at once, as the server is small.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": false,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": false
+ },
+ {
+  "kind": "docs_unanswerable",
+  "question": "What electricity tariff per kWh does the project assume?",
+  "answer": "The provided documentation does not specify the exact electricity tariff per kWh that the project assumes. The documentation focuses more on the methodology, accuracy, and results of the electricity forecasts rather than the specific tariff details. \n\nIf you need information on the assumed electricity tariff, you might want to look into the project's configuration files or contact the project maintainers directly for that specific detail. Would you like me to search for any other related information?",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs_unanswerable",
+  "question": "How many users has the live demo had?",
+  "answer": "The information about the number of users for the live demo is not available through the provided tools. The tools are focused on electricity forecast metrics for specific buildings and do not include user engagement data.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": false,
+  "passed": true
+ }
+]
