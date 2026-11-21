@@ -1,0 +1,13 @@
+[
+{"kind":"docs","question":"How many tests does the project have in total, and how many of them need a database?","numbers":[63,27],"allowed":[36,3.9,3.12],"keywords":[]},
+{"kind":"docs","question":"How many buildings and sites does the evaluation use, and which building category were they chosen from?","numbers":[56,14],"allowed":[604,535],"keywords":[["education"]]},
+{"kind":"docs","question":"Why was the Healthcare category not used?","numbers":[13],"allowed":[],"keywords":[["quality"],["education"]]},
+{"kind":"docs","question":"How was the weather comparison run, and what rule did the author set beforehand for calling weather a gain?","numbers":[],"allowed":[1.0,0.3,0.4],"keywords":[["three"],["1%","1 percent","one percent"]]},
+{"kind":"docs","question":"Which database does the project use and what do its tables store?","numbers":[],"allowed":[192,982464],"keywords":[["postgres"],["buildings"],["readings"],["forecasts"]]},
+{"kind":"docs","question":"Which licence covers the source code and which covers the data and model files?","numbers":[4.0],"allowed":[],"keywords":[["mit"],["by-sa"]]},
+{"kind":"docs","question":"What caveats does the README give about trusting the unseen-sites results?","numbers":[],"allowed":[0.03],"keywords":[["only 4","four","4 buildings"],["seed"]]},
+{"kind":"docs","question":"How is a dead hour defined, and how long must a dead stretch be before it is masked?","numbers":[168],"allowed":[],"keywords":[["zero"],["missing"]]},
+{"kind":"docs","question":"When does the monitoring report flag a day, and were those limits derived from data?","numbers":[0.8],"allowed":[1],"keywords":[["chose","chosen","not derived","arbitrary"]]},
+{"kind":"docs_unanswerable","question":"What was the outdoor temperature on 25 December 2017?","numbers":[],"allowed":[],"keywords":[]},
+{"kind":"docs_unanswerable","question":"How much does the AWS server cost per month?","numbers":[],"allowed":[],"keywords":[]}
+]
