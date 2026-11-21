@@ -5,3 +5,9 @@
 3. Deployment question: allowed 26.04 ("Ubuntu 26.04" appears in the README; my list had omitted it).
 
 All three widen or clarify the test; none were made to turn a wrong answer into a pass. Results before each change are kept in results/.
+
+# Held-out run (11 questions, setup frozen): findings about the checker
+
+- Automatic result 7/11. Two of the four failures were substantively correct answers: one added a derived number (168 hours as "about 7 days"), one wrote 0.80 as 80%. The grounding rule treats numbers that are not in the retrieved text as invented, and does not convert units or percentages.
+- These limits were NOT fixed after seeing the results. A later version should normalise percentages and allow simple unit conversions, and be tested on new questions.
+- The other two failures were real: the answer omitted the requested category (Education), and described the test setup instead of the caveats.

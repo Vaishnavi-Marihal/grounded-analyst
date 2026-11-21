@@ -1,0 +1,123 @@
+[
+ {
+  "kind": "docs",
+  "question": "How many tests does the project have in total, and how many of them need a database?",
+  "answer": "Based on the documentation, the project has a total of 63 tests. Out of these, 27 tests need a database and will only run when `TEST_DATABASE_URL` is set, while the remaining 36 tests always run.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "How many buildings and sites does the evaluation use, and which building category were they chosen from?",
+  "answer": "The evaluation uses 56 buildings across 14 sites. These buildings were chosen with quality checks over the entire period. For the unseen sites evaluation, the model was trained on the data from 13 out of the 14 sites (up to 31 May 2017) and then used to forecast the buildings on the 14th site for the period of July to December 2017. A control model was also trained on all 56 buildings and scored on the same hours to compare the performance.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": false,
+  "used_tool": true,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "Why was the Healthcare category not used?",
+  "answer": "The Healthcare category was not used because only 13 buildings passed a simple quality filter within that category. This was insufficient to be included in the final selection of buildings for the study. The Education category was chosen instead due to a higher number of suitable buildings meeting the quality criteria.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "How was the weather comparison run, and what rule did the author set beforehand for calling weather a gain?",
+  "answer": "The weather comparison was run by repeating the comparison with three random seeds for the period July to December 2017. The author decided beforehand that they would call weather a gain only if all three seeds improved the model by more than 1%. None of the seeds met this criterion, so weather was not included in the final model. The results of this comparison are available in the file `docs/weather_seeds.json`, and can be reproduced by running `python src/experiment_weather_seeds.py`.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "Which database does the project use and what do its tables store?",
+  "answer": "The project uses a PostgreSQL database to store the readings and forecasts. Specifically, the database contains three tables:\n\n- `buildings`: This table includes columns for `id`, `site`, and the training-period mean load used as the scale.\n- `readings`: This table contains one row per building per hour. A masked hour is stored as NULL.\n- `forecasts`: This table includes every forecast the API has served, with one row per building per hour. These forecasts are kept so the error can be checked against the real readings later. The key `(building_id, ts)` also serves as the index, allowing a forecast request to read one building's 192 rows (the 7 days before the target day, plus the target day) instead of all 982,464 rows.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "Which licence covers the source code and which covers the data and model files?",
+  "answer": "The source code is covered by the MIT licence, while the data and model files are under the CC BY-SA 4.0 licence.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": true
+ },
+ {
+  "kind": "docs",
+  "question": "What caveats does the README give about trusting the unseen-sites results?",
+  "answer": "The README provides the following caveats about trusting the unseen-sites results:\n\n- For each of the 14 sites, the model was trained on the other 13 sites (data through 31 May 2017) and then used to forecast the held-out site's buildings for July to December 2017. A control model trained on all 56 buildings was also scored on the same hours, with the only difference being whether the site was included in the training data.\n- The results for the unseen sites showed that:\n  - The median error ratio for buildings was 0.701 compared to 0.682 for the control model.\n  - 48 out of 56 buildings beat last week's value, compared to 52 out of 56 for the control model.\n  - 12 out of 14 sites had a median error ratio below 1, compared to 13 out of 14 for the control model.\n\nThese results suggest that the model performs well on unseen sites, but there is a slight degradation in performance compared to the control model trained on all buildings.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": false,
+  "keywords_ok": false,
+  "used_tool": true,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "How is a dead hour defined, and how long must a dead stretch be before it is masked?",
+  "answer": "A dead hour is defined as an hour where the reading is zero or missing. A dead stretch longer than 168 hours (which is equivalent to about 7 days) is masked and not scored or used in the model. This means that if a site experiences a continuous period of 168 hours or more where the data is either zero or missing, this stretch will be masked out.",
+  "grounded": false,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": false
+ },
+ {
+  "kind": "docs",
+  "question": "When does the monitoring report flag a day, and were those limits derived from data?",
+  "answer": "Monitoring flags a day when the ratio of model error to the error of the same hour last week is above 1 or the coverage of the prediction interval is below 80%. These limits (1 and 0.80) were chosen and not derived from the data. The data used for monitoring is a replay of 2017, meaning the real readings already exist, and this setup is used to demonstrate the mechanism rather than for live production monitoring. Days were flagged on US public holidays (Labor Day, Thanksgiving, Christmas Day) where the model had no holiday information, only the hour, weekday, and month.",
+  "grounded": false,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": true,
+  "passed": false
+ },
+ {
+  "kind": "docs_unanswerable",
+  "question": "What was the outdoor temperature on 25 December 2017?",
+  "answer": "The tool provided does not have the capability to retrieve outdoor temperature data. We can only use the tools listed, which are related to electricity forecasts. Therefore, I cannot answer your question with the available tools.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": false,
+  "passed": true
+ },
+ {
+  "kind": "docs_unanswerable",
+  "question": "How much does the AWS server cost per month?",
+  "answer": "The cost of the AWS server is not provided by the available tools and is not related to the electricity forecast data. The tools are focused on providing electricity forecast information and model accuracy metrics for buildings. There is no direct way to determine the AWS server cost from the given tools.",
+  "grounded": true,
+  "must_ok": true,
+  "strict_ok": true,
+  "keywords_ok": true,
+  "used_tool": false,
+  "passed": true
+ }
+]
