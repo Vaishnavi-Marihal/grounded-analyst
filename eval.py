@@ -8,6 +8,7 @@ from collections import Counter
 
 import agent
 import graph_agent
+import langchain_agent
 import questions as qmod
 from checker import corrects_claim, extract_numbers, is_grounded
 
@@ -87,7 +88,8 @@ def run(model):
     if kinds:
         questions = [q for q in questions if q["kind"] in kinds.split(",")]
     rows = []
-    runner = graph_agent.run_agent if os.environ.get("AGENT_IMPL") == "graph" else agent.run_agent
+    runners = {"graph": graph_agent.run_agent, "langchain": langchain_agent.run_agent}
+    runner = runners.get(os.environ.get("AGENT_IMPL"), agent.run_agent)
     for q in questions:
         try:
             out = runner(q["question"], model=model)
@@ -149,8 +151,8 @@ if __name__ == "__main__":
         name += "_repair"
     if os.environ.get("TOOLS_V") == "2":
         name += "_t2"
-    if os.environ.get("AGENT_IMPL") == "graph":
-        name += "_graph"
+    if os.environ.get("AGENT_IMPL") in ("graph", "langchain"):
+        name += "_" + os.environ["AGENT_IMPL"]
     with open(f"results/{name}.json", "w") as f:
         json.dump(rows, f, indent=1)
     write_review(model, rows, name)
