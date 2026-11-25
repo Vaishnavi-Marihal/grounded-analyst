@@ -1,0 +1,38 @@
+{
+ "correctness": {
+  "n_queries": 21,
+  "faiss_same_order": 21,
+  "faiss_same_set": 21,
+  "pgvector_same_order": 21,
+  "pgvector_same_set": 21
+ },
+ "scale": {
+  "n_vectors": 30000,
+  "n_queries": 105,
+  "numpy_exact": {
+   "median_ms": 2.098,
+   "p95_ms": 2.226
+  },
+  "faiss_flat": {
+   "build_s": 0.03,
+   "median_ms": 1.377,
+   "p95_ms": 1.47,
+   "memory_mb": 92.2,
+   "recall_vs_numpy": 1.0
+  },
+  "pgvector_exact": {
+   "load_s": 7.35,
+   "median_ms": 52.318,
+   "p95_ms": 55.371,
+   "table_mb": 126.6,
+   "recall_vs_numpy": 1.0
+  },
+  "pgvector_hnsw": {
+   "index_build_s": 16.15,
+   "median_ms": 1.911,
+   "p95_ms": 2.287,
+   "table_plus_index_mb": 249.5,
+   "recall_vs_numpy": 0.556
+  }
+ }
+}
