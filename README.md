@@ -90,6 +90,34 @@ What I found:
   somewhat too narrow. I changed the document answer key three times after
   seeing results (logged in `EVAL_NOTES.md`).
 
+## Vector stores: FAISS vs pgvector
+
+`vector_stores.py` wraps FAISS (exact search) and pgvector (Postgres, with an
+exact scan or an HNSW index). The experiments are `vector_experiment.py` and
+`hnsw_sweep.py`; results are in `results/vector_store_comparison.json`.
+
+- **Same answers on the real data.** On the README index (30 chunks) and 21
+  questions, FAISS and pgvector returned the same top 3, in the same order, as
+  plain numpy: 21 of 21. For this project the choice of store does not change
+  what the agent sees, and numpy alone would be enough.
+- **Scale test:** 30,000 synthetic vectors (real chunk vectors plus noise), 105
+  queries. Median query time: numpy 2.1 ms, FAISS 1.4 ms, pgvector exact scan
+  52 ms, pgvector HNSW 1.9 ms. pgvector is a separate server reached over a
+  connection and FAISS runs inside the Python process, so this compares what
+  each costs to run, not the search algorithms alone. FAISS needs 92 MB in
+  memory; the pgvector table is 127 MB, 250 MB with the HNSW index, which took
+  16 s to build.
+- **HNSW is approximate.** With its default setting it returned 56% of the exact
+  top 3. Raising the search effort to 400 gave 71% at 2.2 ms, and the returned
+  items were within 0.002 to 0.006 cosine similarity of the exact ones. My test
+  vectors are near-duplicates (30 base vectors plus noise), which is a hard case
+  with many near-ties, and I did not tune the index build settings. It shows
+  the accuracy/speed trade-off, not a general verdict on pgvector. I did not
+  test whether the lost neighbours would change the answers of the agent.
+- **When pgvector makes sense:** when the data already lives in Postgres or
+  needs persistence, SQL filters and shared access. For 30 chunks it adds a
+  database to run and gains nothing.
+
 ## Reproduce
 
 Needs Python 3.12 and [Ollama](https://ollama.com).
@@ -112,7 +140,7 @@ python log_to_mlflow.py && mlflow ui --backend-store-uri sqlite:///mlflow.db
 `langchain_agent.py` LangChain version · `tools.py` · `checker.py` ·
 `rag.py` search · `retrieval_eval.py` · `eval.py`, `eval_docs.py`,
 `questions.py` · `docs_questions.json`, `held_out_questions.json` ·
-`log_to_mlflow.py` · `cache/` recorded API responses · `results/` ·
+`log_to_mlflow.py` · `vector_stores.py`, `vector_experiment.py`, `hnsw_sweep.py` · `cache/` recorded API responses · `results/` ·
 `EVAL_NOTES.md`
 
 ## Data and licence
