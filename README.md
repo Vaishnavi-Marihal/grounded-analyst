@@ -1,5 +1,7 @@
 # Grounded Analyst
 
+[![tests](https://github.com/Vaishnavi-Marihal/grounded-analyst/actions/workflows/ci.yml/badge.svg)](https://github.com/Vaishnavi-Marihal/grounded-analyst/actions/workflows/ci.yml)
+
 An LLM agent that answers questions about building electricity forecasts and
 has to prove its numbers. It calls a forecast API (from my
 [building-energy-forecast](https://github.com/Vaishnavi-Marihal/building-energy-forecast)
