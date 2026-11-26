@@ -18,8 +18,10 @@ def score_doc(q, out):
     gold = [float(x) for x in q["numbers"]]
     allowed = gold + [float(x) for x in q["allowed"]]
     must_ok = all(any(is_grounded(t, [n]) for t in tokens) for n in gold)
-    checked = [t for t in tokens
-               if ("." in t or len(t) >= 3) and t not in asked and not YEAR.fullmatch(t)]
+    checked = [
+        t for t in tokens
+        if ("." in t or len(t) >= 3) and t not in asked and not YEAR.fullmatch(t)
+    ]
     strict_ok = all(any(is_grounded(t, [a]) for a in allowed) for t in checked)
     keywords_ok = all(any(w in answer.lower() for w in group) for group in q["keywords"])
     used_tool = any(isinstance(t, dict) and "passages" in t for t in out["tool_results"])
@@ -40,7 +42,7 @@ def score_doc(q, out):
 
 if __name__ == "__main__":
     model = sys.argv[1] if len(sys.argv) > 1 else agent.MODEL
-    questions = json.load(open("docs_questions.json"))
+    questions = json.load(open(os.environ.get("QUESTIONS_FILE", "docs_questions.json")))
     rows = []
     for q in questions:
         try:
@@ -62,5 +64,7 @@ if __name__ == "__main__":
     name = model.replace(":", "_") + ("" if variant == "v1" else "_" + variant)
     if os.environ.get("SEARCH_METHOD") == "hybrid":
         name += "_hybrid"
+    if os.environ.get("QUESTIONS_FILE"):
+        name += "_heldout"
     with open(f"results/docs_{name}.json", "w") as f:
         json.dump(rows, f, indent=1)

@@ -78,3 +78,22 @@ def test_numbers_quoted_from_the_question_are_allowed(monkeypatch):
     setup(monkeypatch, [reply(calls=[CALL]), reply(content="No, the total is 60 kWh, not 3000 kWh.")])
     out = agent.run_agent("Is the total 3000 kWh?")
     assert out["ungrounded"] == []
+
+def test_parse_text_tool_calls():
+    text = 'First. {"name": "get_day_forecast", "parameters": {"building_id": "B", "date": "2017-12-25"}}'
+    assert agent.parse_text_tool_calls(text) == [
+        ("get_day_forecast", {"building_id": "B", "date": "2017-12-25"})
+    ]
+
+
+def test_parse_ignores_invalid_json():
+    assert agent.parse_text_tool_calls('{"name":"calculate",""parameters":{"a":1}}') == []
+
+
+def test_repair_runs_a_text_tool_call(monkeypatch):
+    monkeypatch.setenv("REPAIR", "1")
+    text = '{"name": "get_day_forecast", "parameters": {"building_id": "B", "date": "2017-12-25"}}'
+    setup(monkeypatch, [reply(content=text), reply(content="The total forecast is 60 kWh.")])
+    out = agent.run_agent("question")
+    assert out["repaired_calls"] == 1
+    assert out["ungrounded"] == []
